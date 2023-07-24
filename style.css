@@ -36,6 +36,34 @@ html {
     scroll-behavior: smooth;
 }
 .everything {
-    display: grid;
+    display: block;
     grid-template-areas: title title;
+}
+.header {
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+    "titleImgContainer"
+    "navbarItems";
+    justify-content: center;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.navbar {
+    background-color: rgba(0,0,0,0.35);
+    grid-area: navbarItems;
+    border-radius: 7px 7px 20px 20px;
+    padding: 10px;
+    display: flex;
+}
+.titleImgContainer {
+    column-span: all;
+    grid-area: titleImgContainer;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.longTitle {
+    width: 90%; 
 }
