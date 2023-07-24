@@ -15,11 +15,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
     src: url(fonts/ProductSans-Black.ttf);
 }
 @font-face {
-    font-family: Monsterrat Bold; /* Other */
+    font-family: Montserrat Bold; /* Other */
     src: url(fonts/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: Monsterrat Medium; /* Other */
+    font-family: Montserrat Medium; /* Other */
     src: url(fonts/Montserrat-Medium.ttf);
 }
 @font-face {
@@ -38,6 +38,9 @@ html {
 body {
     background-color: rgba(166, 255, 166,0.85)
 }
+::selection {
+    background-color: rgba(0,0,0,0.3);
+}
 .everything {
     display: block;
     grid-template-areas: title title;
@@ -49,23 +52,42 @@ body {
     "titleImgContainer"
     "navbarItems";
     justify-content: center;
-    background-color: rgba(0,0,0,0.25);
-    border-radius: 20px;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 7px 7px 20px 20px;
     flex-wrap: wrap;
 }
 .navbar {
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.25);
     grid-area: navbarItems;
     border-radius: 7px 7px 20px 20px;
-    display: flex;
+    display: grid;
+    grid-template-areas: "leftBar rightBar";
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 5px;
 }
 .navbarLink {
-    margin: 0px 0px 0px 0px;
-    background-color: blueviolet;
-    border: dotted 2px lime;
-    border-radius: 7px 7px 20px 20px;
+    margin: 0px 4px 0px 4px;
+    background-color: rgba(0,0,0,0.25);
+    /* border: dotted 2px black; */
+    border-radius: 12px;
+    font-family: Product Sans Regular;
+    font-size: 22px;
+    padding: 5px 10px 5px 10px;
+    transition: 0.3s;
+    color: rgb(220, 220, 220);
+}
+.navbarLink:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+#leftLink {
+    margin: 0px 4px 0px 0px;
+    border-radius: 7px 12px 12px 18px;
+}
+#rightLink {
+    margin: 0px 0px 0px 4px;
+    border-radius: 12px 7px 18px 12px;
 }
 .titleImgContainer {
     column-span: all;
@@ -76,4 +98,16 @@ body {
 }
 .longTitle {
     width: 90%; 
+}
+.leftBar {
+    grid-area: leftBar;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.rightBar {
+    grid-area: rightBar;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
