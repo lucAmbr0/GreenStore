@@ -35,6 +35,9 @@ Insta: https://www.instagram.com/luca.ambroo_/
 html {
     scroll-behavior: smooth;
 }
+body {
+    background-color: rgba(166, 255, 166,0.85)
+}
 .everything {
     display: block;
     grid-template-areas: title title;
