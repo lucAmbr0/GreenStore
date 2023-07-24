@@ -5,6 +5,7 @@ github: https://github.com/lucAmbr0/
 Insta: https://www.instagram.com/luca.ambroo_/ 
 */
 /* -------------------- IMPORT FONTS --------------------*/
+
 @font-face {
     font-family: Product Sans Medium; /* Medium titles */
     src: url(fonts/ProductSans-Medium.ttf);
@@ -29,7 +30,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
     font-family: Product Sans Regular; /* Normal text 2 */
     src: url(fonts/ProductSans-Regular.ttf);
 }
-/* */
+
 
 html {
     scroll-behavior: smooth;
