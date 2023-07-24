@@ -43,10 +43,9 @@ body {
 }
 .everything {
     display: block;
-    grid-template-areas: title title;
 }
 .header {
-    margin-top: 10px;
+    margin: 10px 0.85% 15px 0.85%;
     display: grid;
     grid-template-areas: 
     "titleImgContainer"
@@ -76,6 +75,7 @@ body {
     padding: 5px 10px 5px 10px;
     transition: 0.3s;
     color: rgb(220, 220, 220);
+    cursor: pointer;
 }
 .navbarLink:hover {
     background-color: rgba(0,0,0,0.4);
@@ -110,4 +110,55 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
+}
+.content {
+    background-color: rgba(0,0,0,0.25);
+    margin: 10px 0.85% 15px 0.85%;
+    border-radius: 7px 7px 20px 20px;
+    padding: 2%;
+}
+h1 {
+    font-family: Product Sans Medium;
+    border-left: double 15px black;
+    font-size: 45px;
+    margin-left: 25px;
+    padding-left: 15px;
+    margin-top: -5px;
+}
+p {
+    font-family: Arial;
+    text-align: left;
+    font-size: 24px;
+    margin: 10px 5% 10px 5%;
+    line-height: 1.15;
+}
+#italic {
+    font-style: italic;
+}
+::marker {
+    color: transparent;
+}
+summary {
+    cursor: pointer;
+}
+.shippingSection {
+    display: grid;
+    grid-template-areas: "img p p";
+    margin: 50px;
+    /* background-color: aqua; */
+}
+.itMap {
+    grid-area: img;
+    width: 100%;
+    border: solid 4px black;
+    border-radius: 15px;
+    /* background-color: blueviolet; */
+}
+.shippingParagraph {
+    grid-area: p;
+    /* background-color: lime; */
+}
+.itMapAlign {
+    justify-content: end;
+    float: right;
 }
