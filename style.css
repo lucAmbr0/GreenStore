@@ -1,0 +1,10 @@
+/*
+        GreenStore Project est.2021 
+Created by @luca.ambroo_ 
+github: https://github.com/lucAmbr0/
+Insta: https://www.instagram.com/luca.ambroo_/ 
+*/
+.everything {
+    display: grid;
+    grid-template-areas: title title;
+}
