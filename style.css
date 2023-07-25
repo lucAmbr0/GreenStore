@@ -452,12 +452,3 @@ h2:hover {
 #SaleProductsLayout {
     margin-bottom: -28px;
 }
-#mediumProduct {
-    width: 24.5%;
-    border: solid 4px black;
-    border-radius: 14px;
-    margin: 12px;
-}
-#mediumProduct:hover {
-    border-radius: 20px;
-}
