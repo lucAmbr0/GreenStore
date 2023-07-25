@@ -71,7 +71,6 @@ body {
 .navbarLink {
     margin: 0px 3px 0px 3px;
     background-color: rgba(0,0,0,0.25);
-    /* border: dotted 2px black; */
     border-radius: 12px;
     font-family: Product Sans Regular;
     font-size: 22px;
