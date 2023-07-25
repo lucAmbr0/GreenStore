@@ -1,4 +1,4 @@
-/*
+/* -
         GreenStore Project est.2021 
 Created by @luca.ambroo_ 
 github: https://github.com/lucAmbr0/
@@ -31,7 +31,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
     src: url(fonts/ProductSans-Regular.ttf);
 }
 
-/* -------------------- CSS Rules --------------------*/
+
 html {
     scroll-behavior: smooth;
 }
