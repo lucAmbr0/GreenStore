@@ -170,6 +170,7 @@ summary {
 .shippingParagraph {
     grid-area: p;
     margin-left: 40px;
+    text-align: justify;
 }
 .itMapAlign {
     justify-content: end;
@@ -270,7 +271,8 @@ h2:hover {
 .reviewText {
     display: block;
     grid-area: txt;
-    font-size: 20px
+    font-size: 20px;
+    text-align: justify;
 }
 #shortReviewText {
     font-size: 26px;
@@ -300,3 +302,103 @@ h2:hover {
     display: none;
 }
 /* ------------------- TODO: ADD ANIMATION ON DIV SHOWING ------------------- */
+
+
+/* ------------------- HEADING PRODUCTS -------------------- */
+
+.headingProductsBox {
+    background-color: rgba(0,0,0,0.111);
+    border: solid 4px rgb(37, 37, 37);  
+    border-radius: 50px 50px 7px 7px;
+    display: block;
+    width: auto;
+    margin: 50px 10% 0 10%;
+    transition: 0.3s;
+}
+.headingProductsBox:hover {
+    border: solid 4px black;
+    background-color: rgba(55, 169, 59, 0.2);
+    /* box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.626); */
+}
+#middleBox {
+    margin: 10px 10% 10px 10%;
+    border-radius: 7px 7px 7px 7px;
+}
+#bottomBox {
+    margin: 10px 10% 60px 10%;
+    border-radius: 7px 7px 50px 50px ;
+}
+#monthlyMostSoldTxt {
+    text-align: center;
+    padding: 30px 0 0 0px;
+    font-size: 40px;
+    border-bottom: solid 4px transparent;
+    width: fit-content;
+    margin: auto;
+    font-family: Product Sans Regular;
+    scale: 1;
+    transition: 0.3s;
+}
+#monthlyMostSoldTxt:hover {
+    border-bottom: solid 4px black;
+    scale: 1.08;
+}
+.headingProductsLayout {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.productPreview {
+    width: 300px;
+    background-color: black;
+    border: solid 8px black;
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.4s;
+}
+.productPreview:hover {
+    scale: 1.15;
+    border-radius: 20px;
+}
+#smallerProduct {
+    width: 193px;
+    border: solid 4px black;
+    border-radius: 10px;
+    margin: 10px;
+}
+#smallerProduct:hover {
+    scale: 1.15;
+    border-radius: 15px;
+}
+#mediumProduct {
+    width: 235px;
+    border: solid 4px black;
+    border-radius: 14px;
+    margin: 14px;
+}
+#firstMidPr {
+    width: 235px;
+    border: solid 4px black;
+    border-radius: 14px 14px 14px 14px;
+    margin: 14px;
+}
+#lastMidPr {
+    width: 235px;
+    border: solid 4px black;
+    border-radius: 14px 14px 14px 14px;
+    margin: 14px;
+}
+#firstMidPr:hover {
+    width: 235px;
+    border: solid 4px black;
+    border-radius: 14px 14px 14px 25px;
+    margin: 14px;
+}
+#lastMidPr:hover {
+    width: 235px;
+    border: solid 4px black;
+    border-radius: 14px 14px 25px 14px;
+    margin: 14px;
+}
