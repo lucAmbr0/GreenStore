@@ -128,6 +128,7 @@ h1 {
 }
 h1:hover {
     margin-left: 40px;
+    width: fit-content;
 }
 p {
     font-family: Arial;
@@ -191,4 +192,65 @@ summary {
 #noDeco {
     text-decoration: none;
     color: black;
+}
+.reviewBox {
+    display: flex;
+    border: solid 4px rgb(37, 37, 37);
+    background-color: rgba(0, 0, 0, 0.111);
+    border-radius: 10px;
+    margin: 10px 10% 10px 15%;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+.reviewBox:hover {
+    border: solid 4px black;
+    background-color: rgba(55, 169, 59, 0.2);
+    border-radius: 15px;
+}
+.starsContainer {
+    display: flex;
+    border: solid 4px transparent;
+    transition: 0.4s;
+    padding: 10px;
+    margin: 10px 10px 10px auto;
+}
+.score {
+    font-family: Product Sans Medium;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 5px;
+    height: auto;
+    align-items: center;
+    font-size: 26px;
+}
+h2 {
+        display: flex;
+        align-items: center;
+        margin: 10px 0 10px 20px;
+        font-family: Product Sans Regular;
+        font-size: 30px;
+}
+.expandReview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img txt";
+    margin: 0 20px 0 20px;
+}
+.reviewImg {
+    display: block;
+    grid-area: img;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+    border-radius: 10px;
+    width: fit-content;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.reviewImg:hover {
+    box-shadow: 3px 5px 8px rgb(34, 34, 34);
+}
+.reviewText {
+    display: block;
+    grid-area: txt;
+    font-size: 18px;
 }
