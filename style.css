@@ -201,7 +201,7 @@ summary {
     border: solid 4px rgb(37, 37, 37);  
     background-color: rgba(0, 0, 0, 0.111);
     border-radius: 10px;
-    margin: 40px 10% 50px 15%;
+    margin: 40px 9% 50px 13%;
     flex-wrap: wrap;
     transition: 0.3s;
 }
@@ -237,7 +237,7 @@ h2 {
     transition: 0.3s;
 }
 h2:hover {
-    scale: 1.1;
+    scale: 1.08;
 }
 #mainReview {
     font-size: 35px;
@@ -254,15 +254,23 @@ h2:hover {
     justify-content: center;
     margin: 10px auto 20px auto;
     border-radius: 10px;
-    width: fit-content;
+    width: 100%;
     transition: 0.4s;
     cursor: pointer;
     border: solid 3px black;
+    scale: 1;
+}
+.reviewImg:hover {
+    scale: 1.04;
+}
+#twoReviewImg {
+    width: 100%;
+    border: none;
 }
 .reviewText {
     display: block;
     grid-area: txt;
-    font-size: 18px;
+    font-size: 20px
 }
 #shortReviewText {
     font-size: 26px;
