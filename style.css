@@ -55,13 +55,13 @@ body {
     "navbarItems";
     justify-content: center;
     background-color: rgba(0,0,0,0.35);
-    border-radius: 20px 20px 7px 7px;
+    border-radius: 30px 30px 7px 7px;
     flex-wrap: wrap;
 }
 .navbar {
     background-color: rgba(0,0,0,0.25);
     grid-area: navbarItems;
-    border-radius: 20px 20px 7px 7px;
+    border-radius: 25px 25px 7px 7px;
     display: grid;
     grid-template-areas: "leftBar rightBar";
     flex-direction: row;
@@ -86,11 +86,11 @@ body {
 }
 #leftLink {
     margin: 0px 3px 0px 0px;
-    border-radius: 18px 12px 12px 7px;
+    border-radius: 22px 12px 12px 7px;
 }
 #rightLink {
     margin: 0px 0px 0px 3px;
-    border-radius: 12px 18px 7px 12px;
+    border-radius: 12px 22px 7px 12px;
 }
 .titleImgContainer {
     column-span: all;
@@ -201,7 +201,7 @@ summary {
     display: flex;
     border: solid 4px rgb(37, 37, 37);  
     background-color: rgba(0, 0, 0, 0.111);
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 40px 9% 50px 13%;
     flex-wrap: wrap;
     transition: 0.3s;
@@ -209,7 +209,7 @@ summary {
 .reviewBox:hover {
     border: solid 4px black;
     background-color: rgba(55, 169, 59, 0.2);
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.626);
 }
 .starsContainer {
@@ -318,7 +318,6 @@ h2:hover {
 .headingProductsBox:hover {
     border: solid 4px black;
     background-color: rgba(55, 169, 59, 0.2);
-    /* box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.626); */
 }
 #middleBox {
     margin: 10px 10% 10px 10%;
@@ -326,9 +325,12 @@ h2:hover {
 }
 #bottomBox {
     margin: 10px 10% 60px 10%;
-    border-radius: 7px 7px 50px 50px ;
+    border-radius: 7px 7px 50px 50px;
+    height: fit-content;
+    padding: 0 0 30px 0;
+    cursor: pointer;
 }
-#monthlyMostSoldTxt {
+.headingProductsTxt {
     text-align: center;
     padding: 30px 0 0 0px;
     font-size: 40px;
@@ -337,11 +339,29 @@ h2:hover {
     margin: auto;
     font-family: Product Sans Regular;
     scale: 1;
+    cursor: default;
     transition: 0.3s;
 }
-#monthlyMostSoldTxt:hover {
+.headingProductsTxt:hover {
     border-bottom: solid 4px black;
     scale: 1.08;
+}
+#viewStoreTxt {
+    text-align: center;
+    padding: 30px 0 10px 0px;
+    font-size: 50px;
+    border-bottom: solid 4px transparent;
+    width: fit-content;
+    margin: auto;
+    font-family: Product Sans Regular;
+    scale: 1;
+    cursor: pointer;
+    transition: 0.45s;
+}
+#viewStoreTxt:hover {
+    border-bottom: solid 4px black;
+    scale: 1.1;
+    letter-spacing: 3px;
 }
 .headingProductsLayout {
     padding: 20px;
@@ -349,7 +369,7 @@ h2:hover {
     justify-content: center;
 }
 .productPreview {
-    width: 300px;
+    width: 28%;
     background-color: black;
     border: solid 8px black;
     border-radius: 15px;
@@ -360,45 +380,85 @@ h2:hover {
 }
 .productPreview:hover {
     scale: 1.15;
-    border-radius: 20px;
+    border-radius: 22px;
 }
 #smallerProduct {
-    width: 193px;
+    width: 17.5%;
     border: solid 4px black;
     border-radius: 10px;
-    margin: 10px;
+    margin: 11px;
 }
 #smallerProduct:hover {
     scale: 1.15;
-    border-radius: 15px;
+    border-radius: 18px;
 }
 #mediumProduct {
-    width: 235px;
+    width: 22%;
     border: solid 4px black;
     border-radius: 14px;
     margin: 14px;
 }
-#firstMidPr {
-    width: 235px;
-    border: solid 4px black;
-    border-radius: 14px 14px 14px 14px;
-    margin: 14px;
+#mediumProduct:hover {
+    border-radius: 20px;
 }
-#lastMidPr {
-    width: 235px;
-    border: solid 4px black;
-    border-radius: 14px 14px 14px 14px;
-    margin: 14px;
+#topFlashSale {
+    background-color: rgba(252, 255, 82, 0.779);
 }
-#firstMidPr:hover {
-    width: 235px;
-    border: solid 4px black;
-    border-radius: 14px 14px 14px 25px;
-    margin: 14px;
+#topFlashSale:hover {
+    background-color: rgba(255, 255, 33, 0.911);
 }
-#lastMidPr:hover {
-    width: 235px;
+.headingProductsTxtSale {
+    text-align: center;
+    padding: 30px 0 0 0px;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+    font-family: Product Sans Regular;
+    scale: 1;
+    cursor: default;
+    transition: 0.1s;
+}
+.headingProductsTxtSale:hover {
+    scale: 1.08;
+}
+#timer {
+    display: flex;
+    font-family: Product Sans Medium;
+    margin-bottom: 30px;
+}
+#timer:hover {
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px rgba(44, 44, 44, 0.818);
+}
+.red {
+    color: red;
+}
+
+.yellow {
+    color: blue;
+}
+.headingProductsBoxSale {
+    background-color: rgba(252, 255, 82, 0.779);
+    border: solid 4px rgb(37, 37, 37);  
+    border-radius: 50px 50px 7px 7px;
+    display: block;
+    width: auto;
+    margin: 50px 10% 0 10%;
+    transition: 0.3s;
+}
+.headingProductsBoxSale:hover {
     border: solid 4px black;
-    border-radius: 14px 14px 25px 14px;
-    margin: 14px;
+    background-color: rgba(255, 255, 33, 0.911);
+}
+#SaleProductsLayout {
+    margin-bottom: -28px;
+}
+#mediumProduct {
+    width: 24.5%;
+    border: solid 4px black;
+    border-radius: 14px;
+    margin: 12px;
+}
+#mediumProduct:hover {
+    border-radius: 20px;
 }
