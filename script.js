@@ -43,10 +43,14 @@ function cambiaColore() {
     if (timer.classList.contains("red")) {
         timer.classList.remove("red");
         timer.classList.add("yellow");
+        timer.classList.remove("big");
+        timer.classList.add("small");
     } else {
         timer.classList.remove("yellow");
         timer.classList.add("red");
+        timer.classList.remove("small");
+        timer.classList.add("big");
     }
 }
 
-setInterval(cambiaColore, 500);
+setInterval(cambiaColore, 400);
