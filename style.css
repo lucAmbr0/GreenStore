@@ -55,13 +55,13 @@ body {
     "navbarItems";
     justify-content: center;
     background-color: rgba(0,0,0,0.35);
-    border-radius: 30px 30px 7px 7px;
+    border-radius: 30px 30px 4px 4px;
     flex-wrap: wrap;
 }
 .navbar {
     background-color: rgba(0,0,0,0.25);
     grid-area: navbarItems;
-    border-radius: 25px 25px 7px 7px;
+    border-radius: 25px 25px 4px 4px;
     display: grid;
     grid-template-areas: "leftBar rightBar";
     flex-direction: row;
@@ -85,11 +85,11 @@ body {
 }
 #leftLink {
     margin: 0px 3px 0px 0px;
-    border-radius: 22px 12px 12px 7px;
+    border-radius: 22px 12px 12px 5px;
 }
 #rightLink {
     margin: 0px 0px 0px 3px;
-    border-radius: 12px 22px 7px 12px;
+    border-radius: 12px 22px 5px 12px;
 }
 .titleImgContainer {
     column-span: all;
@@ -116,7 +116,7 @@ body {
 .content {
     background-color: rgba(0,0,0,0.25);
     margin: 10px 0.85% 15px 0.85%;
-    border-radius: 7px 7px 7px 7px;
+    border-radius: 4px 4px 4px 4px;
     padding: 2%;
 }
 h1 {
@@ -401,9 +401,6 @@ h2:hover {
     border-radius: 20px;
 }
 #topFlashSale {
-    background-color: rgba(252, 255, 82, 0.779);
-}
-#topFlashSale:hover {
     background-color: rgba(255, 255, 33, 0.911);
 }
 .headingProductsTxtSale {
@@ -415,10 +412,7 @@ h2:hover {
     font-family: Product Sans Regular;
     scale: 1;
     cursor: default;
-    transition: 0.1s;
-}
-.headingProductsTxtSale:hover {
-    scale: 1.08;
+    transition: 0.35s;
 }
 #timer {
     display: flex;
@@ -426,16 +420,19 @@ h2:hover {
     margin-bottom: 30px;
     font-size: 60px;
 }
-#timer:hover {
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 5px rgba(44, 44, 44, 0.818);
-}
 .red {
     color: red;
 }
 
 .yellow {
     color: blue;
+}
+
+.big {
+    scale: 1.2;
+}
+.small {
+    scale: 1;
 }
 .headingProductsBoxSale {
     background-color: rgba(252, 255, 82, 0.779);
@@ -456,7 +453,7 @@ h2:hover {
 .footer {
     background-color: rgba(0,0,0,0.25);
     margin: 10px 0.85% 15px 0.85%;
-    border-radius: 7px 7px 30px 30px;
+    border-radius: 4px 4px 30px 30px;
     padding: 2%;
 }
 .textFooter {
