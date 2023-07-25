@@ -46,7 +46,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 					<br><br>
 					Siamo impegnati a offrire un servizio di consegna eccellente, perché la tua soddisfazione è la nostra priorità. Scegli GreenStore e scopri la comodità di ricevere la freschezza della natura direttamente a casa tua!</p>
 					</div>
-					<p class="expandImg"><a href="Media/other/MappaItalia.webp" id="noDeco">► Espandi la mappa</p></a>
+					<p class="expandImg" id="reviewsAboutUs"><a href="Media/other/MappaItalia.webp" id="noDeco">► Espandi la mappa</p></a>
 				</details>
 				<details open>
 					<summary><h1>Recensioni su di noi</h1></summary>
@@ -65,9 +65,9 @@ Insta: https://www.instagram.com/luca.ambroo_/
 					</div>
 					<!-- More reviews when button clicked -->
 					<div class="expandReviewsButtonContainer">
-						<button class="expandReviewsButton" onclick="moreReviews()">
+						<a href="#reviewsAboutUs" id="noDeco"><button class="expandReviewsButton" onclick="moreReviews()">
 							<h3 id="moreReviewsText">▼ Leggi altre recensioni ▼</h3>
-						</button>
+						</button></a>
 					</div>
 					<div id="moreReviewsBox">
 					<!-- Long review 1 -->
@@ -121,16 +121,16 @@ Insta: https://www.instagram.com/luca.ambroo_/
 						</div>
 					</div>
 					<div class="expandReviewsButtonContainer">
-						<button class="expandReviewsButton" onclick="moreReviews()">
+						<a href="#reviewsAboutUs" id="noDeco"><button class="expandReviewsButton" onclick="moreReviews()">
 							<h3 id="moreReviewsText">▲ Leggi meno recensioni ▲</h3>
-						</button>
+						</button></a>
 					</div>
 					</div>
 				</details>
 				<details open>
 					<summary><h1>Prodotti in evidenza</h1></summary>
 					<div class="headingProductsBox">
-						<h4 id="monthlyMostSoldTxt">I più acquistati del mese</h2>
+						<h4 class="headingProductsTxt">I più acquistati del mese</h4>
 						<div class="headingProductsLayout">
 							<img src="Media/Products/FruttaFresca/Mandarini20%.webp" alt="Ananas" class="productPreview">
 							<img src="Media/Products/FruttaFresca/Ananas.webp" alt="Ananas" class="productPreview">
@@ -139,7 +139,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 						</div>
 					</div>
 					<div class="headingProductsBox" id="middleBox">
-						<h4 id="monthlyMostSoldTxt">Offerte in evidenza</h2>
+						<h4 class="headingProductsTxt">Offerte in evidenza</h4>
 						<div class="headingProductsLayout">
 							<img src="Media/Products/FruttaFresca/Banane30%.webp" alt="Ananas" class="productPreview" id="smallerProduct">
 							<img src="Media/Products/FruttaFresca/Mele20%.webp" alt="Ananas" class="productPreview" id="smallerProduct">
@@ -149,19 +149,33 @@ Insta: https://www.instagram.com/luca.ambroo_/
 							<br>
 						</div>
 					</div>
-					<div class="headingProductsBox" id="bottomBox">
-						<h4 id="monthlyMostSoldTxt">Sapori esotici dall'estero</h2>
+					<div class="headingProductsBox" id="middleBox">
+						<h4 class="headingProductsTxt">Sapori esotici dall'estero</h4>
 						<div class="headingProductsLayout">
-							<img src="Media/Products/FruttaFresca/Pomelo.webp" alt="Ananas" class="productPreview" id="firstMidPr">
+							<img src="Media/Products/FruttaFresca/Pomelo.webp" alt="Ananas" class="productPreview" id="mediumProduct">
 							<img src="Media/Products/FruttaFresca/DragonFruit20%.webp" alt="Ananas" class="productPreview" id="mediumProduct">
 							<img src="Media/Products/FruttaFresca/Kiwano.webp" alt="Ananas" class="productPreview" id="mediumProduct">
-							<img src="Media/Products/FruttaFresca/Papaya20%.webp" alt="Ananas" class="productPreview" id="lastMidPr">
+							<img src="Media/Products/FruttaFresca/Papaya20%.webp" alt="Ananas" class="productPreview" id="mediumProduct">
 							<br>
 						</div>
+					</div>
+					<div class="headingProductsBox" id="bottomBox">
+						<a href="Negozio.html" id="noDeco"><h4 id="viewStoreTxt">»»» Visita il negozio completo «««</h4></a>
 					</div>
 				</details>
 				<details open>
 					<summary><h1>Offerte Lampo!</h1></summary>
+					<div class="headingProductsBox" id="topFlashSale">
+						<p class="headingProductsTxtSale" id="timer">Tempo rimanente:ㅤ<span id="countdown"></span></p>
+					</div>
+					<div class="headingProductsBoxSale" id="bottomBox">
+						<div class="headingProductsLayout" id="SaleProductsLayout">
+							<img src="Media/Products/FruttaFresca/Pomelo.webp" alt="Ananas" class="productPreview" id="mediumProductFlashSale">
+							<img src="Media/Products/FruttaFresca/DragonFruit20%.webp" alt="Ananas" class="productPreview" id="mediumProductFlashSale">
+							<img src="Media/Products/FruttaFresca/Kiwano.webp" alt="Ananas" class="productPreview" id="mediumProductFlashSale">
+							<br>
+						</div>
+					</div>
 				</details>
 			</div>
 		</div>
