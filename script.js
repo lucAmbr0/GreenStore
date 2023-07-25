@@ -30,7 +30,7 @@ function startCountdown(duration, display) {
             // Ad esempio, nascondere l'offerta o mostrare un messaggio
             display.textContent = "Scaduto!";
         }
-    },1000);
+    },850);
 }
 
 // Avvia il timer con una durata di 3 ore, 20 minuti e 14 secondi
