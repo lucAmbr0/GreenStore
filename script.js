@@ -60,14 +60,30 @@ function cambiaColore() {
 
 setInterval(cambiaColore, 400);
 
-// function to create cookie
+// cookie prova da chatGPT
+// let FATTOH;
+// function accettaCookies() {
+//     // Nascondi il overlay
+//     document.getElementById("overlay").style.display = "none";
+//     // Imposta un cookie con scadenza di 365 giorni
+//     FATTOH = sessionStorage.setItem('popupFatto', true);
+// }
+
+// // Controlla se il cookie è già stato impostato all'avvio della pagina
+// if (FATTOH !== true) {
+//     overlay.style.display = "block";
+// }
+
+// PROVA 2
+
+// Funzione per impostare un cookie
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
+  
 // Funzione per ottenere il valore di un cookie
 function getCookie(cname) {
     var name = cname + "=";
