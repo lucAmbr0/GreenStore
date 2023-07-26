@@ -6,30 +6,9 @@ Insta: https://www.instagram.com/luca.ambroo_/
 */
 /* -------------------- IMPORT FONTS --------------------*/
 
-@font-face {
-    font-family: Product Sans Medium; /* Medium titles */
-    src: url(fonts/ProductSans-Medium.ttf);
-}
-@font-face {
-    font-family: Product Sans Black; /* Main titles */
-    src: url(fonts/ProductSans-Black.ttf);
-}
-@font-face {
-    font-family: Montserrat Bold; /* Other */
-    src: url(fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-    font-family: Montserrat Medium; /* Other */
-    src: url(fonts/Montserrat-Medium.ttf);
-}
-@font-face {
-    font-family: Arial; /* Normal text */
-    src: url(Fonts/arial.ttf);
-}
-@font-face {
-    font-family: Product Sans Regular; /* Normal text 2 */
-    src: url(fonts/ProductSans-Regular.ttf);
-}
+/* Normal text: font-family: 'Noto Sans', sans-serif; */
+/* Headings/Titles: font-family: 'Poppins', sans-serif; */
+/* All credits in Disclaimer.html */
 
 /* -------------------- GENERAL RULES --------------------*/
 
@@ -44,6 +23,9 @@ body {
 }
 .everything {
     display: block;
+}
+#disclaimerPage {
+    padding: 3% 10% 2% 5%;
 }
 
 /* -------------------- HOMEPAGE --------------------*/
@@ -72,9 +54,11 @@ body {
     margin: 0px 3px 0px 3px;
     background-color: rgba(0,0,0,0.25);
     border-radius: 12px;
-    font-family: Product Sans Regular;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: -1px;
     font-size: 22px;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 8px 2px 8px;
     transition: 0.3s;
     color: rgb(220, 220, 220);
     cursor: pointer;
@@ -120,7 +104,8 @@ body {
     padding: 2%;
 }
 h1 {
-    font-family: Product Sans Medium;
+    font-family: Poppins;
+    font-weight: bolder;
     border-left: double 15px black;
     font-size: 45px;
     margin-left: 25px;
@@ -132,12 +117,21 @@ h1:hover {
     margin-left: 40px;
     width: fit-content;
 }
+.disclaimerTitle {
+    font-size: 38px;
+    border-left: double 11px black;
+}
 p {
-    font-family: Arial;
+    font-family: Noto Sans;
+    font-weight: 400;
     text-align: left;
     font-size: 24px;
     margin: 10px 5% 10px 5%;
     line-height: 1.15;
+}
+.disclaimerParagraph {
+    text-align: justify;
+    font-size: 20px;
 }
 #italic {
     font-style: italic;
@@ -196,6 +190,10 @@ summary {
     text-decoration: none;
     color: black;
 }
+#linkDeco {
+    color: darkblue;
+    text-decoration: underline darkblue;
+}
 .reviewBox {
     display: flex;
     border: solid 4px rgb(37, 37, 37);  
@@ -211,6 +209,12 @@ summary {
     border-radius: 25px;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.626);
 }
+#mainReviewBox {
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.626);
+}
+#mainReviewBox:hover {
+    box-shadow: 7px 0px 15px rgba(0, 0, 0, 0.626);
+}
 .starsContainer {
     display: flex;
     border: solid 4px transparent;
@@ -219,7 +223,7 @@ summary {
     margin: 10px 10px 10px auto;
 }
 .score {
-    font-family: Product Sans Medium;
+    font-family: Poppins;
     display: flex;
     flex-direction: row;
     margin: 0px 0px 0px 5px;
@@ -231,7 +235,8 @@ h2 {
     display: flex;
     align-items: center;
     margin: 10px 0 10px 35px;
-    font-family: Product Sans Regular;
+    font-family: Poppins;
+    font-weight: 600;
     font-size: 30px;
     scale: 1;
     transition: 0.3s;
@@ -336,7 +341,8 @@ h2:hover {
     border-bottom: solid 4px transparent;
     width: fit-content;
     margin: auto;
-    font-family: Product Sans Regular;
+    font-family: Poppins;
+    font-weight: 600;
     scale: 1;
     cursor: default;
     transition: 0.3s;
@@ -352,7 +358,8 @@ h2:hover {
     border-bottom: solid 4px transparent;
     width: fit-content;
     margin: auto;
-    font-family: Product Sans Regular;
+    font-family: Poppins;
+    font-weight: 900;
     scale: 1;
     cursor: pointer;
     transition: 0.45s;
@@ -406,17 +413,19 @@ h2:hover {
 .headingProductsTxtSale {
     text-align: center;
     padding: 30px 0 0 0px;
-    font-size: 40px;
+    font-size: 35px;
     width: fit-content;
     margin: auto;
-    font-family: Product Sans Regular;
+    font-family: Poppins;
+    font-weight: 900;
     scale: 1;
     cursor: default;
+    letter-spacing: -2px;
     transition: 0.35s;
 }
 #timer {
     display: flex;
-    font-family: Product Sans Medium;
+    font-family: Poppins;
     margin-bottom: 30px;
     font-size: 60px;
 }
@@ -429,10 +438,10 @@ h2:hover {
 }
 
 .big {
-    scale: 1.2;
+    scale: 1.15;
 }
 .small {
-    scale: 1;
+    scale: 0.95;
 }
 .headingProductsBoxSale {
     background-color: rgba(252, 255, 82, 0.779);
@@ -458,7 +467,8 @@ h2:hover {
 }
 .textFooter {
     font-size: 14px;
-    font-family: Arial;
+    font-family: Noto Sans;
+    font-weight: lighter;
     text-align: center;
     margin-top: 30px;
     color: rgb(37, 37, 37);
