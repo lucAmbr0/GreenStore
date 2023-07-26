@@ -31,7 +31,7 @@ body {
 /* -------------------- HOMEPAGE --------------------*/
 #overlay {
     position: fixed;
-    display: block;
+    /* display: block; */
     top: 0;
     left: 0;
     width: 100%;
@@ -531,7 +531,7 @@ h2:hover {
 }
 
 .big {
-    scale: 1.15;
+    scale: 1.13;
 }
 .small {
     scale: 0.95;
