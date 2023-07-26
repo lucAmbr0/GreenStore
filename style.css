@@ -76,8 +76,9 @@ body {
     border-radius: 12px;
     font-family: Poppins;
     font-weight: bold;
+    letter-spacing: -1px;
     font-size: 22px;
-    padding: 5px 10px 5px 10px;
+    padding: 2px 8px 2px 8px;
     transition: 0.3s;
     color: rgb(220, 220, 220);
     cursor: pointer;
