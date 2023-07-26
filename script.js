@@ -92,10 +92,10 @@ function getCookie(cname) {
     for (var i = 0; i < ca.length; i++) {
       var c = ca[i];
       while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+         c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
+         return c.substring(name.length, c.length);
       }
     }
     return "";
@@ -107,19 +107,19 @@ function showPopupOnce() {
     var popupShown = getCookie("popupShown");
   
     if (!popupShown) {
-      popup.style.display = "block";
-      setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+        popup.style.display = "block";
+        setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+    
+        // Chiudi il pop-up quando l'utente fa clic sul pulsante "Chiudi"
+        var closePopupBtn = document.getElementById("closePopup");
+        if (closePopupBtn) {
+            closePopupBtn.addEventListener("click", function() {
+            popup.style.display = "none";
+            });
+        }
   
-      // Chiudi il pop-up quando l'utente fa clic sul pulsante "Chiudi"
-      var closePopupBtn = document.getElementById("closePopup");
-      if (closePopupBtn) {
-        closePopupBtn.addEventListener("click", function() {
-          popup.style.display = "none";
-        });
-    }
-  
-    // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
-    window.addEventListener("click", function(event) {
+        // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
+        window.addEventListener("click", function(event) {
         if (event.target === popup) {
           popup.style.display = "none";
         }
