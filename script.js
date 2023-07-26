@@ -118,7 +118,7 @@ function showPopupOnce() {
         });
     }
   
-      // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
+    // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
     window.addEventListener("click", function(event) {
         if (event.target === popup) {
           popup.style.display = "none";
@@ -127,6 +127,5 @@ function showPopupOnce() {
     }
 }
   
-// Mostra il pop-up una volta caricata la pagina
-document.addEventListener("DOMContentLoaded", showPopupOnce);
-  
+  // Mostra il pop-up una volta caricata la pagina
+document.addEventListener("DOMContentLoaded", showPopupOnce); 
