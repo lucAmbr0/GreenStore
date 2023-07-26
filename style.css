@@ -6,32 +6,9 @@ Insta: https://www.instagram.com/luca.ambroo_/
 */
 /* -------------------- IMPORT FONTS --------------------*/
 
-@font-face {
-    font-family: Product Sans Medium; /* Medium titles */
-    src: url(fonts/ProductSans-Medium.ttf);
-}
-@font-face {
-    font-family: Product Sans Black; /* Main titles */
-    src: url(fonts/ProductSans-Black.ttf);
-}
-@font-face {
-    font-family: Montserrat Bold; /* Other */
-    src: url(fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-    font-family: Montserrat Medium; /* Other */
-    src: url(fonts/Montserrat-Medium.ttf);
-}
-@font-face {
-    font-family: Arial; /* Normal text */
-    src: url(Fonts/arial.ttf);
-}
-@font-face {
-    font-family: Product Sans Regular; /* Normal text 2 */
-    src: url(fonts/ProductSans-Regular.ttf);
-}
-/* font-family: 'Noto Sans', sans-serif; */
-/* font-family: 'Poppins', sans-serif; */
+/* Normal text: font-family: 'Noto Sans', sans-serif; */
+/* Headings/Titles: font-family: 'Poppins', sans-serif; */
+/* All credits in Disclaimer.html */
 
 /* -------------------- GENERAL RULES --------------------*/
 
