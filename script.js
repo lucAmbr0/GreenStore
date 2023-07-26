@@ -62,19 +62,38 @@ setInterval(cambiaColore, 400);
 
 // cookie prova da chatGPT
 
-// Nascondi il overlay
+// // Nascondi il overlay
+// function accettaCookies() {
+//     // Nascondi il overlay
+//     document.getElementById("overlay").style.display = "none";
+//     // Imposta un cookie con scadenza di 365 giorni
+//     document.cookie = "cookies_accettati=true; expires=" + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+// }
+
+// // Controlla se il cookie è già stato impostato
+// function checkCookiesAccettati() {
+//     var cookiesAccettati = document.cookie.replace(/(?:(?:^|.*;\s*)cookies_accettati\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+//     if (!cookiesAccettati) {
+//         // Se il cookie non è presente, mostra il overlay
+//         document.getElementById("overlay").style.display = "block";
+//     }
+// }
+
+// Esegui la funzione di controllo all'avvio della pagina
+checkCookiesAccettati();
+
 function accettaCookies() {
     // Nascondi il overlay
     document.getElementById("overlay").style.display = "none";
-    // Imposta un cookie con scadenza di 365 giorni
-    document.cookie = "cookies_accettati=true; expires=" + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+    // Imposta un flag in localStorage per indicare l'accettazione dei cookie
+    localStorage.setItem("cookies_accettati", "true");
 }
 
-// Controlla se il cookie è già stato impostato
+// Controlla se il flag è presente in localStorage
 function checkCookiesAccettati() {
-    var cookiesAccettati = document.cookie.replace(/(?:(?:^|.*;\s*)cookies_accettati\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-    if (!cookiesAccettati) {
-        // Se il cookie non è presente, mostra il overlay
+    var cookiesAccettati = localStorage.getItem("cookies_accettati");
+    if (!cookiesAccettati || cookiesAccettati !== "true") {
+        // Se il flag non è presente o non è impostato su "true", mostra il overlay
         document.getElementById("overlay").style.display = "block";
     }
 }
