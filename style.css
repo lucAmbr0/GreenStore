@@ -24,6 +24,9 @@ body {
 .everything {
     display: block;
 }
+#disclaimerPage {
+    padding: 3% 10% 2% 5%;
+}
 
 /* -------------------- HOMEPAGE --------------------*/
 .header {
@@ -114,6 +117,10 @@ h1:hover {
     margin-left: 40px;
     width: fit-content;
 }
+.disclaimerTitle {
+    font-size: 38px;
+    border-left: double 11px black;
+}
 p {
     font-family: Noto Sans;
     font-weight: 400;
@@ -121,6 +128,10 @@ p {
     font-size: 24px;
     margin: 10px 5% 10px 5%;
     line-height: 1.15;
+}
+.disclaimerParagraph {
+    text-align: justify;
+    font-size: 20px;
 }
 #italic {
     font-style: italic;
@@ -178,6 +189,10 @@ summary {
 #noDeco {
     text-decoration: none;
     color: black;
+}
+#linkDeco {
+    color: darkblue;
+    text-decoration: underline darkblue;
 }
 .reviewBox {
     display: flex;
