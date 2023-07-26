@@ -136,6 +136,9 @@ p {
 #italic {
     font-style: italic;
 }
+li::marker {
+    color: black;
+}
 ::marker {
     color: transparent;
 }
@@ -476,7 +479,7 @@ h2:hover {
 .socialBox1 {
     justify-content: center;
     display: flex;
-    width: fit-content;
+    width: 15%;
     height: 80px;
     align-items: center;
     background-color: rgba(21, 139, 0, 0.285);
@@ -525,7 +528,7 @@ h2:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 18%;
+    width: 15%;
     height: 80px;
     background-color: rgba(21, 139, 0, 0.285);
     border: solid 3px rgb(37, 37, 37);
