@@ -29,9 +29,9 @@ body {
 }
 
 /* -------------------- HOMEPAGE --------------------*/
-#overlay {
+.popup {
     position: fixed;
-    /* display: block; */
+    display: none;
     top: 0;
     left: 0;
     width: 100%;

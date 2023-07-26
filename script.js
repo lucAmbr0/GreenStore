@@ -61,15 +61,72 @@ function cambiaColore() {
 setInterval(cambiaColore, 400);
 
 // cookie prova da chatGPT
-let FATTOH;
-function accettaCookies() {
-    // Nascondi il overlay
-    document.getElementById("overlay").style.display = "none";
-    // Imposta un cookie con scadenza di 365 giorni
-    FATTOH = sessionStorage.setItem('popupFatto', true);
+// let FATTOH;
+// function accettaCookies() {
+//     // Nascondi il overlay
+//     document.getElementById("overlay").style.display = "none";
+//     // Imposta un cookie con scadenza di 365 giorni
+//     FATTOH = sessionStorage.setItem('popupFatto', true);
+// }
+
+// // Controlla se il cookie è già stato impostato all'avvio della pagina
+// if (FATTOH !== true) {
+//     overlay.style.display = "block";
+// }
+
+// PROVA 2
+
+// Funzione per impostare un cookie
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+  
+// Funzione per ottenere il valore di un cookie
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
 }
 
-// Controlla se il cookie è già stato impostato all'avvio della pagina
-if (FATTOH !== true) {
-    overlay.style.display = "block";
+// Funzione per mostrare il pop-up solo se il cookie non è impostato
+function showPopupOnce() {
+    var popup = document.getElementById("popup");
+    var popupShown = getCookie("popupShown");
+  
+    if (!popupShown) {
+      popup.style.display = "block";
+      setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+  
+      // Chiudi il pop-up quando l'utente fa clic sul pulsante "Chiudi"
+      var closePopupBtn = document.getElementById("closePopup");
+      if (closePopupBtn) {
+        closePopupBtn.addEventListener("click", function() {
+          popup.style.display = "none";
+        });
+    }
+  
+      // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
+    window.addEventListener("click", function(event) {
+        if (event.target === popup) {
+          popup.style.display = "none";
+        }
+      });
+    }
 }
+  
+// Mostra il pop-up una volta caricata la pagina
+document.addEventListener("DOMContentLoaded", showPopupOnce);
+  
