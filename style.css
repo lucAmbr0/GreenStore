@@ -28,9 +28,31 @@ body {
     padding: 3% 10% 2% 5%;
 }
 
+/* -------------------- ANIMATIONS DEFINITIONS  --------------------*/
+
+@keyframes fadeUp { 
+    from { opacity: 0; transform: translateY(40px) translateX(0);}
+    to { opacity: 1; transform: translateY(0px) translateX(0);}
+}
+@keyframes opacity {
+    from { opacity: 0; }
+    to { opacity: 1; transform: translateY(0px);}
+}
+@keyframes zoomOut {
+    from { opacity: 0; scale: 0.7;}
+    to { opacity: 1; scale: 1;}
+}
+@keyframes disappear {
+    from { opacity: 1; }
+    to { opacity: 0; transform: translateY(0px);}
+}
+
 /* -------------------- HOMEPAGE --------------------*/
+
 .popup {
     display: none;
+    animation: opacity 0.6s forwards;
+    animation-delay: 0s;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +75,13 @@ body {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.326);
     border: double 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 10px 10px rgb(37, 37, 37);
+    opacity: 0;
+    animation: zoomOut 0.6s forwards;
+    animation-delay: 0s;
+}
+#cookiesNoticeBox {
+    display: none;
 }
 .cookiesText {
     margin: 10px;
@@ -61,6 +90,8 @@ body {
     font-family: Poppins;
     font-weight: 800;
     text-decoration: underline;
+    animation: none;
+    opacity: 1;
 }
 .cookiesTextParagraph {
     font-size: 20px;
@@ -69,6 +100,8 @@ body {
     padding: 15px;
     text-align: justify;
     line-height: 1.2;
+    animation: none;
+    opacity: 1;
 }
 .cookiesButtonsContainer {
     display: flex;
@@ -118,6 +151,8 @@ body {
     background-color: rgba(28, 176, 65, 0.918);
 }
 .header {
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0s;
     margin: 20px 0.85% 15px 0.85%;
     display: grid;
     grid-template-areas: 
@@ -137,6 +172,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5px;
+    animation: zoomOut 0.8s forwards;
+    animation-delay: 0s;
 }
 .navbarLink {
     margin: 0px 3px 0px 3px;
@@ -150,6 +187,9 @@ body {
     transition: 0.3s;
     color: rgb(220, 220, 220);
     cursor: pointer;
+    animation: zoomOut 0.5s forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
 }
 .navbarLink:hover {
     background-color: rgba(0,0,0,0.4);
@@ -169,6 +209,9 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px;
+    /* animation: opacity 0.5s forwards;
+    animation-delay: 0.4s;
+    opacity: 0; */
 }
 .longTitle {
     width: 90%; 
@@ -186,10 +229,13 @@ body {
     justify-content: end;
 }
 .content {
+    animation: fadeUp 0.4s forwards;
+    animation-delay: 0.5s;
     background-color: rgba(0,0,0,0.25);
     margin: 10px 0.85% 15px 0.85%;
     border-radius: 4px 4px 4px 4px;
     padding: 2%;
+    opacity: 0;
 }
 h1 {
     font-family: Poppins;
@@ -200,6 +246,8 @@ h1 {
     padding-left: 15px;
     margin-top: -5px;
     transition: 0.4s;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.5s;
 }
 h1:hover {
     margin-left: 40px;
@@ -216,6 +264,9 @@ p {
     font-size: 24px;
     margin: 10px 5% 10px 5%;
     line-height: 1.15;
+    animation: fadeUp 0.6s forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
 }
 .disclaimerParagraph {
     text-align: justify;
@@ -360,7 +411,8 @@ h2:hover {
     scale: 1.04;
 }
 #twoReviewImg {
-    width: 100%;
+    width: 103%;
+    border: none;
 }
 .reviewText {
     display: block;
