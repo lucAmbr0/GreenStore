@@ -6,18 +6,21 @@ function moreReviews() {
     if (moreReviewsSwitch % 2 !== 0) {
         moreReviewsBox.style.display = "block";
         moreReviewsBox.style.opacity = "1";
-        moreReviewsText.innerHTML = "▲ Leggi meno recensioni ▲"; }
-    else { 
+        moreReviewsText.innerHTML = "▲ Leggi meno recensioni ▲";
+    }
+    else {
         moreReviewsBox.style.display = "none";
-        moreReviewsText.innerHTML = "▼ Leggi altre recensioni ▼"; }
+        moreReviewsText.innerHTML = "▼ Leggi altre recensioni ▼";
+    }
 };
 
 let overlay = document.getElementById("overlay");
 let cookiesAlreadyDone = false;
 function closeCookiesNotice() {
     if (cookiesAlreadyDone === false) {
-    overlay.style.display = "none";
-    cookiesAlreadyDone = true; }
+        overlay.style.display = "none";
+        cookiesAlreadyDone = true;
+    }
 };
 
 
@@ -36,7 +39,7 @@ function startCountdown(duration, display) {
         if (--timer < 0) {
             display.textContent = "Scaduto!";
         }
-    },850);
+    }, 850);
 }
 
 var timerDuration = 3 * 60 * 60 + 23 * 60 + 14;
@@ -83,49 +86,50 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-  
+
 // Funzione per ottenere il valore di un cookie
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-         c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-         return c.substring(name.length, c.length);
-      }
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
 }
 
-// Funzione per mostrare il pop-up solo se il cookie non è impostato
+// Funzione per mostrare il popup solo se il cookie non è impostato
 function showPopupOnce() {
     var popup = document.getElementById("popup");
     var popupShown = getCookie("popupShown");
-  
+
     if (!popupShown) {
         popup.style.display = "block";
-        setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
-    
-        // Chiudi il pop-up quando l'utente fa clic sul pulsante "Chiudi"
+
+        // Chiudi il popup quando l'utente fa clic sul pulsante "Chiudi"
         var closePopupBtn = document.getElementById("closePopup");
         if (closePopupBtn) {
-            closePopupBtn.addEventListener("click", function() {
-            popup.style.display = "none";
+            closePopupBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+                setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
             });
         }
-  
-        // Chiudi il pop-up quando l'utente fa clic al di fuori del contenuto del pop-up
-        window.addEventListener("click", function(event) {
-        if (event.target === popup) {
-          popup.style.display = "none";
-        }
-      });
+
+        // Chiudi il popup quando l'utente fa clic al di fuori del contenuto del popup
+        window.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                popup.style.display = "none";
+                setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+            }
+        });
     }
 }
-  
-  // Mostra il pop-up una volta caricata la pagina
-document.addEventListener("DOMContentLoaded", showPopupOnce); 
+
+// Mostra il popup una volta caricata la pagina
+document.addEventListener("DOMContentLoaded", showPopupOnce);
