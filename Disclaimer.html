@@ -15,6 +15,16 @@ Insta: https://www.instagram.com/luca.ambroo_/
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">	</head>
 	<body>
 		<div class="everything">
+			<!-- Logout Popup -->
+			<div class="popup" id="popupLogout">
+				<div class="cookiesNoticeBoxStyle" id="logout">
+					<p class="cookiesText">Logout eseguito</h1>
+					<p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati memorizzati dal sito sono stati eliminati.
+					<div class="cookiesButtonsContainer">
+						<button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
+					</div>
+				</div>
+			</div>
             <div class="header">
 				<!-- Main header -->
 				<div class="titleImgContainer"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore" class="longTitle"></div>
@@ -27,7 +37,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 					</div>
 					<div class="rightBar">
 						<a href="Disclaimer.html" id="noDeco"><h3 class="navbarLink">Disclaimer</h3></a>
-						<a href="index.html" id="noDeco" onclick="Logout()"><h3 class="navbarLink">Logout</h3></a>
+						<a id="noDeco" onclick="Logout()"><h3 class="navbarLink" id="rightLink">Logout</h3></a>
 					</div>
 				</div>
 			</div>

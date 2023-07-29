@@ -72,6 +72,12 @@ setTimeout(function() {
 }   
 },1000);
 
+var popupLogout = document.getElementById("popupLogout");
 function Logout() {
     localStorage.removeItem("popupShown");
+    popupLogout.style.display = "block";
+}
+function closeLogoutPopup() {
+    popupLogout.style.display = "none";
+    location.reload();
 }
