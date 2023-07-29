@@ -58,19 +58,19 @@ setInterval(cambiaColore, 400);
 var popup = document.getElementById("popup");
 var popupShown = localStorage.getItem("popupShown");
 var cookieNotice = document.getElementById("CookiesNoticeBoxStyle");
-  function closePopup() {
+function closePopup() {
     popup.style.animation = "0.4s disappear";
-    setTimeout(function() {
-      popup.style.display = "none";
-      localStorage.setItem("popupShown", "true");
-    }, 400); 
-  }
-setTimeout(function() {
+    setTimeout(function () {
+        popup.style.display = "none";
+        localStorage.setItem("popupShown", "true");
+    }, 400);
+}
+setTimeout(function () {
     if (popupShown === null || popupShown === "false") {
-    popup.style.display = "block";
-    cookiesNotice.style.display = "block";
-}   
-},1000);
+        popup.style.display = "block";
+        cookiesNotice.style.display = "block";
+    }
+}, 1000);
 
 var popupLogout = document.getElementById("popupLogout");
 function Logout() {
