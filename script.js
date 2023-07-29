@@ -13,16 +13,7 @@ function moreReviews() {
         moreReviewsText.innerHTML = "▼ Leggi altre recensioni ▼";
     }
 };
-
-let overlay = document.getElementById("overlay");
-let cookiesAlreadyDone = false;
-function closeCookiesNotice() {
-    if (cookiesAlreadyDone === false) {
-        overlay.style.display = "none";
-        cookiesAlreadyDone = true;
-    }
-};
-
+moreReviewsBox.style.display = "none";
 
 function startCountdown(duration, display) {
     var timer = duration, hours, minutes, seconds;
@@ -66,31 +57,21 @@ setInterval(cambiaColore, 400);
 // --------- LA MIA PROVA
 var popup = document.getElementById("popup");
 var popupShown = localStorage.getItem("popupShown");
+var cookieNotice = document.getElementById("CookiesNoticeBoxStyle");
+  function closePopup() {
+    popup.style.animation = "0.4s disappear";
+    setTimeout(function() {
+      popup.style.display = "none";
+      localStorage.setItem("popupShown", "true");
+    }, 400); 
+  }
+setTimeout(function() {
+    if (popupShown === null || popupShown === "false") {
+    popup.style.display = "block";
+    cookiesNotice.style.display = "block";
+}   
+},1000);
 
-function closePopup() {
-  popup.style.display = "none";
-  localStorage.setItem("popupShown", "true");
+function Logout() {
+    localStorage.removeItem("popupShown");
 }
-
-if (popupShown === null || popupShown === "false") {
-  // Il popup viene mostrato solo se non è mai stato mostrato prima
-  popup.style.display = "block";
-}
-
-// ---------------- STACK OVERFLOW 1
-// var poppy = localStorage.getItem('myPopup');
-
-// if(!poppy){
-//     function PopUp(){
-//         $('.popup').fadeIn(500);
-//     }
-
-//     setTimeout(function(){
-//         PopUp();
-//     },1000); // 1000 to load it after 1 second from page load
-
-//     $('.close-popup-btn').click(function() {
-//         $('.popup').fadeOut(300);
-//     });
-//     localStorage.setItem('myPopup','true');
-// }
