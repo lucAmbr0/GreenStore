@@ -64,33 +64,33 @@ function cambiaColore() {
 setInterval(cambiaColore, 400);
 
 // --------- LA MIA PROVA
-// var popup = document.getElementById("popup");
-// var popupShown = localStorage.getItem("popupShown");
+var popup = document.getElementById("popup");
+var popupShown = localStorage.getItem("popupShown");
 
-// function closePopup() {
-//   popup.style.display = "none";
-//   localStorage.setItem("popupShown", "true");
-// }
+function closePopup() {
+  popup.style.display = "none";
+  localStorage.setItem("popupShown", "true");
+}
 
-// if (popupShown === null || popupShown === "false") {
-//   // Il popup viene mostrato solo se non è mai stato mostrato prima
-//   popup.style.display = "block";
-// }
+if (popupShown === null || popupShown === "false") {
+  // Il popup viene mostrato solo se non è mai stato mostrato prima
+  popup.style.display = "block";
+}
 
 // ---------------- STACK OVERFLOW 1
-var poppy = localStorage.getItem('myPopup');
+// var poppy = localStorage.getItem('myPopup');
 
-if(!poppy){
-    function PopUp(){
-        $('.popup').fadeIn(500);
-    }
+// if(!poppy){
+//     function PopUp(){
+//         $('.popup').fadeIn(500);
+//     }
 
-    setTimeout(function(){
-        PopUp();
-    },1000); // 1000 to load it after 1 second from page load
+//     setTimeout(function(){
+//         PopUp();
+//     },1000); // 1000 to load it after 1 second from page load
 
-    $('.close-popup-btn').click(function() {
-        $('.popup').fadeOut(300);
-    });
-    localStorage.setItem('myPopup','true');
-}
+//     $('.close-popup-btn').click(function() {
+//         $('.popup').fadeOut(300);
+//     });
+//     localStorage.setItem('myPopup','true');
+// }
