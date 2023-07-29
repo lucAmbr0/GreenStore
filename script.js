@@ -80,56 +80,101 @@ setInterval(cambiaColore, 400);
 // PROVA 2
 
 // Funzione per impostare un cookie
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// function setCookie(cname, cvalue, exdays) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//     var expires = "expires=" + d.toUTCString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
+
+// // Funzione per ottenere il valore di un cookie
+// function getCookie(cname) {
+//     var name = cname + "=";
+//     var decodedCookie = decodeURIComponent(document.cookie);
+//     var ca = decodedCookie.split(';');
+//     for (var i = 0; i < ca.length; i++) {
+//         var c = ca[i];
+//         while (c.charAt(0) == ' ') {
+//             c = c.substring(1);
+//         }
+//         if (c.indexOf(name) == 0) {
+//             return c.substring(name.length, c.length);
+//         }
+//     }
+//     return "";
+// }
+
+// // Funzione per mostrare il popup solo se il cookie non è impostato
+// function showPopupOnce() {
+//     var popup = document.getElementById("popup");
+//     var popupShown = getCookie("popupShown");
+
+//     if (!popupShown) {
+//         popup.style.display = "block";
+
+//         // Chiudi il popup quando l'utente fa clic sul pulsante "Chiudi"
+//         var closePopupBtn = document.getElementById("closePopup");
+//         if (closePopupBtn) {
+//             closePopupBtn.addEventListener("click", function () {
+//                 popup.style.display = "none";
+//                 setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+//             });
+//         }
+
+//         // Chiudi il popup quando l'utente fa clic al di fuori del contenuto del popup
+//         window.addEventListener("click", function (event) {
+//             if (event.target === popup) {
+//                 popup.style.display = "none";
+//                 setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
+//             }
+//         });
+//     }
+// }
+
+// // Mostra il popup una volta caricata la pagina
+// document.addEventListener("DOMContentLoaded", showPopupOnce);
+
+
+var popup = document.getElementById("popup");
+var popupShown = localStorage.getItem("popupShown");
+
+function closePopup() {
+  popup.style.display = "none";
+  localStorage.setItem("popupShown", "true");
 }
 
-// Funzione per ottenere il valore di un cookie
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
+if (popupShown === null || popupShown === "false") {
+  // Il popup viene mostrato solo se non è mai stato mostrato prima
+  popup.style.display = "block";
 }
+// function getLocalStorageItem(key) {
+//     var value = localStorage.getItem(key);
+//     return value ? JSON.parse(value) : null;
+// }
 
-// Funzione per mostrare il popup solo se il cookie non è impostato
-function showPopupOnce() {
-    var popup = document.getElementById("popup");
-    var popupShown = getCookie("popupShown");
+// // Funzione per mostrare il popup solo se non è già stato visualizzato
+// function showPopupOnce() {
+//     var popup = document.getElementById("popup");
+//     var popupShown = getLocalStorageItem("popupShown");
 
-    if (!popupShown) {
-        popup.style.display = "block";
+//     if (!popupShown) {
+//         popup.style.display = "block";
 
-        // Chiudi il popup quando l'utente fa clic sul pulsante "Chiudi"
-        var closePopupBtn = document.getElementById("closePopup");
-        if (closePopupBtn) {
-            closePopupBtn.addEventListener("click", function () {
-                popup.style.display = "none";
-                setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
-            });
-        }
+//         // Chiudi il popup quando l'utente fa clic sul pulsante "Chiudi"
+//         var closePopupBtn = document.getElementById("closePopup");
+//         if (closePopupBtn) {
+//             closePopupBtn.addEventListener("click", function() {
+//                 popup.style.display = "none";
+//                 setLocalStorageItem("popupShown", true);
+//             });
+//         }
 
-        // Chiudi il popup quando l'utente fa clic al di fuori del contenuto del popup
-        window.addEventListener("click", function (event) {
-            if (event.target === popup) {
-                popup.style.display = "none";
-                setCookie("popupShown", true, 30); // Imposta il cookie per 30 giorni
-            }
-        });
-    }
-}
-
-// Mostra il popup una volta caricata la pagina
-document.addEventListener("DOMContentLoaded", showPopupOnce);
+//         // Chiudi il popup quando l'utente fa clic al di fuori del contenuto del popup
+//         window.addEventListener("click", function(event) {
+//             if (event.target === popup) {
+//                 popup.style.display = "none";
+//                 setLocalStorageItem("popupShown", true);
+//             }
+//         });
+//     }
+// }
