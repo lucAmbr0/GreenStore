@@ -21,34 +21,6 @@ Insta: https://www.instagram.com/luca.ambroo_/
 <body>
 	<div class="everything">
 		<div class="everything">
-			<!-- Cookies Notice -->
-			<div class="popup" id="popup">
-				<div class="cookiesNoticeBoxStyle" id="CookiesNoticeBoxStyle">
-					<p class="cookiesText">Informativa Cookies</h1>
-					<p class="cookiesTextParagraph">Utilizziamo cookie e tecnologie simili per aiutare a fornire e
-						migliorare i contenuti su GreenStore. I cookie sono utili anche per fornire un'esperienza più
-						sicura utilizzando le informazioni che riceviamo all'interno e all'esterno di GreenStore e per
-						fornire e migliorare i nostri servizi per le persone che hanno un account. <br>
-						<i>Puoi modificare le tue scelte riguardo i cookies nelle impostazioni del tuo account.</i>
-					</p> <br>
-					<div class="cookiesButtonsContainer">
-						<button class="onlyEssentialCookies" onclick="closePopup()">Accetta solo i cookies
-							essenziali</button>
-						<button class="allCookies" onclick="closePopup()">Accetta tutti i cookies</button>
-					</div>
-				</div>
-			</div>
-			<!-- Logout Popup -->
-			<div class="popup" id="popupLogout">
-				<div class="cookiesNoticeBoxStyle" id="logout">
-					<p class="cookiesText">Logout eseguito</h1>
-					<p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati
-						memorizzati dal sito sono stati eliminati.
-					<div class="cookiesButtonsContainer">
-						<button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
-					</div>
-				</div>
-			</div>
 			<div class="header">
 				<!-- Main header -->
 				<div class="titleImgContainer"><img src="Media/other/GreenstoreTransparent2.webp"
@@ -72,7 +44,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 						<a href="Disclaimer.html" id="noDeco">
 							<h3 class="navbarLink">Disclaimer</h3>
 						</a>
-						<a id="noDeco" onclick="Logout()">
+						<a id="noDeco" href="index.html">
 							<h3 class="navbarLink" id="rightLink">Logout</h3>
 						</a>
 					</div>
@@ -217,6 +189,17 @@ Insta: https://www.instagram.com/luca.ambroo_/
 				</details>
 				<details open>
 					<summary>
+						<h1 class="disclaimerTitle">Attribuzione e Licenza</h1>
+					</summary>
+					<p class="disclaimerParagraph">Nonostante questo progetto includa diverse fonti protette che hanno richiesto la citazione in questa pagina, il resto del codice realizzato per dare corpo al sito, oltre ai vari contenuti ideati, la grafica del sito, il design di paragrafi, pagine, immagini e pulsanti è stato realizzato interamente da me.</p>
+					<p class="disclaimerParagraph">Dopo aver osservato che questo progetto mette insieme molte fonti di creatori di terze parti, è stato deciso di non applicare una licenza a questo progetto, tuttavia, se uno sviluppatore di terze parti volesse utilizzare delle parti di questa pagina (contenuti, layout, grafica CSS, altri elementi realizzati o ideati dallo sviluppatore di questo progetto) è espressamente richiesto dallo sviluppatore di citare nel footer di tutte le pagine del vostro progetto o in altre aree ben visibili nel caso di progetti non web (ad esempio README.MD) i seguenti dati:</p>
+					<ul>
+						<li class="creditsLink">Nickname GitHub del creatore del progetto: lucAmbr0</li>
+						<li class="creditsLink">Link alla repository di questo progetto: https://github.com/lucAmbr0/GreenStore</li>
+					</ul>
+				</details>
+				<details open>
+					<summary>
 						<h1 class="disclaimerTitle">Avvertenza legale</h1>
 					</summary>
 					<p class="disclaimerParagraph">GreenStore e tutti i contenuti associati sono forniti senza garanzia
@@ -272,7 +255,6 @@ Insta: https://www.instagram.com/luca.ambroo_/
 				<p class="versionName">GreenStore Project v2.0 2023 edition</p>
 			</a>
 		</div>
-
 	</div>
 	<script src="script.js"></script>
 </body>

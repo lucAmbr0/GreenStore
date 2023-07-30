@@ -73,9 +73,11 @@ setTimeout(function () {
 }, 1000);
 
 var popupLogout = document.getElementById("popupLogout");
+var logout = document.getElementById("logout");
 function Logout() {
     localStorage.removeItem("popupShown");
     popupLogout.style.display = "block";
+    logout.style.display = "block";
 }
 function closeLogoutPopup() {
     popupLogout.style.display = "none";
