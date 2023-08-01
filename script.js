@@ -15,6 +15,35 @@ function moreReviews() {
 };
 moreReviewsBox.style.display = "none";
 
+const expandImgRev02 = document.getElementById("expandImgRev02");
+function expandImgRev02F() {
+    overlay.style.display = "block";
+    expandImgRev02.style.display = "block";
+};
+function CloseRevImg02 () {
+    overlay.style.animation = "0.4s disappear";
+    setTimeout(function () {
+        overlay.style.display = "none";
+        expandImgRev02.style.display = "none";
+        overlay.style.animation = "0.6s opacity";
+    }, 400);
+};
+
+const expandImgRev03 = document.getElementById("expandImgRev03");
+function expandImgRev03F() {
+    overlay.style.display = "block";
+    expandImgRev03.style.display = "block";
+};
+function CloseRevImg03 () {
+    overlay.style.animation = "0.4s disappear";
+    setTimeout(function () {
+        overlay.style.display = "none";
+        expandImgRev03.style.display = "none";
+        overlay.style.animation = "0.6s opacity";
+    }, 400);
+};
+
+
 function startCountdown(duration, display) {
     var timer = duration, hours, minutes, seconds;
     setInterval(function () {
