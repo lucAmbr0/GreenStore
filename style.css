@@ -930,9 +930,9 @@ h2:hover {
 
 .filterAndSortContainer {
     display: grid;
-    grid-template-areas: 
-    "filterName sorterName"
-    "filterSelector sorterSelector";
+    grid-template-areas:
+        "filterName sorterName"
+        "filterSelector sorterSelector";
     /* background-color: rgba(0, 0, 0, 0.1);
     border: solid 3px rgb(37, 37, 37); */
     border-radius: 20px;
@@ -942,13 +942,16 @@ h2:hover {
 #filterName {
     grid-area: filterName;
 }
+
 #sorterName {
     grid-area: sorterName;
 }
+
 #filterSelector {
     grid-area: filterSelector;
     margin: 0 auto 0 0;
 }
+
 #sorterSelector {
     grid-area: sorterSelector;
 }
@@ -971,6 +974,7 @@ h2:hover {
     padding: 3px 4px 3px 4px;
     letter-spacing: -1px;
 }
+
 .filterSorterText:hover {
     scale: 1;
 }
