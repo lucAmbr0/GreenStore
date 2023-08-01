@@ -60,7 +60,7 @@ body {
 @keyframes zoomOut {
     from {
         opacity: 0;
-        scale: 0.7;
+        scale: 0.6;
     }
 
     to {
@@ -229,6 +229,29 @@ body {
     flex-wrap: wrap;
 }
 
+.smallLogoContainer {
+    display: flex;
+}
+
+.smallLogo {
+    width: 50%;
+    margin: 20px auto 20px auto;
+    display: flex;
+}
+
+/* .headerTitle {
+    font-size: 50px;
+    font-family: Poppins;
+    margin: 5px auto 5px 5%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: rgb(37, 37, 37);
+    text-shadow: 0px 5px 5px black;
+} */
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.25);
     grid-area: navbarItems;
@@ -254,9 +277,15 @@ body {
     transition: 0.3s;
     color: rgb(220, 220, 220);
     cursor: pointer;
-    animation: zoomOut 0.5s forwards;
-    animation-delay: 0.4s;
+    animation: zoomOut 0.8s forwards;
+    animation-delay: 0.3s;
     opacity: 0;
+}
+
+.selected {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    text-decoration: underline;
 }
 
 .navbarLink:hover {
@@ -280,9 +309,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px;
-    /* animation: opacity 0.5s forwards;
-    animation-delay: 0.4s;
-    opacity: 0; */
 }
 
 .longTitle {
