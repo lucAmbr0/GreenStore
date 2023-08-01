@@ -1,3 +1,4 @@
+// BUTTON TO EXPAND REVIEWS
 const moreReviewsBox = document.getElementById("moreReviewsBox");
 let moreReviewsText = document.getElementById("moreReviewsText");
 let moreReviewsSwitch = 0;
@@ -15,35 +16,7 @@ function moreReviews() {
 };
 moreReviewsBox.style.display = "none";
 
-const expandImgRev02 = document.getElementById("expandImgRev02");
-function expandImgRev02F() {
-    overlay.style.display = "block";
-    expandImgRev02.style.display = "block";
-};
-function CloseRevImg02 () {
-    overlay.style.animation = "0.4s disappear";
-    setTimeout(function () {
-        overlay.style.display = "none";
-        expandImgRev02.style.display = "none";
-        overlay.style.animation = "0.6s opacity";
-    }, 400);
-};
-
-const expandImgRev03 = document.getElementById("expandImgRev03");
-function expandImgRev03F() {
-    overlay.style.display = "block";
-    expandImgRev03.style.display = "block";
-};
-function CloseRevImg03 () {
-    overlay.style.animation = "0.4s disappear";
-    setTimeout(function () {
-        overlay.style.display = "none";
-        expandImgRev03.style.display = "none";
-        overlay.style.animation = "0.6s opacity";
-    }, 400);
-};
-
-
+// FLASH SALES IN INDEX.HTML TIMER
 function startCountdown(duration, display) {
     var timer = duration, hours, minutes, seconds;
     setInterval(function () {
@@ -80,10 +53,9 @@ function cambiaColore() {
         timer.classList.add("big");
     }
 }
-
 setInterval(cambiaColore, 400);
 
-// --------- LA MIA PROVA
+// --------- COOKIES POPUP
 var popup = document.getElementById("popup");
 var popupShown = localStorage.getItem("popupShown");
 var cookieNotice = document.getElementById("CookiesNoticeBoxStyle");
@@ -107,8 +79,44 @@ function Logout() {
     localStorage.removeItem("popupShown");
     popupLogout.style.display = "block";
     logout.style.display = "block";
-}
+};
 function closeLogoutPopup() {
     popupLogout.style.display = "none";
     location.reload();
-}
+};
+
+// SORTER ALGORITHM IN NEGOZIO.HTML
+const filterAll = document.getElementById("filterAll");
+const filterFresh = document.getElementById("filterFresh");
+const filterDried = document.getElementById("filterDried");
+const filterVegetables = document.getElementById("filterVegetables");
+console.log("hgkjhgkla")
+
+function filterForEverything() {
+    filterAll.classList.add("filterSelected");
+    filterFresh.classList.remove("filterSelected");
+    filterDried.classList.remove("filterSelected");
+    filterVegetables.classList.remove("filterSelected");
+    console.log("jhgkhgkjahglad");
+};
+
+function filterForFreshFruit() {
+    filterAll.classList.remove("filterSelected");
+    filterFresh.classList.add("filterSelected");
+    filterDried.classList.remove("filterSelected");
+    filterVegetables.classList.remove("filterSelected");
+};
+
+function filterForDriedFruit() {
+    filterAll.classList.remove("filterSelected");
+    filterFresh.classList.remove("filterSelected");
+    filterDried.classList.add("filterSelected");
+    filterVegetables.classList.remove("filterSelected");
+};
+
+function filterForVegetables() {
+    filterAll.classList.remove("filterSelected");
+    filterFresh.classList.remove("filterSelected");
+    filterDried.classList.remove("filterSelected");
+    filterVegetables.classList.add("filterSelected");
+};
