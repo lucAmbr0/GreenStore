@@ -963,6 +963,8 @@ h2:hover {
     align-items: center;
     padding: 0 3px 0 3px;
     width: fit-content;
+    box-shadow: 0px 1px 5px rgb(37, 37, 37);
+    /* border: solid 2px rgb(37, 37, 37); */
 }
 
 .filterSorterText {
@@ -989,9 +991,11 @@ h2:hover {
     cursor: pointer;
     font-weight: 400;
     letter-spacing: -0.5px;
-
+    transition: 0.3s;
 }
 
 .filterSelected {
     background-color: rgba(35, 122, 20, 0.685);
+    box-shadow: 0px 1px 3px;
+    transition: 0.3s;
 }
