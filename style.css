@@ -255,7 +255,7 @@ body {
     color: rgb(220, 220, 220);
     cursor: pointer;
     animation: zoomOut 0.5s forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.7s;
     opacity: 0;
 }
 
