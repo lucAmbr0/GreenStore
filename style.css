@@ -582,8 +582,6 @@ h2:hover {
     letter-spacing: 1px;
 }
 
-/* ------------------- TODO: ADD ANIMATION ON DIV SHOWING ------------------- */
-
 
 /* ------------------- HEADING PRODUCTS -------------------- */
 
@@ -926,4 +924,47 @@ h2:hover {
     font-size: 24px;
     font-weight: 700;
     line-height: 2;
+}
+
+/* ------------------- NEGOZIO.HTML -------------------- */
+
+.filterAndSortContainer {
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* border-radius: 20px; */
+    padding: 10px 30px 30px 10px;
+}
+
+.filterSorter {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.211);
+    border-radius: 40px;
+    margin: 0 10px 0 0px;
+    align-items: center;
+
+}
+
+.filterSorterText {
+    font-size: 24px;
+    display: flex;
+    scale: 1;
+    margin: 0 4px 0 10px;
+    padding: 3px 4px 3px 4px;
+}
+.filterSorterText:hover {
+    scale: 1;
+}
+
+.filterSelector {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 8px 5px 8px;
+    background-color: rgba(0, 0, 0, 0.221);
+    border-radius: 22px;
+    font-size: 18px;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.filterSelected {
+    background-color: rgba(35, 122, 20, 0.685);
 }
