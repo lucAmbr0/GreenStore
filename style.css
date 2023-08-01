@@ -523,6 +523,7 @@ h2:hover {
     display: none;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 10px 8px rgb(37, 37, 37);
 }
 #expandImgRev01:hover {
     scale: 1;
@@ -538,6 +539,7 @@ h2:hover {
     display: none;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 10px 8px rgb(37, 37, 37);
 }
 #expandImgRev02:hover {
     scale: 1;
@@ -553,6 +555,7 @@ h2:hover {
     display: none;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 10px 8px rgb(37, 37, 37);
 }
 #expandImgRev03:hover {
     scale: 1;
@@ -567,6 +570,7 @@ h2:hover {
     left: 20%;
     display: flex;
     align-content: center;
+    cursor: pointer;
 }
 
 #closeExpandImg {
