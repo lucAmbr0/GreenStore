@@ -571,6 +571,7 @@ h2:hover {
     display: flex;
     align-content: center;
     cursor: pointer;
+    box-shadow: 3px 4px 4px rgb(37, 37, 37);
 }
 
 #closeExpandImg {
