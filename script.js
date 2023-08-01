@@ -15,21 +15,6 @@ function moreReviews() {
 };
 moreReviewsBox.style.display = "none";
 
-const expandImgRev01 = document.getElementById("expandImgRev01");
-const overlay = document.getElementById("overlay");
-function expandImgRev01F() {
-    overlay.style.display = "block";
-    expandImgRev01.style.display = "block";
-};
-function CloseRevImg01 () {
-    overlay.style.animation = "0.4s disappear";
-    setTimeout(function () {
-        overlay.style.display = "none";
-        expandImgRev01.style.display = "none";
-        overlay.style.animation = "0.6s opacity";
-    }, 400);
-};
-
 const expandImgRev02 = document.getElementById("expandImgRev02");
 function expandImgRev02F() {
     overlay.style.display = "block";
