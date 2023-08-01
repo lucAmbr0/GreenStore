@@ -60,7 +60,7 @@ body {
 @keyframes zoomOut {
     from {
         opacity: 0;
-        scale: 0.7;
+        scale: 0.6;
     }
 
     to {
@@ -277,12 +277,12 @@ body {
     transition: 0.3s;
     color: rgb(220, 220, 220);
     cursor: pointer;
-    animation: zoomOut 0.5s forwards;
-    animation-delay: 0.7s;
+    animation: zoomOut 0.8s forwards;
+    animation-delay: 0.3s;
     opacity: 0;
 }
 
-#selected {
+.selected {
     background-color: rgba(0, 0, 0, 0.55);
     color: white;
     text-decoration: underline;
