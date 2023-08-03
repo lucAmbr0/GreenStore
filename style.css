@@ -983,7 +983,7 @@ h2:hover {
 
 .filterSelector {
     margin: 5px 2px 5px 2px;
-    padding: 5px 8px 5px 8px;
+    padding: 5px 8px 5px 9px;
     background-color: rgba(0, 0, 0, 0.221);
     border-radius: 22px;
     font-size: 18px;
@@ -998,7 +998,7 @@ h2:hover {
     background-color: rgba(35, 122, 20, 0.685);
     box-shadow: 0px 1px 3px;
     scale: 1.05;
-    margin: 7px 7px 7px 7px;
+    margin: 7px 6px 7px 6px;
     transition: 0.3s;
 }
 
@@ -1006,13 +1006,9 @@ h2:hover {
     display: none;
 }
 
-.rlySmall {
-    width: 30px;
-}
-
 .productsContainer {
     display: flex;
-    background-color: blueviolet;
+    background-color: transparent;
     justify-content: space-evenly;
     border-radius: 20px;
     flex-wrap: wrap;
@@ -1022,10 +1018,13 @@ h2:hover {
 .product {
     display: flex;
     flex-direction: column;
-    background-color: lime;
+    border: solid 3px black;
+    background-color: white;
     margin: 12px 10px;
+    border-radius: 15px;
+    overflow: hidden;
     width: 15%;
-    border-radius: 10px;
+    height: fit-content;
     justify-content: center;
     cursor: pointer;
     transition: 0.4s;
@@ -1036,27 +1035,115 @@ h2:hover {
     box-shadow: 1px 2px 10px;
 }
 
+.storeImgContainer {
+    margin: 0 auto 0 auto;
+    display: flex;
+    background-color: white;
+}
+
 .storeProduct {
     width: 90%;
-    margin: 10px auto;
+    margin: 4px auto 5px auto;
     border-radius: 10px;
 }
 
 .storeProductName {
     font-family: Noto Sans;
     font-size: 24px;
+    font-weight: 500;
     overflow: hidden;
     text-align: center;
-    background-color: aqua;
-    margin: 0 5px 0 5px;
+    color: whitesmoke;
+    margin: 0;
 }
 
 .storeProductPrice {
     font-family: Noto Sans;
     font-size: 18px;
-    overflow: hidedn;
+    overflow: hidden;
     text-align: center;
-    background-color: chocolate;
-    margin: 10px 5px 10px 5px;
-    font-weight: 400;
+    color: whitesmoke;
+    margin: 0 auto;
+    padding: 1px 3px;
+    border-radius: 8px;
+    width: fit-content;
+    font-weight: 300;
+    background-color: rgba(35, 83, 29, 0.8);
+}
+
+.bottomSectionProduct {
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(35, 83, 29, 0.8);
+}
+
+.storePriceContainer {
+    display: block;
+    justify-content: center;
+    /* background-color: white; */
+    border-radius: 40px 40px 0 0;
+}
+
+.notValid {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.storeBuyProductContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 3px 5px 6px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.quantity {
+    width: 60px;
+    font-size: 18px;
+    border-radius: 6px;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    margin: 0 10px 0 0px;
+    color: rgb(15, 15, 15);
+}
+
+.quantity:focus {
+    outline: none;
+    color: rgb(15, 15, 15);
+}
+
+.quantity::placeholder {
+    color: rgb(15, 15, 15);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48,
+}
+
+.white {
+    color: rgb(37, 37, 37);
+    background-color: rgba(255, 255, 255, 0.626);
+    padding: 3px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.white:hover {
+    scale: 1.15;
+}
+
+.hg {
+    font-family: Noto Sans;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    font-size: 16px;
+    margin: auto;
+    overflow: hidden;
 }
