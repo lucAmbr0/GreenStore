@@ -4,12 +4,25 @@ var filterFresh = document.getElementById("filterFresh");
 var filterDried = document.getElementById("filterDried");
 var filterVegetables = document.getElementById("filterVegetables");
 
+const FRESHFRUIT = document.querySelectorAll(".FRESHFRUIT");
+const DRIEDFRUIT = document.querySelectorAll(".DRIEDFRUIT");
+const VEGETABLES = document.querySelectorAll(".VEGETABLES");
+
 filterForEverything();
 function filterForEverything() {
     filterAll.classList.add("filterSelected");
     filterFresh.classList.remove("filterSelected");
     filterDried.classList.remove("filterSelected");
     filterVegetables.classList.remove("filterSelected");
+    FRESHFRUIT.forEach((div) => {
+        div.style.display = 'flex';
+    });
+    DRIEDFRUIT.forEach((div) => {
+        div.style.display = 'flex';
+    });
+    VEGETABLES.forEach((div) => {
+        div.style.display = 'flex';
+    });
 };
 
 function filterForFreshFruit() {
@@ -17,6 +30,15 @@ function filterForFreshFruit() {
     filterFresh.classList.add("filterSelected");
     filterDried.classList.remove("filterSelected");
     filterVegetables.classList.remove("filterSelected");
+    FRESHFRUIT.forEach((div) => {
+        div.style.display = 'flex';
+    });
+    DRIEDFRUIT.forEach((div) => {
+        div.style.display = 'none';
+    });
+    VEGETABLES.forEach((div) => {
+        div.style.display = 'none';
+    });
 };
 
 function filterForDriedFruit() {
@@ -24,6 +46,15 @@ function filterForDriedFruit() {
     filterFresh.classList.remove("filterSelected");
     filterDried.classList.add("filterSelected");
     filterVegetables.classList.remove("filterSelected");
+    FRESHFRUIT.forEach((div) => {
+        div.style.display = 'none';
+    });
+    DRIEDFRUIT.forEach((div) => {
+        div.style.display = 'flex';
+    });
+    VEGETABLES.forEach((div) => {
+        div.style.display = 'none';
+    });
 };
 
 function filterForVegetables() {
@@ -31,6 +62,15 @@ function filterForVegetables() {
     filterFresh.classList.remove("filterSelected");
     filterDried.classList.remove("filterSelected");
     filterVegetables.classList.add("filterSelected");
+    FRESHFRUIT.forEach((div) => {
+        div.style.display = 'none';
+    });
+    DRIEDFRUIT.forEach((div) => {
+        div.style.display = 'none';
+    });
+    VEGETABLES.forEach((div) => {
+        div.style.display = 'flex';
+    });
 };
 
 // SORTER ALGORITHM IN NEGOZIO.HTML
