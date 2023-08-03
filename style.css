@@ -1049,12 +1049,22 @@ h2:hover {
 
 .storeProductName {
     font-family: Noto Sans;
-    font-size: 24px;
+    text-shadow: 0px 1px 4px black;
+    font-size: 22px;
     font-weight: 500;
     overflow: hidden;
     text-align: center;
     color: whitesmoke;
-    margin: 0;
+    margin: 2px 0 4px 0;
+}
+
+.offerPercentage {
+    color: white;
+    /* text-decoration: underline; */
+    font-weight: 700;
+    text-shadow: 0px 2px 6px black;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .storeProductPrice {
@@ -1121,10 +1131,6 @@ h2:hover {
 .storeOfferPriceContainer {
     background-color: rgba(255, 255, 255, 0.4);
 }
-
-/* .productOffer {
-    border: solid 4px rgb(188, 25, 25);
-} */
 
 .quantity {
     width: 60px;
