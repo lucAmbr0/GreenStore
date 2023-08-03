@@ -1087,9 +1087,9 @@ h2:hover {
 .storeBuyProductContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    margin: 3px 5px 8px 5px;
+    margin: 3px 5px 6px 5px;
     padding: 5px;
     border-radius: 5px;
     background-color: rgba(255,255,255,0.2);
@@ -1102,17 +1102,17 @@ h2:hover {
     align-content: center;
     background-color: rgba(255, 255, 255, 0.4);
     border: none;
-    margin: 0 7px;
-    color: black;
+    margin: 0 10px 0 0px;
+    color: rgb(15, 15, 15);
 }
 
 .quantity:focus {
     outline: none;
-    color: black;
+    color: rgb(15, 15, 15);
 }
 
 .quantity::placeholder {
-    color: black;
+    color: rgb(15, 15, 15);
 }
 
 .material-symbols-outlined {
@@ -1122,18 +1122,23 @@ h2:hover {
   'GRAD' 200,
   'opsz' 48,
 }
+
 .white {
     color: rgb(37, 37, 37);
     background-color: rgba(255, 255, 255, 0.626);
     padding: 3px;
     border-radius: 8px;
+    transition: 0.3s;
+}
+.white:hover {
+    scale: 1.15;
 }
 
 .hg {
     font-family: Noto Sans;
     font-weight: 400;
-    color: whitesmoke;
+    color: white;
     font-size: 16px;
-    margin: 0px 2px 10px 2px;
+    margin: auto;
     overflow: hidden;
 }
