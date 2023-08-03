@@ -67,15 +67,15 @@ function FsortECRE() {
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.add("filterSelected");
     sortEDEC.classList.remove("filterSelected");
-    const griglia = document.getElementById('productsGrid');
-    const products = Array.from(griglia.getElementsByClassName('product'));
-    products.sort((a, b) => {
-        const prezzoA = parseFloat(a.querySelector('h4').innerText.replace('Prezzo: $', ''));
-        const prezzoB = parseFloat(b.querySelector('h4').innerText.replace('Prezzo: $', ''));
-        return prezzoA - prezzoB;
+    const griglia = document.getElementById('grigliaProdotti');
+    const prodotti = Array.from(griglia.getElementsByClassName('product'));
+    prodotti.sort((a, b) => {
+      const prezzoA = parseFloat(a.querySelector('.storeProductPrice').innerText);
+      const prezzoB = parseFloat(b.querySelector('.storeProductPrice').innerText);
+      return prezzoA - prezzoB;
     });
-    for (const product of products) {
-        griglia.appendChild(product);
+    for (const prodotto of prodotti) {
+      griglia.appendChild(prodotto);
     }
 };
 function FsortEDEC() {
@@ -83,14 +83,14 @@ function FsortEDEC() {
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.add("filterSelected");
-    const griglia = document.getElementById('productsGrid');
-    const products = Array.from(griglia.getElementsByClassName('product'));
-    products.sort((a, b) => {
-        const prezzoA = parseFloat(a.querySelector('h4').innerText.replace('Prezzo: $', ''));
-        const prezzoB = parseFloat(b.querySelector('h4').innerText.replace('Prezzo: $', ''));
-        return prezzoB - prezzoA;
+    const griglia = document.getElementById('grigliaProdotti');
+    const prodotti = Array.from(griglia.getElementsByClassName('product'));
+    prodotti.sort((a, b) => {
+      const prezzoA = parseFloat(a.querySelector('.storeProductPrice').innerText);
+      const prezzoB = parseFloat(b.querySelector('.storeProductPrice').innerText);
+      return prezzoB - prezzoA;
     });
-    for (const product of products) {
-        griglia.appendChild(product);
+    for (const prodotto of prodotti) {
+      griglia.appendChild(prodotto);
     }
 };
