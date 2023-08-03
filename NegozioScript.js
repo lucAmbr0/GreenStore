@@ -62,20 +62,26 @@ function FsortZA() {
         griglia.appendChild(product);
     }
 };
+
+function extractPrice(str) {
+    const match = str.match(/(\d+\.\d+)€\/kg/);
+    return match ? parseFloat(match[1]) : NaN;
+}
+
 function FsortECRE() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.add("filterSelected");
     sortEDEC.classList.remove("filterSelected");
-    const griglia = document.getElementById('grigliaProdotti');
-    const prodotti = Array.from(griglia.getElementsByClassName('product'));
-    prodotti.sort((a, b) => {
-      const prezzoA = parseFloat(a.querySelector('.storeProductPrice').innerText);
-      const prezzoB = parseFloat(b.querySelector('.storeProductPrice').innerText);
-      return prezzoA - prezzoB;
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = extractPrice(a.querySelector('.storeProductPrice').innerText);
+        const prezzoB = extractPrice(b.querySelector('.storeProductPrice').innerText);
+        return prezzoA - prezzoB;
     });
-    for (const prodotto of prodotti) {
-      griglia.appendChild(prodotto);
+    for (const product of products) {
+        griglia.appendChild(product);
     }
 };
 function FsortEDEC() {
@@ -83,14 +89,14 @@ function FsortEDEC() {
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.add("filterSelected");
-    const griglia = document.getElementById('grigliaProdotti');
-    const prodotti = Array.from(griglia.getElementsByClassName('product'));
-    prodotti.sort((a, b) => {
-      const prezzoA = parseFloat(a.querySelector('.storeProductPrice').innerText);
-      const prezzoB = parseFloat(b.querySelector('.storeProductPrice').innerText);
-      return prezzoB - prezzoA;
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = extractPrice(a.querySelector('.storeProductPrice').innerText);
+        const prezzoB = extractPrice(b.querySelector('.storeProductPrice').innerText);
+        return prezzoB - prezzoA;
     });
-    for (const prodotto of prodotti) {
-      griglia.appendChild(prodotto);
+    for (const product of products) {
+        griglia.appendChild(product);
     }
 };
