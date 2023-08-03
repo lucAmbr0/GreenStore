@@ -1089,10 +1089,10 @@ h2:hover {
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: 0 10px 0 10px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    background-color: rgb(37, 37, 37);
+    margin: 3px 5px 8px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
 }
 
 .quantity {
@@ -1103,7 +1103,7 @@ h2:hover {
     background-color: rgba(255, 255, 255, 0.4);
     border: none;
     margin: 0 7px;
-    color: whitesmoke;
+    color: black;
 }
 
 .quantity:focus {
@@ -1134,6 +1134,6 @@ h2:hover {
     font-weight: 400;
     color: whitesmoke;
     font-size: 16px;
-    margin: 8px 2px;
+    margin: 0px 2px 10px 2px;
     overflow: hidden;
 }
