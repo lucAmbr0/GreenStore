@@ -1018,12 +1018,12 @@ h2:hover {
 .product {
     display: flex;
     flex-direction: column;
-    border: solid 3px black;
+    border: solid 4px black;
     background-color: white;
     margin: 12px 10px;
     border-radius: 15px;
     overflow: hidden;
-    width: 15%;
+    width: 17%;
     height: fit-content;
     justify-content: center;
     cursor: pointer;
@@ -1121,10 +1121,10 @@ h2:hover {
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 200,
-        'opsz' 48,
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48
 }
 
 .white {
@@ -1144,6 +1144,6 @@ h2:hover {
     font-weight: 500;
     color: rgb(15, 15, 15);
     font-size: 16px;
-    margin: auto;
+    margin: auto auto 4px auto;
     overflow: hidden;
 }
