@@ -43,22 +43,60 @@ function FsortAZ() {
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.remove("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => a.querySelector('h3').innerText.localeCompare(b.querySelector('h3').innerText));
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
 function FsortZA() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.add("filterSelected");
     sortECRE.classList.remove("filterSelected");
-    sortEDEC.classList.remove("filterSelected");
+    sortEDEC.classList.remove("filterSelected")
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => b.querySelector('h3').innerText.localeCompare(a.querySelector('h3').innerText));
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
+
+function extractPrice(str) {
+    const match = str.match(/(\d+\.\d+)€\/kg/);
+    return match ? parseFloat(match[1]) : NaN;
+}
+
 function FsortECRE() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.add("filterSelected");
     sortEDEC.classList.remove("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = extractPrice(a.querySelector('.storeProductPrice').innerText);
+        const prezzoB = extractPrice(b.querySelector('.storeProductPrice').innerText);
+        return prezzoA - prezzoB;
+    });
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
 function FsortEDEC() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.add("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = extractPrice(a.querySelector('.storeProductPrice').innerText);
+        const prezzoB = extractPrice(b.querySelector('.storeProductPrice').innerText);
+        return prezzoB - prezzoA;
+    });
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };

@@ -997,5 +997,66 @@ h2:hover {
 .filterSelected {
     background-color: rgba(35, 122, 20, 0.685);
     box-shadow: 0px 1px 3px;
+    scale: 1.05;
+    margin: 7px 7px 7px 7px;
     transition: 0.3s;
+}
+
+.invisible {
+    display: none;
+}
+
+.rlySmall {
+    width: 30px;
+}
+
+.productsContainer {
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: lime;
+    margin: 12px 10px;
+    width: 15%;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.product:hover {
+    scale: 1.08;
+    box-shadow: 1px 2px 10px;
+}
+
+.storeProduct {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.storeProductName {
+    font-family: Noto Sans;
+    font-size: 24px;
+    overflow: hidden;
+    text-align: center;
+    background-color: aqua;
+    margin: 0 5px 0 5px;
+}
+
+.storeProductPrice {
+    font-family: Noto Sans;
+    font-size: 18px;
+    overflow: hidedn;
+    text-align: center;
+    background-color: chocolate;
+    margin: 10px 5px 10px 5px;
+    font-weight: 400;
 }

@@ -20,49 +20,54 @@ Insta: https://www.instagram.com/luca.ambroo_/
 
 <body>
     <div class="everything">
-		<div class="header">
-			<!-- Main header -->
-			<div class="smallLogoContainer">
+        <div class="header">
+            <!-- Main header -->
+            <div class="smallLogoContainer">
                 <img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore" class="smallLogo">
                 <!-- <h3 class="headerTitle">Negozio</h3> -->
             </div>
-			<div class="navbar" id="smallNavbar">
-				<div class="leftBar">
-					<a href="index.html" id="noDeco">
-						<h3 class="navbarLink" id="leftLink">Home</h3>
-					</a>
-					<a href="Negozio.html" id="noDeco">
-						<h3 class="navbarLink selected">Negozio</h3>
-					</a>
-					<a href="#Offerte" id="noDeco">
-						<h3 class="navbarLink">Offerte</h3>
-					</a>
-					<a href="Account.html" id="noDeco">
-						<h3 class="navbarLink">Account e ordini</h3>
-					</a>
-				</div>
-				<div class="rightBar">
-					<a href="Disclaimer.html" id="noDeco">
-						<h3 class="navbarLink">Disclaimer</h3>
-					</a>
-					<a id="noDeco" onclick="Logout()">
-						<h3 class="navbarLink" id="rightLink">Logout</h3>
-					</a>
-				</div>
-			</div>
-		</div>
+            <div class="navbar" id="smallNavbar">
+                <div class="leftBar">
+                    <a href="index.html" id="noDeco">
+                        <h3 class="navbarLink" id="leftLink">Home</h3>
+                    </a>
+                    <a href="Negozio.html" id="noDeco">
+                        <h3 class="navbarLink selected">Negozio</h3>
+                    </a>
+                    <a href="#Offerte" id="noDeco">
+                        <h3 class="navbarLink">Offerte</h3>
+                    </a>
+                    <a href="Account.html" id="noDeco">
+                        <h3 class="navbarLink">Account e ordini</h3>
+                    </a>
+                </div>
+                <div class="rightBar">
+                    <a href="Disclaimer.html" id="noDeco">
+                        <h3 class="navbarLink">Disclaimer</h3>
+                    </a>
+                    <a id="noDeco" onclick="Logout()">
+                        <h3 class="navbarLink" id="rightLink">Logout</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <!-- Content section -->
             <details open>
-                <summary><h1>Catalogo completo prodotti</h1></summary>
-                <button onclick="filterForEverything()">test button</button>
+                <summary>
+                    <h1>Catalogo completo prodotti</h1>
+                </summary>
                 <div class="filterAndSortContainer">
                     <h2 class="filterSorterText" id="filterName">Filtra per:</h2>
                     <div class="filterSorter" id="filterSelector">
-                        <h3 class="filterSelector filterSelected" id="filterAll" onclick="filterForEverything()">Tutti (39)</h3>
-                        <h3 class="filterSelector" id="filterFresh" onclick="filterForFreshFruit()">Frutta fresca (30)</h3>
-                        <h3 class="filterSelector" id="filterDried" onclick="filterForDriedFruit()">Frutta secca (9)</h3>
-                        <h3 class="filterSelector" id="filterVegetables" onclick="filterForVegetables()">Verdura (0)</h3>
+                        <h3 class="filterSelector filterSelected" id="filterAll" onclick="filterForEverything()">Tutti
+                            (39)</h3>
+                        <h3 class="filterSelector" id="filterFresh" onclick="filterForFreshFruit()">Frutta fresca (30)
+                        </h3>
+                        <h3 class="filterSelector" id="filterDried" onclick="filterForDriedFruit()">Frutta secca (9)
+                        </h3>
+                        <h3 class="filterSelector" id="filterVegetables" onclick="filterForVegetables()">Verdura (0)
+                        </h3>
                     </div>
                     <h2 class="filterSorterText" id="sorterName">Ordina per:</h2>
                     <div class="filterSorter" id="sorterSelector">
@@ -72,13 +77,48 @@ Insta: https://www.instagram.com/luca.ambroo_/
                         <h3 class="filterSelector" id="sortEDEC" onclick="FsortEDEC()">Prezzo decrescente</h3>
                     </div>
                 </div>
-                <div class="A-Z">
-                    
-                </div>
-                <div class="E-EEE">
-
-                </div>
-                <div class="EEE-E">
+                <div class="productsContainer" id="productsGrid">
+                    <div class="product">
+                        <img src="Media/Products/FruttaFresca/Moredigelsonocaption.webp" alt="Prodotto 2"
+                            class="storeProduct">
+                        <h3 class="storeProductName">More di Gelso</h3>
+                        <h4 class="storeProductPrice">Prezzo: 5.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 5</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 7</h3>
+                        <h4 class="storeProductPrice">Prezzo: 3.26€/kg</h4>
+                    </div>
+                    <!-- <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 9</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 3</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 1</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 6</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div>
+                    <div class="product">
+                        <img src="Media/other/fullStar.webp" alt="Prodotto 2" class="storeProduct">
+                        <h3 class="storeProductName">Prodotto 7</h3>
+                        <h4 class="storeProductPrice">Prezzo: 15.26€/kg</h4>
+                    </div> -->
 
                 </div>
             </details>
