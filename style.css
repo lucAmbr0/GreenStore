@@ -1116,7 +1116,7 @@ h2:hover {
 }
 
 .bottomSectionProduct {
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
     background-color: rgba(35, 83, 29, 0.8);
 }
 
@@ -1139,7 +1139,7 @@ h2:hover {
 }
 
 .storeOffer {
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
     background-color: rgb(213, 95, 10);
 }
 
