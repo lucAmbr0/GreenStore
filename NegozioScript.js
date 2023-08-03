@@ -4,6 +4,7 @@ var filterFresh = document.getElementById("filterFresh");
 var filterDried = document.getElementById("filterDried");
 var filterVegetables = document.getElementById("filterVegetables");
 
+filterForEverything();
 function filterForEverything() {
     filterAll.classList.add("filterSelected");
     filterFresh.classList.remove("filterSelected");
@@ -38,6 +39,7 @@ var sortZA = document.getElementById("sortZA");
 var sortECRE = document.getElementById("sortECRE");
 var sortEDEC = document.getElementById("sortEDEC");
 
+FsortAZ();
 function FsortAZ() {
     sortAZ.classList.add("filterSelected");
     sortZA.classList.remove("filterSelected");
