@@ -1088,6 +1088,7 @@ h2:hover {
     display: flex;
     text-decoration: line-through;
     opacity: 0.8;
+    font-weight: 200;
 }
 
 .noBackground {
@@ -1099,6 +1100,8 @@ h2:hover {
     padding: 1px 5px;
     background-color: rgb(212, 51, 23);
     border: solid 3px orange;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .bottomSectionProduct {
