@@ -1015,16 +1015,23 @@ h2:hover {
     background-color: blueviolet;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 10px;
 }
+
 .product {
     display: flex;
     flex-direction: column;
     background-color: lime;
-    margin: 10px;
+    margin: 12px 10px;
     width: 15%;
     border-radius: 10px;
     justify-content: center;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.product:hover {
+    scale: 1.1;
 }
 
 .storeProduct {
