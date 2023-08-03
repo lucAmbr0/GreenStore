@@ -1007,3 +1007,44 @@ h2:hover {
 .rlySmall {
     width: 30px;
 }
+
+.productsContainer {
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: lime;
+    margin: 10px;
+    width: 15%;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.storeProduct {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.storeProductName {
+    font-family: Noto Sans;
+    font-size: 24px;
+    overflow: hidden;
+    text-align: center;
+    background-color: aqua;
+    margin: 0 5px 0 5px;
+}
+
+.storeProductPrice {
+    font-family: Noto Sans;
+    font-size: 18px;
+    overflow: hidedn;
+    text-align: center;
+    background-color: chocolate;
+    margin: 10px 5px 10px 5px;
+}
