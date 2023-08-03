@@ -70,8 +70,8 @@ function FsortECRE() {
     const griglia = document.getElementById('productsGrid');
     const products = Array.from(griglia.getElementsByClassName('product'));
     products.sort((a, b) => {
-        const prezzoA = parseFloat(a.querySelector('p').innerText.replace('Prezzo: $', ''));
-        const prezzoB = parseFloat(b.querySelector('p').innerText.replace('Prezzo: $', ''));
+        const prezzoA = parseFloat(a.querySelector('h4').innerText.replace('Prezzo: $', ''));
+        const prezzoB = parseFloat(b.querySelector('h4').innerText.replace('Prezzo: $', ''));
         return prezzoA - prezzoB;
     });
     for (const product of products) {
@@ -86,8 +86,8 @@ function FsortEDEC() {
     const griglia = document.getElementById('productsGrid');
     const products = Array.from(griglia.getElementsByClassName('product'));
     products.sort((a, b) => {
-        const prezzoA = parseFloat(a.querySelector('p').innerText.replace('Prezzo: $', ''));
-        const prezzoB = parseFloat(b.querySelector('p').innerText.replace('Prezzo: $', ''));
+        const prezzoA = parseFloat(a.querySelector('h4').innerText.replace('Prezzo: $', ''));
+        const prezzoB = parseFloat(b.querySelector('h4').innerText.replace('Prezzo: $', ''));
         return prezzoB - prezzoA;
     });
     for (const product of products) {
