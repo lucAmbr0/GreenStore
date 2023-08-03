@@ -1014,6 +1014,7 @@ h2:hover {
     display: flex;
     background-color: blueviolet;
     justify-content: space-evenly;
+    border-radius: 20px;
     flex-wrap: wrap;
     padding: 10px;
 }
@@ -1031,7 +1032,8 @@ h2:hover {
 }
 
 .product:hover {
-    scale: 1.1;
+    scale: 1.08;
+    box-shadow: 1px 2px 10px;
 }
 
 .storeProduct {
