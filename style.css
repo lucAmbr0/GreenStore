@@ -1057,9 +1057,23 @@ h2:hover {
     margin: 0;
 }
 
+.storeProductPrice {
+    font-family: Noto Sans;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 auto;
+    padding: 1px 3px;
+    border-radius: 8px;
+    width: fit-content;
+    font-weight: 300;
+    background-color: rgba(35, 83, 29, 0.8);
+}
+
 .bottomSectionProduct {
     border-radius: 10px 10px 0 0;
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(35, 83, 29, 0.8);
 }
 
 .storePriceContainer {
@@ -1067,16 +1081,6 @@ h2:hover {
     justify-content: center;
     /* background-color: white; */
     border-radius: 40px 40px 0 0;
-}
-
-.storeProductPrice {
-    font-family: Noto Sans;
-    font-size: 18px;
-    overflow: hidden;
-    text-align: center;
-    color: whitesmoke;
-    margin: 0;
-    font-weight: 300;
 }
 
 .notValid {
@@ -1092,7 +1096,7 @@ h2:hover {
     margin: 3px 5px 6px 5px;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .quantity {
@@ -1116,11 +1120,11 @@ h2:hover {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 200,
-  'opsz' 48,
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48,
 }
 
 .white {
@@ -1130,14 +1134,15 @@ h2:hover {
     border-radius: 8px;
     transition: 0.3s;
 }
+
 .white:hover {
     scale: 1.15;
 }
 
 .hg {
     font-family: Noto Sans;
-    font-weight: 400;
-    color: white;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
     font-size: 16px;
     margin: auto;
     overflow: hidden;
