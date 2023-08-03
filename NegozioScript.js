@@ -64,7 +64,7 @@ function FsortZA() {
 };
 
 function extractPrice(str) {
-    const match = str.match(/(\d+\.\d+)€\/kg/);
+    const match = str.match(/(\d+\.\d+)€\/hg/);
     return match ? parseFloat(match[1]) : NaN;
 }
 
