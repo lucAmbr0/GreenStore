@@ -43,22 +43,54 @@ function FsortAZ() {
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.remove("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => a.querySelector('h3').innerText.localeCompare(b.querySelector('h3').innerText));
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
 function FsortZA() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.add("filterSelected");
     sortECRE.classList.remove("filterSelected");
-    sortEDEC.classList.remove("filterSelected");
+    sortEDEC.classList.remove("filterSelected")
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => b.querySelector('h3').innerText.localeCompare(a.querySelector('h3').innerText));
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
 function FsortECRE() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.add("filterSelected");
     sortEDEC.classList.remove("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = parseFloat(a.querySelector('p').innerText.replace('Prezzo: $', ''));
+        const prezzoB = parseFloat(b.querySelector('p').innerText.replace('Prezzo: $', ''));
+        return prezzoA - prezzoB;
+    });
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };
 function FsortEDEC() {
     sortAZ.classList.remove("filterSelected");
     sortZA.classList.remove("filterSelected");
     sortECRE.classList.remove("filterSelected");
     sortEDEC.classList.add("filterSelected");
+    const griglia = document.getElementById('productsGrid');
+    const products = Array.from(griglia.getElementsByClassName('product'));
+    products.sort((a, b) => {
+        const prezzoA = parseFloat(a.querySelector('p').innerText.replace('Prezzo: $', ''));
+        const prezzoB = parseFloat(b.querySelector('p').innerText.replace('Prezzo: $', ''));
+        return prezzoB - prezzoA;
+    });
+    for (const product of products) {
+        griglia.appendChild(product);
+    }
 };

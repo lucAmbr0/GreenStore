@@ -999,3 +999,11 @@ h2:hover {
     box-shadow: 0px 1px 3px;
     transition: 0.3s;
 }
+
+.invisible {
+    display: none;
+}
+
+.rlySmall {
+    width: 30px;
+}
