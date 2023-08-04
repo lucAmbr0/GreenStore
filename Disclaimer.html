@@ -16,258 +16,294 @@ Insta: https://www.instagram.com/luca.ambroo_/
 	<link
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@200;400;500;600&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
 </head>
 
 <body>
 	<div class="everything">
-		<div class="everything">
-			<div class="header">
-				<!-- Main header -->
-				<div class="titleImgContainer"><img src="Media/other/GreenstoreTransparent2.webp"
-						alt="Logo di Greenstore" class="longTitle"></div>
-				<div class="navbar">
-					<div class="leftBar">
-						<a href="index.html" id="noDeco">
-							<h3 class="navbarLink" id="leftLink">Home</h3>
-						</a>
-						<a href="Negozio.html" id="noDeco">
-							<h3 class="navbarLink">Negozio</h3>
-						</a>
-						<a href="index.html#Offerte" id="noDeco">
-							<h3 class="navbarLink">Offerte</h3>
-						</a>
-						<a href="Account.html" id="noDeco">
-							<h3 class="navbarLink">Account e ordini</h3>
-						</a>
-					</div>
-					<div class="rightBar">
-						<a href="Disclaimer.html" id="noDeco">
-							<h3 class="navbarLink selected">Disclaimer</h3>
-						</a>
-						<a id="noDeco" href="index.html">
-							<h3 class="navbarLink" id="rightLink">Logout</h3>
-						</a>
-					</div>
+		<!-- Cookies Notice -->
+		<div class="popup" id="popup">
+			<div class="cookiesNoticeBoxStyle" id="CookiesNoticeBoxStyle">
+				<p class="cookiesText">Informativa Cookies</h1>
+				<p class="cookiesTextParagraph">Utilizziamo cookie e tecnologie simili per aiutare a fornire e
+					migliorare i contenuti su GreenStore. I cookie sono utili anche per fornire un'esperienza più sicura
+					utilizzando le informazioni che riceviamo all'interno e all'esterno di GreenStore e per fornire e
+					migliorare i nostri servizi per le persone che hanno un account. <br>
+					<i>Puoi modificare le tue scelte riguardo i cookies nelle impostazioni del tuo account.</i>
+				</p> <br>
+				<div class="cookiesButtonsContainer">
+					<button class="onlyEssentialCookies" onclick="closePopup()">Accetta solo i cookies
+						essenziali</button>
+					<button class="allCookies" onclick="closePopup()">Accetta tutti i cookies</button>
 				</div>
 			</div>
-			<div class="content" id="disclaimerPage">
-				<!-- Content section -->
-				<details open>
-					<summary>
-						<h1 class="disclaimerTitle">Progetto e natura del sito</h1>
-					</summary>
-					<p class="disclaimerParagraph">Benvenuti su GreenStore, un'esperienza di e-commerce unica e
-						coinvolgente, creata con passione e dedizione. GreenStore è un progetto innovativo e fittizio
-						nato nel 2021 dalla mia sfida di utilizzare nella pratica le competenze che ho appreso in Web
-						Development.</p>
-					<p class="disclaimerParagraph">Il progetto nato nel 2021 è durato circa 7 mesi ed ha portato alla
-						luce una versione più antiquata ed essenziale di quello che vedete ora, essa è stata allegata in
-						un esame scolastico al solo scopo dimostrativo. La versione precedente non è pubblica, tuttavia,
-						nel 2023 questo progetto è stato ripreso per una completa revisione del codice ripartendo da 0.
-						La presente nuova versione gode di innumerevoli novità e features oltre ad un design più moderno
-						e funzionale e una particolare attenzione al rispetto del diritto d'autore allo scopo di poterlo
-						rendere visibile pubblicamente sul Web.</p>
-					<p class="disclaimerParagraph">Invitiamo i visitatori a godersi l'esperienza di esplorare i prodotti
-						e immaginare un mondo in cui la freschezza, la bontà e la sostenibilità sono alla base delle
-						scelte di acquisto. Sebbene GreenStore non possa soddisfare ordini reali, speriamo che questo
-						progetto ispiri una maggiore consapevolezza sull'importanza di uno stile di vita sano e
-						rispettoso dell'ambiente.</p>
-					<p class="disclaimerParagraph">Grazie per aver scelto di visitare GreenStore! Se hai domande o
-						desideri fornire un feedback, puoi contattarmi attraverso i miei account social in fondo alla
-						pagina.</p>
-					<br><br>
-				</details>
-				<details open>
-					<summary>
-						<h1 class="disclaimerTitle">Contenuti e informazioni</h1>
-					</summary>
-					<p class="disclaimerParagraph">Tutti i contenuti presenti su GreenStore, inclusi testi, immagini,
-						fotografie, loghi e font, sono stati utilizzati esclusivamente a fini didattici e dimostrativi.
-						Nessun contenuto è inteso a violare i diritti d'autore o a essere utilizzato per scopi
-						commerciali reali.</p>
-					<p class="disclaimerParagraph">GreenStore si impegna a fornire contenuti accurati e informativi,
-						tuttavia, sottolineo che tutti i testi, le immagini e i materiali presenti sul sito sono stati
-						utilizzati esclusivamente a fini didattici e dimostrativi. Poiché il progetto è puro frutto di
-						fantasia e nessun business è veramente esistito dietro questa pagina nessun contenuto utilizzato
-						qui è destinato ad infrangere i diritti d'autore o a essere utilizzato per scopi commerciali
-						reali.</p>
-					<p class="disclaimerParagraph">È importante sottolineare che GreenStore è un progetto di simulazione
-						e non rappresenta un vero negozio fisico o un'azienda reale. Questo sito web è stato creato con
-						il solo scopo di dimostrare le capacità di programmazione web e fornire un'esperienza
-						interattiva a coloro che lo visitano.</p>
-					<p class="disclaimerParagraph">Sebbene l'aspetto e la funzionalità del sito possano sembrare
-						autentici, vogliamo chiarire che nessun prodotto o servizio offerto su GreenStore è
-						effettivamente disponibile per l'acquisto. Tutti i prodotti mostrati, i prezzi e le offerte
-						speciali sono puramente immaginari e creati esclusivamente a fini didattici.</p>
-					<p class="disclaimerParagraph">GreenStore non è affiliato con alcun marchio o logo esistente. Non
-						esistono partnership commerciali o accordi di associazione con aziende reali. Tutti i nomi e le
-						immagini di prodotti utilizzati su questo sito sono stati generati per scopi creativi e di
-						simulazione.</p>
-					<br><br>
-				</details>
-				<details open>
-					<summary>
-						<h1 class="disclaimerTitle">Fonti e citazioni</h1>
-					</summary>
-					<p class="disclaimerParagraph">Per la creazione di questo progetto, sono state utilizzate alcune
-						risorse prese da fonti pubbliche e gratuite. Di seguito sono citate con relativi collegamenti
-						web tutte le fonti utilizzate:</p>
-					<div class="allCreditsContainer">
-						<div class="creditsContainer">
-							<ul>
-								<li><a class="creditsLink" id="headingCredit">Immagini</a></li>
-								<li><a href="https://www.google.com/imghp" class="creditsLink" id="linkDeco">Google
-										Immagini</a></li>
-								<li><a href="https://maps.google.com" class="creditsLink" id="linkDeco">Google Maps</a>
-								</li>
-								<li><a href="https://www.viversano.net/" class="creditsLink" id="linkDeco">Viversano</a>
-								</li>
-								<li><a href="https://www.cleanpng.com/" class="creditsLink" id="linkDeco">CleanPNG</a>
-								</li>
-								<li><a href="https://pngtree.com/" class="creditsLink" id="linkDeco">PNGtree</a></li>
-								<li><a href="https://www.pngwing.com/" class="creditsLink" id="linkDeco">PNGwing</a>
-								</li>
-								<li><a href="https://www.shutterstock.com/it/" class="creditsLink"
-										id="linkDeco">Shutterstock</a></li>
-								<li><a href="https://pixelied.com/convert/" class="creditsLink" id="linkDeco">Pixelied
-										.webp</a></li>
-								<li><a href="https://www.flaticon.com/free-icons/instagram" class="creditsLink"
-										id="linkDeco">Instagram Flaticon</a></li>
-								<li><a href="https://www.flaticon.com/free-icons/youtube" class="creditsLink"
-										id="linkDeco">YouTube Flaticon</a></li>
-								<li><a href="https://www.flaticon.com/free-icons/github" class="creditsLink"
-										id="linkDeco">GitHub Flaticon</a></li>
-							</ul>
-							<ul>
-								<li><a class="creditsLink" id="headingCredit">Servizi/App</a></li>
-								<li><a href="https://www.photopea.com/" class="creditsLink" id="linkDeco">Photopea</a>
-								</li>
-								<li><a href="https://www.google.it/intl/it/chrome/" class="creditsLink"
-										id="linkDeco">Chrome</a></li>
-								<li><a href="https://chat.openai.com/" class="creditsLink" id="linkDeco">ChatGPT</a>
-								</li>
-								<li><a href="https://github.com/lucAmbr0" class="creditsLink" id="linkDeco">GitHub</a>
-								</li>
-								<li><a href="https://code.visualstudio.com/" class="creditsLink" id="linkDeco">Visual
-										Studio Code</a></li>
-								<li><a href="https://git-scm.com/" class="creditsLink" id="linkDeco">Git</a></li>
-							</ul>
-							<ul>
-								<li><a class="creditsLink" id="headingCredit">Snippet codice</a></li>
-								<li><a href="https://mimo.org/" class="creditsLink" id="linkDeco">Mimo [Web
-										Development]</a></li>
-								<li><a href="https://css-tricks.com/" class="creditsLink" id="linkDeco">CSS tricks</a>
-								</li>
-								<li><a href="https://www.w3schools.com/" class="creditsLink" id="linkDeco">W3schools</a>
-								</li>
-								<li><a href="https://stackoverflow.com/" class="creditsLink"
-										id="linkDeco">StackOverflow</a></li>
-							</ul>
-							<ul>
-								<li><a class="creditsLink" id="headingCredit">Font/caratteri</a></li>
-								<li><a href="https://fonts.google.com/" class="creditsLink" id="linkDeco">Google
-										Fonts</a></li>
-								<li><a href="https://fonts.google.com/specimen/Poppins/" class="creditsLink"
-										id="linkDeco">Poppins - Titoli</a></li>
-								<li><a href="https://fonts.google.com/noto/specimen/Noto+Sans?" class="creditsLink"
-										id="linkDeco">Noto Sans - Corpo</a></li>
-							</ul>
-							<ul>
-								<li><a class="creditsLink" id="headingCredit">Valori nutrizionali:</a></li>
-								<li><a href="https://www.viversano.net/" class="creditsLink" id="linkDeco">Viversano</a>
-								</li>
-								<li><a href="https://www.usda.gov/" class="creditsLink" id="linkDeco">USDA</a></li>
-								<li><a href="https://www.fao.org/home/en" class="creditsLink" id="linkDeco">FAO</a></li>
-							</ul>
-						</div>
-					</div>
-					<br>
-					<p class="disclaimerParagraph">Le immagini, i font e tutte le altre risorse utilizzate sono soggetti
-						ai rispettivi diritti d'autore e licenze. Nessuna delle fonti citate supporta, sponsorizza o è
-						associata a GreenStore o a questo progetto di e-commerce fittizio.</p>
-					<br><br>
-				</details>
-				<details open>
-					<summary>
-						<h1 class="disclaimerTitle">Attribuzione e Licenza</h1>
-					</summary>
-					<p class="disclaimerParagraph">Nonostante questo progetto includa diverse fonti protette che hanno
-						richiesto la citazione in questa pagina, il resto del codice realizzato per dare corpo al sito,
-						oltre ai vari contenuti ideati, la grafica del sito, il design di paragrafi, pagine, immagini e
-						pulsanti è stato realizzato interamente da me.</p>
-					<p class="disclaimerParagraph">Dopo aver osservato che questo progetto mette insieme molte fonti di
-						creatori di terze parti, è stato deciso di non applicare una licenza a questo progetto,
-						tuttavia, se uno sviluppatore di terze parti volesse utilizzare delle parti di questa pagina
-						(contenuti, layout, grafica CSS, altri elementi realizzati o ideati dallo sviluppatore di questo
-						progetto) è espressamente richiesto dallo sviluppatore di citare nel footer di tutte le pagine
-						del vostro progetto o in altre aree ben visibili nel caso di progetti non web (ad esempio
-						README.MD) i seguenti dati:</p>
-					<ul>
-						<li class="creditsLink">Nickname GitHub del creatore del progetto: lucAmbr0</li>
-						<li class="creditsLink">Link alla repository di questo progetto:
-							https://github.com/lucAmbr0/GreenStore</li>
-					</ul>
-				</details>
-				<details open>
-					<summary>
-						<h1 class="disclaimerTitle">Avvertenza legale</h1>
-					</summary>
-					<p class="disclaimerParagraph">GreenStore e tutti i contenuti associati sono forniti senza garanzia
-						di alcun tipo. Non ci assumiamo alcuna responsabilità per eventuali errori o omissioni nel
-						contenuto del sito. L'utilizzo di questo sito è a proprio rischio. Tutti i prodotti e i prezzi
-						mostrati sono puramente immaginari e non sono disponibili per l'acquisto o la vendita.</p>
-				</details>
-			</div>
-			<div class="footer">
-				<!-- Footer section -->
-				<div class="footerContainer">
-					<div class="socialBox1">
-						<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
-								alt="Logo di Instagram" class="socialIcon"></a>
-						<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
-								class="socialIcon"></a>
-						<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
-								src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
-					</div>
-					<div class="socialBox2">
-						<a href="#start">
-							<p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp"
-									alt="Logo GreenStore" class="footerLogo">
-						</a>
-					</div>
-					<div class="socialBox3">
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Contattaci</p>
-						</a>
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Privacy</p>
-						</a>
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Copyright</p>
-						</a>
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Attribuzione</p>
-						</a>
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Citazioni</p>
-						</a>
-						<a href="Disclaimer.html">
-							<p class="footerLinks">Disclaimer</p>
-						</a>
-					</div>
-				</div>
-				<h3 class="textFooter"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
-						simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since
-					2021. It represents a grocery e-commerce website simulation that does not phisically exist. <br>
-					Attribution required when using any file or code of this project on your third party personal
-					projects. More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
-			</div>
-			<a href="https://github.com/lucAmbr0/GreenStore">
-				<p class="versionName">GreenStore Project v2.0 2023 edition</p>
-			</a>
 		</div>
+		<!-- Logout Popup -->
+		<div class="popup" id="popupLogout">
+			<div class="cookiesNoticeBoxStyle" id="logout">
+				<p class="cookiesText">Logout eseguito</h1>
+				<p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati memorizzati
+					dal sito sono stati eliminati.
+				<div class="cookiesButtonsContainer">
+					<button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<!-- Main header -->
+			<div class="titleImgContainer"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore"
+					class="longTitle"></div>
+			<div class="navbar">
+				<div class="leftBar">
+					<a href="index.html" id="noDeco">
+						<h3 class="navbarLink" id="leftLink">Home</h3>
+					</a>
+					<a href="Negozio.html" id="noDeco">
+						<h3 class="navbarLink">Negozio</h3>
+					</a>
+					<a href="index.html#Offerte" id="noDeco">
+						<h3 class="navbarLink">Offerte</h3>
+					</a>
+					<a href="Account.html" id="noDeco">
+						<h3 class="navbarLink">Account e ordini</h3>
+					</a>
+				</div>
+				<div class="rightBar">
+					<a href="Disclaimer.html" id="noDeco">
+						<h3 class="navbarLink selected">Disclaimer</h3>
+					</a>
+					<a id="noDeco" onclick="Logout()">
+						<h3 class="navbarLink" id="rightLink">Logout</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="content" id="disclaimerPage">
+			<!-- Content section -->
+			<details open>
+				<summary>
+					<h1 class="disclaimerTitle">Progetto e natura del sito</h1>
+				</summary>
+				<p class="disclaimerParagraph">Benvenuti su GreenStore, un'esperienza di e-commerce unica e
+					coinvolgente, creata con passione e dedizione. GreenStore è un progetto innovativo e fittizio
+					nato nel 2021 dalla mia sfida di utilizzare nella pratica le competenze che ho appreso in Web
+					Development.</p>
+				<p class="disclaimerParagraph">Il progetto nato nel 2021 è durato circa 7 mesi ed ha portato alla
+					luce una versione più antiquata ed essenziale di quello che vedete ora, essa è stata allegata in
+					un esame scolastico al solo scopo dimostrativo. La versione precedente non è pubblica, tuttavia,
+					nel 2023 questo progetto è stato ripreso per una completa revisione del codice ripartendo da 0.
+					La presente nuova versione gode di innumerevoli novità e features oltre ad un design più moderno
+					e funzionale e una particolare attenzione al rispetto del diritto d'autore allo scopo di poterlo
+					rendere visibile pubblicamente sul Web.</p>
+				<p class="disclaimerParagraph">Invitiamo i visitatori a godersi l'esperienza di esplorare i prodotti
+					e immaginare un mondo in cui la freschezza, la bontà e la sostenibilità sono alla base delle
+					scelte di acquisto. Sebbene GreenStore non possa soddisfare ordini reali, speriamo che questo
+					progetto ispiri una maggiore consapevolezza sull'importanza di uno stile di vita sano e
+					rispettoso dell'ambiente.</p>
+				<p class="disclaimerParagraph">Grazie per aver scelto di visitare GreenStore! Se hai domande o
+					desideri fornire un feedback, puoi contattarmi attraverso i miei account social in fondo alla
+					pagina.</p>
+				<br><br>
+			</details>
+			<details open>
+				<summary>
+					<h1 class="disclaimerTitle">Contenuti e informazioni</h1>
+				</summary>
+				<p class="disclaimerParagraph">Tutti i contenuti presenti su GreenStore, inclusi testi, immagini,
+					fotografie, loghi e font, sono stati utilizzati esclusivamente a fini didattici e dimostrativi.
+					Nessun contenuto è inteso a violare i diritti d'autore o a essere utilizzato per scopi
+					commerciali reali.</p>
+				<p class="disclaimerParagraph">GreenStore si impegna a fornire contenuti accurati e informativi,
+					tuttavia, sottolineo che tutti i testi, le immagini e i materiali presenti sul sito sono stati
+					utilizzati esclusivamente a fini didattici e dimostrativi. Poiché il progetto è puro frutto di
+					fantasia e nessun business è veramente esistito dietro questa pagina nessun contenuto utilizzato
+					qui è destinato ad infrangere i diritti d'autore o a essere utilizzato per scopi commerciali
+					reali.</p>
+				<p class="disclaimerParagraph">È importante sottolineare che GreenStore è un progetto di simulazione
+					e non rappresenta un vero negozio fisico o un'azienda reale. Questo sito web è stato creato con
+					il solo scopo di dimostrare le capacità di programmazione web e fornire un'esperienza
+					interattiva a coloro che lo visitano.</p>
+				<p class="disclaimerParagraph">Sebbene l'aspetto e la funzionalità del sito possano sembrare
+					autentici, vogliamo chiarire che nessun prodotto o servizio offerto su GreenStore è
+					effettivamente disponibile per l'acquisto. Tutti i prodotti mostrati, i prezzi e le offerte
+					speciali sono puramente immaginari e creati esclusivamente a fini didattici.</p>
+				<p class="disclaimerParagraph">GreenStore non è affiliato con alcun marchio o logo esistente. Non
+					esistono partnership commerciali o accordi di associazione con aziende reali. Tutti i nomi e le
+					immagini di prodotti utilizzati su questo sito sono stati generati per scopi creativi e di
+					simulazione.</p>
+				<br><br>
+			</details>
+			<details open>
+				<summary>
+					<h1 class="disclaimerTitle">Fonti e citazioni</h1>
+				</summary>
+				<p class="disclaimerParagraph">Per la creazione di questo progetto, sono state utilizzate alcune
+					risorse prese da fonti pubbliche e gratuite. Di seguito sono citate con relativi collegamenti
+					web tutte le fonti utilizzate:</p>
+				<div class="allCreditsContainer">
+					<div class="creditsContainer">
+						<ul>
+							<li><a class="creditsLink" id="headingCredit">Immagini</a></li>
+							<li><a href="https://www.google.com/imghp" class="creditsLink" id="linkDeco">Google
+									Immagini</a></li>
+							<li><a href="https://maps.google.com" class="creditsLink" id="linkDeco">Google Maps</a>
+							</li>
+							<li><a href="https://www.viversano.net/" class="creditsLink" id="linkDeco">Viversano</a>
+							</li>
+							<li><a href="https://www.cleanpng.com/" class="creditsLink" id="linkDeco">CleanPNG</a>
+							</li>
+							<li><a href="https://pngtree.com/" class="creditsLink" id="linkDeco">PNGtree</a></li>
+							<li><a href="https://www.pngwing.com/" class="creditsLink" id="linkDeco">PNGwing</a>
+							</li>
+							<li><a href="https://www.shutterstock.com/it/" class="creditsLink"
+									id="linkDeco">Shutterstock</a></li>
+							<li><a href="https://pixelied.com/convert/" class="creditsLink" id="linkDeco">Pixelied
+									.webp</a></li>
+							<li><a href="https://www.flaticon.com/free-icons/instagram" class="creditsLink"
+									id="linkDeco">Instagram Flaticon</a></li>
+							<li><a href="https://www.flaticon.com/free-icons/youtube" class="creditsLink"
+									id="linkDeco">YouTube Flaticon</a></li>
+							<li><a href="https://www.flaticon.com/free-icons/github" class="creditsLink"
+									id="linkDeco">GitHub Flaticon</a></li>
+						</ul>
+						<ul>
+							<li><a class="creditsLink" id="headingCredit">Servizi/App</a></li>
+							<li><a href="https://www.photopea.com/" class="creditsLink" id="linkDeco">Photopea</a>
+							</li>
+							<li><a href="https://www.google.it/intl/it/chrome/" class="creditsLink"
+									id="linkDeco">Chrome</a></li>
+							<li><a href="https://chat.openai.com/" class="creditsLink" id="linkDeco">ChatGPT</a>
+							</li>
+							<li><a href="https://github.com/lucAmbr0" class="creditsLink" id="linkDeco">GitHub</a>
+							</li>
+							<li><a href="https://code.visualstudio.com/" class="creditsLink" id="linkDeco">Visual
+									Studio Code</a></li>
+							<li><a href="https://git-scm.com/" class="creditsLink" id="linkDeco">Git</a></li>
+						</ul>
+						<ul>
+							<li><a class="creditsLink" id="headingCredit">Snippet codice</a></li>
+							<li><a href="https://mimo.org/" class="creditsLink" id="linkDeco">Mimo [Web
+									Development]</a></li>
+							<li><a href="https://css-tricks.com/" class="creditsLink" id="linkDeco">CSS tricks</a>
+							</li>
+							<li><a href="https://www.w3schools.com/" class="creditsLink" id="linkDeco">W3schools</a>
+							</li>
+							<li><a href="https://stackoverflow.com/" class="creditsLink" id="linkDeco">StackOverflow</a>
+							</li>
+						</ul>
+						<ul>
+							<li><a class="creditsLink" id="headingCredit">Font/caratteri</a></li>
+							<li><a href="https://fonts.google.com/" class="creditsLink" id="linkDeco">Google
+									Fonts</a></li>
+							<li><a href="https://fonts.google.com/specimen/Poppins/" class="creditsLink"
+									id="linkDeco">Poppins - Titoli</a></li>
+							<li><a href="https://fonts.google.com/noto/specimen/Noto+Sans?" class="creditsLink"
+									id="linkDeco">Noto Sans - Corpo</a></li>
+						</ul>
+						<ul>
+							<li><a class="creditsLink" id="headingCredit">Valori nutrizionali:</a></li>
+							<li><a href="https://www.viversano.net/" class="creditsLink" id="linkDeco">Viversano</a>
+							</li>
+							<li><a href="https://www.usda.gov/" class="creditsLink" id="linkDeco">USDA</a></li>
+							<li><a href="https://www.fao.org/home/en" class="creditsLink" id="linkDeco">FAO</a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<p class="disclaimerParagraph">Le immagini, i font e tutte le altre risorse utilizzate sono soggetti
+					ai rispettivi diritti d'autore e licenze. Nessuna delle fonti citate supporta, sponsorizza o è
+					associata a GreenStore o a questo progetto di e-commerce fittizio.</p>
+				<br><br>
+			</details>
+			<details open>
+				<summary>
+					<h1 class="disclaimerTitle">Attribuzione e Licenza</h1>
+				</summary>
+				<p class="disclaimerParagraph">Nonostante questo progetto includa diverse fonti protette che hanno
+					richiesto la citazione in questa pagina, il resto del codice realizzato per dare corpo al sito,
+					oltre ai vari contenuti ideati, la grafica del sito, il design di paragrafi, pagine, immagini e
+					pulsanti è stato realizzato interamente da me.</p>
+				<p class="disclaimerParagraph">Dopo aver osservato che questo progetto mette insieme molte fonti di
+					creatori di terze parti, è stato deciso di non applicare una licenza a questo progetto,
+					tuttavia, se uno sviluppatore di terze parti volesse utilizzare delle parti di questa pagina
+					(contenuti, layout, grafica CSS, altri elementi realizzati o ideati dallo sviluppatore di questo
+					progetto) è espressamente richiesto dallo sviluppatore di citare nel footer di tutte le pagine
+					del vostro progetto o in altre aree ben visibili nel caso di progetti non web (ad esempio
+					README.MD) i seguenti dati:</p>
+				<ul>
+					<li class="creditsLink">Nickname GitHub del creatore del progetto: lucAmbr0</li>
+					<li class="creditsLink">Link alla repository di questo progetto:
+						https://github.com/lucAmbr0/GreenStore</li>
+				</ul>
+			</details>
+			<details open>
+				<summary>
+					<h1 class="disclaimerTitle" onclick="easterEggCounter()">Avvertenza legale</h1>
+				</summary>
+				<p class="disclaimerParagraph">GreenStore e tutti i contenuti associati sono forniti senza garanzia
+					di alcun tipo. Non ci assumiamo alcuna responsabilità per eventuali errori o omissioni nel
+					contenuto del sito. L'utilizzo di questo sito è a proprio rischio. Tutti i prodotti e i prezzi
+					mostrati sono puramente immaginari e non sono disponibili per l'acquisto o la vendita.</p>
+					<div class="hiddenInput" id="hiddenDiv">
+						<input type="text" class="hiddenButton" id="hiddenInput" placeholder="Negozio.html [33, 65:72]">
+						<button onclick="confirmHidden()" class="hiddenButton" id="hiddenConfirmButton">Conferma</button>
+					</div>
+			</details>
+		</div>
+		<div class="footer">
+			<!-- Footer section -->
+			<div class="footerContainer">
+				<div class="socialBox1">
+					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+							alt="Logo di Instagram" class="socialIcon"></a>
+					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+							class="socialIcon"></a>
+					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+				</div>
+				<div class="socialBox2">
+					<a href="#start">
+						<p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
+								class="footerLogo">
+					</a>
+				</div>
+				<div class="socialBox3">
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Contattaci</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Privacy</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Copyright</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Attribuzione</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Citazioni</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Disclaimer</p>
+					</a>
+				</div>
+			</div>
+			<h3 class="textFooter"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
+					simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since
+				2021. It represents a grocery e-commerce website simulation that does not phisically exist. <br>
+				Attribution required when using any file or code of this project on your third party personal
+				projects. More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
+		</div>
+		<a href="https://github.com/lucAmbr0/GreenStore">
+			<p class="versionName">GreenStore Project v2.0 2023 edition</p>
+		</a>
 	</div>
-	<script src="script.js"></script>
+	</div>
+	<script src="js/Disclaimer.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

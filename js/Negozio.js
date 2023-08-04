@@ -9,6 +9,7 @@ const DRIEDFRUIT = document.querySelectorAll(".DRIEDFRUIT");
 const VEGETABLES = document.querySelectorAll(".VEGETABLES");
 
 var filter = localStorage.getItem("filter");
+localStorage.setItem("filter", "everything");
 
 function filterForEverything() {
     filterAll.classList.add("filterSelected");
@@ -98,8 +99,8 @@ var sortECRE = document.getElementById("sortECRE");
 var sortEDEC = document.getElementById("sortEDEC");
 
 var sort = localStorage.getItem("sort");
+localStorage.setItem("sort", "sortAZ");
 
-FsortAZ();
 function FsortAZ() {
     sortAZ.classList.add("filterSelected");
     sortZA.classList.remove("filterSelected");
