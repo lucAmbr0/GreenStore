@@ -286,6 +286,9 @@ body {
     background-color: rgba(0, 0, 0, 0.55);
     color: white;
 }
+.selected:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
 
 .navbarLink:hover {
     background-color: rgba(0, 0, 0, 0.4);
@@ -376,6 +379,36 @@ p {
 .disclaimerParagraph {
     text-align: justify;
     font-size: 20px;
+}
+
+#hiddenDiv {
+    display: none;
+}
+.hiddenInput {
+    margin: 20px 0 20px 10%;
+    width: fit-content;
+    border: dashed 2px black;
+    opacity: 0.5;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: not-allowed;
+}
+.hiddenInput:hover {
+    opacity: 0.7;
+}
+.hiddenButton {
+    margin-right: 10px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Noto Sans;
+    cursor: not-allowed;
+}
+.hiddenButton::placeholder {
+    color: white;
 }
 
 #italic {

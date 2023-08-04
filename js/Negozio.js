@@ -8,7 +8,9 @@ const FRESHFRUIT = document.querySelectorAll(".FRESHFRUIT");
 const DRIEDFRUIT = document.querySelectorAll(".DRIEDFRUIT");
 const VEGETABLES = document.querySelectorAll(".VEGETABLES");
 
-filterForEverything();
+var filter = localStorage.getItem("filter");
+localStorage.setItem("filter", "everything");
+
 function filterForEverything() {
     filterAll.classList.add("filterSelected");
     filterFresh.classList.remove("filterSelected");
@@ -23,6 +25,7 @@ function filterForEverything() {
     VEGETABLES.forEach((div) => {
         div.style.display = 'flex';
     });
+    localStorage.setItem("filter", "everything");
 };
 
 function filterForFreshFruit() {
@@ -39,6 +42,7 @@ function filterForFreshFruit() {
     VEGETABLES.forEach((div) => {
         div.style.display = 'none';
     });
+    localStorage.setItem("filter", "freshFruit");
 };
 
 function filterForDriedFruit() {
@@ -55,6 +59,7 @@ function filterForDriedFruit() {
     VEGETABLES.forEach((div) => {
         div.style.display = 'none';
     });
+    localStorage.setItem("filter", "driedFruit");
 };
 
 function filterForVegetables() {
@@ -71,7 +76,21 @@ function filterForVegetables() {
     VEGETABLES.forEach((div) => {
         div.style.display = 'flex';
     });
+    localStorage.setItem("filter", "vegetables");
 };
+
+if (filter === "freshFruit") {
+    filterForFreshFruit();
+}
+else if (filter === "driedFruit") {
+    filterForDriedFruit();
+}
+else if (filter === "vegetables") {
+    filterForVegetables();
+}
+else {
+    filterForEverything
+}
 
 // SORTER ALGORITHM IN NEGOZIO.HTML
 var sortAZ = document.getElementById("sortAZ");
@@ -79,7 +98,9 @@ var sortZA = document.getElementById("sortZA");
 var sortECRE = document.getElementById("sortECRE");
 var sortEDEC = document.getElementById("sortEDEC");
 
-FsortAZ();
+var sort = localStorage.getItem("sort");
+localStorage.setItem("sort", "sortAZ");
+
 function FsortAZ() {
     sortAZ.classList.add("filterSelected");
     sortZA.classList.remove("filterSelected");
@@ -91,6 +112,7 @@ function FsortAZ() {
     for (const product of products) {
         griglia.appendChild(product);
     }
+    localStorage.setItem("sort", "sortAZ");
 };
 function FsortZA() {
     sortAZ.classList.remove("filterSelected");
@@ -103,6 +125,7 @@ function FsortZA() {
     for (const product of products) {
         griglia.appendChild(product);
     }
+    localStorage.setItem("sort", "sortZA");
 };
 
 function extractPrice(str) {
@@ -125,6 +148,7 @@ function FsortECRE() {
     for (const product of products) {
         griglia.appendChild(product);
     }
+    localStorage.setItem("sort", "sortECRE");
 };
 function FsortEDEC() {
     sortAZ.classList.remove("filterSelected");
@@ -141,4 +165,18 @@ function FsortEDEC() {
     for (const product of products) {
         griglia.appendChild(product);
     }
+    localStorage.setItem("sort", "sortEDEC");
 };
+
+if (sort === "sortZA") {
+    FsortZA();
+}
+else if (sort === "sortECRE") {
+    FsortECRE();
+}
+else if (sort === "sortEDEC") {
+    FsortEDEC();
+}
+else {
+    FsortAZ();
+}
