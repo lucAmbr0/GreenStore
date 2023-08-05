@@ -1252,7 +1252,7 @@ h2:hover {
 }
 
 .cartItem {
-    margin: 10px 20px;
+    margin: 10px 10px -10px 10px;
     display: block;
     width: 20%;
     height: fit-content;
@@ -1260,17 +1260,23 @@ h2:hover {
     background-color: aqua;
     border-radius: 10px;
     text-align: center;
+    padding: 3px;
 }
 
 .cartProductName {
     text-align: center;
+    font-size: 26px;
     margin: 5px 0 0 0;
 }
 
-#cartProductQuantityAndPrice {
+.cartProductQuantityAndPrice {
     display: inline-block;
     flex-direction: row;
     justify-content: space-around;
+    margin: 4px 4px;
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #itemCartList {
@@ -1278,4 +1284,5 @@ h2:hover {
     flex-direction: row;
     background-color: blueviolet;
     margin: 0 2% 0 2%;
+    padding: 3px;
 }

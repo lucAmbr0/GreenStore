@@ -181,18 +181,18 @@ else {
     FsortAZ();
 }
 
-function aggiungiAlCarrello(nomeProdotto, quantita, prezzo) {
+function addToCart(cartProductName, cartProductQuantity, cartProductPrice) {
     var carrelloDiv = document.getElementById("itemCartList");
   
-    // Crea un nuovo div per le informazioni del prodotto aggiunto al carrello
     var prodottoAggiuntoDiv = document.createElement("div");
     prodottoAggiuntoDiv.className = "cartItem";
     
-    // Aggiungi le informazioni del prodotto al nuovo div
     prodottoAggiuntoDiv.innerHTML = `
-      <p>Prodotto: ${nomeProdotto}</p>
-      <p>Quantità: ${quantita}</p>
-      <p>Prezzo: ${prezzo}</p>
+      <p class="cartProductName">${cartProductName}</p>
+      <h3 class="cartProductQuantityAndPrice">
+        <span>${cartProductQuantity}</span>
+        <span>${cartProductPrice}</span>
+      </h3>
     `;
   
     // Aggiungi il nuovo div al carrello
