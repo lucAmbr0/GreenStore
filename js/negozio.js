@@ -180,3 +180,34 @@ else if (sort === "sortEDEC") {
 else {
     FsortAZ();
 }
+var nItems = 0;
+function addToCart(product, cartProductName, Price) {
+    var itemCartList = document.getElementById("itemCartList");
+    var quantity = product.querySelector(".quantity");
+    var quantitaValue = quantity.value;
+    var cart = document.getElementById("carrello");
+    console.log("hdkjhgajkh0");
+    // Crea un nuovo div per le informazioni del Product aggiunto al carrello
+    var NewProductDiv = document.createElement("div");
+    if (quantitaValue >= 100) {
+        // Calcola il Price totale per il Product considerando la quantità
+        var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
+        var shoppingCart = document.querySelector(".shoppingCart");
+        shoppingCart.style.display = "flex";
+        // Aggiungi le informazioni del Product al nuovo div
+        NewProductDiv.innerHTML = `
+          <h4 class="cartProductName">${cartProductName}</h4>
+          <h3  class="cartProductQuantityAndPrice">
+            <span>${quantitaValue}gr.ㅤ</span>
+            <span>${totalPrice.toFixed(2)}€</span>
+          </h3>
+        `;
+        NewProductDiv.style.display = "flex";
+
+        // Aggiungi il nuovo div al carrello
+        itemCartList.appendChild(NewProductDiv);
+        nItems++;
+        cart.innerHTML = "Carrello (" + nItems + "):";
+    }
+    NewProductDiv.className = "cartItem";
+}

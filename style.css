@@ -696,7 +696,6 @@ h2:hover {
     border: solid 8px black;
     border-radius: 15px;
     margin: 20px;
-    cursor: pointer;
     scale: 1;
     transition: 0.4s;
 }
@@ -1071,7 +1070,6 @@ h2:hover {
     width: 17%;
     height: fit-content;
     justify-content: center;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -1215,6 +1213,7 @@ h2:hover {
     padding: 3px;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .white:hover {
@@ -1228,4 +1227,84 @@ h2:hover {
     font-size: 18px;
     margin: auto auto 4px auto;
     overflow: hidden;
+}
+
+.shoppingCart {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: fit-content;
+    max-width: 60%;
+    min-width: 15%;
+    height: fit-content;
+    max-height: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: solid 2px black;
+    box-shadow: 0px 0px 10px;
+    z-index: 2;
+    left: 2%;
+    bottom: 3%;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    padding: 5px 10px 15px 10px;
+}
+
+#carrello {
+    display: block;
+    padding: 0 0px 0px 15px;
+    margin: 7px;
+    font-size: 30px;
+    font-family: Noto Sans;
+    font-weight: 500;
+}
+
+.cartItem {
+    margin: 10px 10px 10px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: solid 1px black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.4s forwards;
+}
+
+.cartProductName {
+    font-family: Noto Sans;
+    text-align: center;
+    font-size: 26px;
+    margin: 5px 0 0 0;
+    padding: 0 5px;
+}
+
+.cartProductQuantityAndPrice {
+    display: inline-block;
+    flex-direction: row;
+    width: fit-content;
+    min-width: 110px;
+    justify-content: space-around;
+    margin: 4px 4px;
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#itemCartList {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 0 10px 0 10px;
+    /* padding: 10px; */
+    width: fit-content;
+    height: fit-content;
+    max-height: 20%;
+    flex-wrap: wrap;
 }
