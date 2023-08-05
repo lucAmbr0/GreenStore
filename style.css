@@ -1253,7 +1253,7 @@ h2:hover {
 
 .cartItem {
     margin: 10px 20px;
-    display: flex;
+    display: block;
     width: 20%;
     height: fit-content;
     flex-direction: column;
@@ -1267,13 +1267,13 @@ h2:hover {
 
 #cartProductQuantityAndPrice {
     display: flex;
-    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #itemCartList {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: blueviolet;
     margin: 0 2% 0 2%;
 }
