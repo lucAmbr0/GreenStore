@@ -1246,12 +1246,10 @@ h2:hover {
     overflow: hidden;
     flex-wrap: wrap;
     padding: 5px 10px 15px 10px;
-    justify-content: flex-end;
 }
 
 #carrello {
     padding: 0 0px 0px 0px;
-    width: fit-content;
     font-size: 30px;
 }
 
