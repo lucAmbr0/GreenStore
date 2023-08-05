@@ -1229,3 +1229,51 @@ h2:hover {
     margin: auto auto 4px auto;
     overflow: hidden;
 }
+
+.shoppingCart {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 60%;
+    height: fit-content;
+    background-color: lime;
+    z-index: 2;
+    left: 2%;
+    bottom: 3%;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    justify-content: flex-end;
+}
+
+#carrello {
+    margin: -1% 2% 2% 2%;
+}
+
+.cartItem {
+    margin: 10px 20px;
+    display: flex;
+    width: 20%;
+    height: fit-content;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.cartProductName {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+#cartProductQuantityAndPrice {
+    display: flex;
+    margin: 0 auto;
+}
+
+#itemCartList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: blueviolet;
+    margin: 0 2% 0 2%;
+}
