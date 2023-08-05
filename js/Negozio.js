@@ -199,7 +199,7 @@ function addToCart(product, cartProductName, Price) {
         NewProductDiv.innerHTML = `
           <h4 class="cartProductName">${cartProductName}</h4>
           <h3  class="cartProductQuantityAndPrice">
-            <span>${quantitaValue}gr. </span>
+            <span>${quantitaValue}gr.ㅤ</span>
             <span>${totalPrice.toFixed(2)}€</span>
           </h3>
         `;

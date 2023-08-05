@@ -1266,6 +1266,7 @@ h2:hover {
     border-radius: 10px;
     text-align: center;
     padding: 3px;
+    flex-wrap: wrap;
     animation: fadeUp 0.4s forwards;
 }
 
