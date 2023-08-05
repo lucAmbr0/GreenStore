@@ -1266,9 +1266,11 @@ h2:hover {
     border-radius: 10px;
     text-align: center;
     padding: 3px;
+    animation: fadeUp 0.4s forwards;
 }
 
 .cartProductName {
+    font-family: Noto Sans;
     text-align: center;
     font-size: 26px;
     margin: 5px 0 0 0;
@@ -1297,5 +1299,4 @@ h2:hover {
     width: fit-content;
     height: fit-content;
     max-height: 20%;
-    flex-wrap: wrap;
 }

@@ -197,12 +197,13 @@ function addToCart(product, cartProductName, Price) {
 
         // Aggiungi le informazioni del Product al nuovo div
         NewProductDiv.innerHTML = `
-          <p class="cartProductName">${cartProductName}</p>
+          <h4 class="cartProductName">${cartProductName}</h4>
           <h3  class="cartProductQuantityAndPrice">
             <span>${quantitaValue}gr. </span>
             <span>${totalPrice.toFixed(2)}€</span>
           </h3>
         `;
+        NewProductDiv.style.display = "flex";
 
         // Aggiungi il nuovo div al carrello
         itemCartList.appendChild(NewProductDiv);
