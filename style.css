@@ -696,7 +696,6 @@ h2:hover {
     border: solid 8px black;
     border-radius: 15px;
     margin: 20px;
-    cursor: pointer;
     scale: 1;
     transition: 0.4s;
 }
@@ -1071,7 +1070,6 @@ h2:hover {
     width: 17%;
     height: fit-content;
     justify-content: center;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -1215,6 +1213,7 @@ h2:hover {
     padding: 3px;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .white:hover {
@@ -1234,8 +1233,11 @@ h2:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 60%;
+    width: fit-content;
+    max-width: 60%;
+    min-width: 15%;
     height: fit-content;
+    max-height: 50%;
     background-color: lime;
     z-index: 2;
     left: 2%;
@@ -1243,18 +1245,20 @@ h2:hover {
     border-radius: 10px;
     overflow: hidden;
     flex-wrap: wrap;
-    padding: 2% 0;
+    padding: 5px 10px 15px 10px;
     justify-content: flex-end;
 }
 
 #carrello {
-    margin: -1% 2% 2% 2%;
+    padding: 0 0px 0px 0px;
+    width: fit-content;
+    font-size: 30px;
 }
 
 .cartItem {
-    margin: 10px 10px -10px 10px;
+    margin: 10px 10px 10px;
     display: block;
-    width: 20%;
+    width: fit-content;
     height: fit-content;
     flex-direction: column;
     background-color: aqua;
@@ -1267,11 +1271,14 @@ h2:hover {
     text-align: center;
     font-size: 26px;
     margin: 5px 0 0 0;
+    padding: 0 5px;
 }
 
 .cartProductQuantityAndPrice {
     display: inline-block;
     flex-direction: row;
+    width: fit-content;
+    min-width: 110px;
     justify-content: space-around;
     margin: 4px 4px;
     font-family: Noto Sans;
@@ -1282,7 +1289,12 @@ h2:hover {
 #itemCartList {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     background-color: blueviolet;
-    margin: 0 2% 0 2%;
-    padding: 3px;
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    max-height: 20%;
+    flex-wrap: wrap;
 }

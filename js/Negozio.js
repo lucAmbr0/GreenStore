@@ -181,21 +181,33 @@ else {
     FsortAZ();
 }
 
-function addToCart(cartProductName, cartProductQuantity, cartProductPrice) {
-    var carrelloDiv = document.getElementById("itemCartList");
-  
-    var prodottoAggiuntoDiv = document.createElement("div");
-    prodottoAggiuntoDiv.className = "cartItem";
-    
-    prodottoAggiuntoDiv.innerHTML = `
-      <p class="cartProductName">${cartProductName}</p>
-      <h3 class="cartProductQuantityAndPrice">
-        <span>${cartProductQuantity}</span>
-        <span>${cartProductPrice}</span>
-      </h3>
-    `;
-  
-    // Aggiungi il nuovo div al carrello
-    carrelloDiv.appendChild(prodottoAggiuntoDiv);
-  }
-  
+
+var nItems = 0;
+function addToCart(product, cartProductName, Price) {
+    var itemCartList = document.getElementById("itemCartList");
+    var quantity = product.querySelector(".quantity");
+    var quantitaValue = quantity.value;
+    var cart = document.getElementById("carrello");
+    console.log("hdkjhgajkh0");
+    // Crea un nuovo div per le informazioni del Product aggiunto al carrello
+    var NewProductDiv = document.createElement("div");
+    if (quantitaValue >= 100) {
+        // Calcola il Price totale per il Product considerando la quantità
+        var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
+
+        // Aggiungi le informazioni del Product al nuovo div
+        NewProductDiv.innerHTML = `
+          <p class="cartProductName">${cartProductName}</p>
+          <h3  class="cartProductQuantityAndPrice">
+            <span>${quantitaValue}gr. </span>
+            <span>${totalPrice.toFixed(2)}€</span>
+          </h3>
+        `;
+
+        // Aggiungi il nuovo div al carrello
+        itemCartList.appendChild(NewProductDiv);
+        nItems++;
+        cart.innerHTML = "Carrello (" + nItems + "):";
+    }
+    NewProductDiv.className = "cartItem";
+}
