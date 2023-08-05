@@ -1249,8 +1249,11 @@ h2:hover {
 }
 
 #carrello {
-    padding: 0 0px 0px 0px;
+    padding: 0 0px 0px 15px;
+    margin: 7px;
     font-size: 30px;
+    font-family: Noto Sans;
+    font-weight: 500;
 }
 
 .cartItem {
