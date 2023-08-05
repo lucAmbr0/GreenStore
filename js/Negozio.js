@@ -180,3 +180,22 @@ else if (sort === "sortEDEC") {
 else {
     FsortAZ();
 }
+
+function aggiungiAlCarrello(nomeProdotto, quantita, prezzo) {
+    var carrelloDiv = document.getElementById("itemCartList");
+  
+    // Crea un nuovo div per le informazioni del prodotto aggiunto al carrello
+    var prodottoAggiuntoDiv = document.createElement("div");
+    prodottoAggiuntoDiv.className = "cartItem";
+    
+    // Aggiungi le informazioni del prodotto al nuovo div
+    prodottoAggiuntoDiv.innerHTML = `
+      <p>Prodotto: ${nomeProdotto}</p>
+      <p>Quantità: ${quantita}</p>
+      <p>Prezzo: ${prezzo}</p>
+    `;
+  
+    // Aggiungi il nuovo div al carrello
+    carrelloDiv.appendChild(prodottoAggiuntoDiv);
+  }
+  
