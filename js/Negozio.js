@@ -194,7 +194,8 @@ function addToCart(product, cartProductName, Price) {
     if (quantitaValue >= 100) {
         // Calcola il Price totale per il Product considerando la quantità
         var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
-
+        var shoppingCart = document.querySelector(".shoppingCart");
+        shoppingCart.style.display = "flex";
         // Aggiungi le informazioni del Product al nuovo div
         NewProductDiv.innerHTML = `
           <h4 class="cartProductName">${cartProductName}</h4>
