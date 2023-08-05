@@ -181,7 +181,6 @@ else {
     FsortAZ();
 }
 
-
 var nItems = 0;
 function addToCart(product, cartProductName, Price) {
     var itemCartList = document.getElementById("itemCartList");
