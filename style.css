@@ -1230,7 +1230,7 @@ h2:hover {
 }
 
 .shoppingCart {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     width: fit-content;
