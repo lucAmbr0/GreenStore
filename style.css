@@ -1238,7 +1238,7 @@ h2:hover {
     min-width: 15%;
     height: fit-content;
     max-height: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(50, 50, 50, 0.2);
     backdrop-filter: blur(10px);
     border: solid 2px black;
     box-shadow: 0px 0px 10px;

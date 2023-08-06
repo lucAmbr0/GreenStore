@@ -279,16 +279,16 @@ function addToCart(product, cartProductName, Price) {
         var quantitaAggiunta = parseInt(quantitaValue);
         console.log("quantità aggiunta: " + quantitaAggiunta);
         prodottoPresente.quantita = quantitaPrecedente + quantitaAggiunta;
-
         var prezzoProdotto = parseFloat(Price) / 100;
         console.log("Prezzo prodotto: " + prezzoProdotto);
         var prezzoAggiuntivo = quantitaAggiunta * prezzoProdotto;
         console.log("Prezzo aggiuntivo: " + prezzoAggiuntivo);
-        var prezzoTotale = totalPrice + prezzoAggiuntivo;
+        var prezzoTotale = (parseFloat(Price) * parseInt(quantitaValue) / GRAMMI_PER_EURO);
         console.log("Prezzo totale: " + prezzoTotale);
         var prezzoTotaleAggiornato = prezzoTotale + prezzoAggiuntivo;
         console.log("Prezzo totale aggiornato: " + prezzoTotaleAggiornato);
         prodottoPresente.prezzo = prezzoTotaleAggiornato.toFixed(2) + "€";
+        totalPrice = prezzoTotaleAggiornato.toFixed(2) + "€";
     } else {
         if (quantitaValue >= 100) {
             // Se il prodotto non è già presente, calcola il prezzo totale per il nuovo prodotto
