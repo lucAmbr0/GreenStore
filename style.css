@@ -1307,7 +1307,7 @@ h2:hover {
 }
 
 
-#carrello {
+#cart {
     display: block;
     padding: 0px 0px 0px 15px;
     margin: 0px 7px 7px 7px;
@@ -1335,7 +1335,7 @@ h2:hover {
 
 .cartItem:hover {
     opacity: 0.2;
-    scale: 0.9;
+    scale: 0.92;
     background-color: rgba(255, 0, 0, 0.495);
     cursor: pointer;
 }
@@ -1377,14 +1377,15 @@ h2:hover {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ececec;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     opacity: 0;
     transition: 0.3s;
-
+    font-family: Noto Sans;
+    font-size: 14px;
     position: absolute;
     z-index: 1;
     bottom: -10%;
