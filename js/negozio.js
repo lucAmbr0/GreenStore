@@ -180,67 +180,46 @@ else if (sort === "sortEDEC") {
 else {
     FsortAZ();
 }
-// var nItems = 0;
-// function addToCart(product, cartProductName, Price) {
-//     var itemCartList = document.getElementById("itemCartList");
-//     var quantity = product.querySelector(".quantity");
-//     var quantitaValue = quantity.value;
-//     var cart = document.getElementById("carrello");
-//     // Crea un nuovo div per le informazioni del Product aggiunto al carrello
-//     var NewProductDiv = document.createElement("div");
-//     if (quantitaValue >= 100) {
-//         // Calcola il Price totale per il Product considerando la quantità
-//         var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
-//         var shoppingCart = document.querySelector(".shoppingCart");
-//         shoppingCart.style.display = "flex";
-//         // Aggiungi le informazioni del Product al nuovo div
-//         NewProductDiv.innerHTML = `
-//           <h4 class="cartProductName">${cartProductName}</h4>
-//           <h3  class="cartProductQuantityAndPrice">
-//             <span>${quantitaValue}gr.ㅤ</span>
-//             <span>${totalPrice.toFixed(2)}€</span>
-//           </h3>
-//         `;
-//         NewProductDiv.style.display = "flex";
 
-//         // Aggiungi il nuovo div al carrello
-//         itemCartList.appendChild(NewProductDiv);
-//         nItems++;
-//         cart.innerHTML = "Carrello (" + nItems + "):";
-//     }
-//     NewProductDiv.className = "cartItem";
-// }
-
-// Funzione per aggiornare l'interfaccia del carrello
+let cartSwitch = 0;
+function cartExpandSwitch() {
+    document.getElementById(cartExpand);
+    cartSwitch++;
+    if (cartSwitch === 1) {
+        cartExpand.innerHTML = "expand_more";
+        cartSwitch = -1;
+    }
+    else {
+        cartExpand.innerHTML = "expand_less";
+    }
+};
 
 var nItems = 0;
 var totalPrice;
 var nuovoPrezzo;
 // Funzione per aggiornare l'interfaccia del carrello
-function updateCartUI(nuovoPrezzoA) {
+function updateCartUI(prezzoTotale) {
+    console.log("prezzoTotale appena passato a updateCartUI " + prezzoTotale);
     var carrelloDiv = document.getElementById("itemCartList");
     var carrello = JSON.parse(localStorage.getItem("carrello")) || [];
 
-    // Svuota il contenuto precedente del carrello
     carrelloDiv.innerHTML = "";
-    nItems = 0;
+    var nItems = 0;
 
-    // Crea gli elementi per visualizzare i prodotti nel carrello
     carrello.forEach(function (prodotto) {
         var NewProductDiv = document.createElement("div");
         NewProductDiv.className = "cartItem";
-        // totalPrice = parseFloat(prodotto.prezzo) * parseInt(prodotto.quantita) / 100;
-        console.log(totalPrice);
-        totalPrice = nuovoPrezzo;
-        console.log(totalPrice);
+
+        var prezzoProdotto = parseFloat(prodotto.prezzo);
+
         NewProductDiv.innerHTML = `
-        <h4 class="cartProductName">${prodotto.nome}</h4>
-        <h3 class="cartProductQuantityAndPrice">
-          <span>${prodotto.quantita}gr.ㅤ</span>
-          <span>${totalPrice}€</span>
-        </h3>
-      `;
-// DA RIMETTERE .toFixed(2) A RIGA ${totalPrice} PER VISUALIZZARE PREZZO ALLA PRIMA AGGIUNTA
+            <h4 class="cartProductName">${prodotto.nome}</h4>
+            <h3 class="cartProductQuantityAndPrice">
+                <span>${prodotto.quantita}gr.ㅤ</span>
+                <span>${prezzoProdotto.toFixed(2)}€</span>
+            </h3>
+        `;
+
         NewProductDiv.style.display = "flex";
         carrelloDiv.appendChild(NewProductDiv);
 
@@ -248,68 +227,40 @@ function updateCartUI(nuovoPrezzoA) {
     });
 
     var cart = document.getElementById("carrello");
-    cart.innerHTML = "Carrello (" + nItems + "):";
+    cart.innerHTML = "Carrello (" + nItems + " elementi):";
 }
 
-// Costante per il rapporto tra grammi ed euro
-
-// Funzione per aggiungere il prodotto al carrello
 function addToCart(product, cartProductName, Price) {
     var itemCartList = document.getElementById("itemCartList");
     var quantity = product.querySelector(".quantity");
-    var quantitaValue = quantity.value;
+    var quantitaValue = parseInt(quantity.value);
     var cart = document.getElementById("carrello");
 
-    // Crea un nuovo oggetto rappresentante il prodotto da aggiungere al carrello
+    if (quantitaValue < 100) {
+        return; // Esci se la quantità è inferiore a 100g
+    }
+
     var prodotto = {
         nome: cartProductName,
         quantita: quantitaValue,
-        prezzo: Price
+        prezzo: (parseFloat(Price) * quantitaValue / 100).toFixed(2)
     };
 
-    // Ottieni il carrello dal localStorage o crea un array vuoto se non esiste ancora
     var carrello = JSON.parse(localStorage.getItem("carrello")) || [];
 
-    // Cerca se il prodotto è già presente nel carrello
     var prodottoPresente = carrello.find(function (item) {
         return item.nome === cartProductName;
     });
 
     if (prodottoPresente) {
-        // Se il prodotto è già presente, aggiorna quantità e prezzo
-        var quantitaPrecedente = parseInt(prodottoPresente.quantita);
-        var quantitaAggiunta = parseInt(quantitaValue);
-        prodottoPresente.quantita = quantitaPrecedente + quantitaAggiunta;
-        
-        var prezzoProdotto = parseFloat(Price);
-        var prezzoTotaleAggiornato = ((quantitaPrecedente + quantitaAggiunta) * prezzoProdotto / 100);
-        console.log(prezzoTotaleAggiornato);
-        nuovoPrezzo = prezzoTotaleAggiornato.toFixed(2);
-        updateCartUI(nuovoPrezzo);
-    }     
-    else {
-        if (quantitaValue >= 100) {
-            // Se il prodotto non è già presente, calcola il prezzo totale per il nuovo prodotto
-            var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
-            console.log(totalPrice);
-            prodotto.prezzo = totalPrice.toFixed(2);
-            nuovoPrezzo = prodotto.prezzo;
-            updateCartUI(nuovoPrezzo)
-            // Aggiungi il prodotto al carrello
-            carrello.push(prodotto);
-        } else {
-            // Se la quantità è inferiore a 100g, esci senza aggiungere nulla
-            return;
-        }
+        prodottoPresente.quantita = parseInt(prodottoPresente.quantita) + quantitaValue;
+        prodottoPresente.prezzo = (parseFloat(prodottoPresente.prezzo) + parseFloat(prodotto.prezzo)).toFixed(2);
+    } else {
+        carrello.push(prodotto);
     }
-    
-    // Salva il carrello aggiornato nel localStorage
+
     localStorage.setItem("carrello", JSON.stringify(carrello));
-
-    // Aggiorna l'interfaccia del carrello
     updateCartUI();
-
-    // ... (il resto del tuo codice)
 }
 
 updateCartUI();

@@ -286,6 +286,7 @@ body {
     background-color: rgba(0, 0, 0, 0.55);
     color: white;
 }
+
 .selected:hover {
     background-color: rgba(0, 0, 0, 1);
 }
@@ -384,6 +385,7 @@ p {
 #hiddenDiv {
     display: none;
 }
+
 .hiddenInput {
     margin: 20px 0 20px 10%;
     width: fit-content;
@@ -394,9 +396,11 @@ p {
     background-color: rgba(0, 0, 0, 0.35);
     cursor: not-allowed;
 }
+
 .hiddenInput:hover {
     opacity: 0.7;
 }
+
 .hiddenButton {
     margin-right: 10px;
     background-color: rgb(15, 15, 15);
@@ -407,6 +411,7 @@ p {
     font-family: Noto Sans;
     cursor: not-allowed;
 }
+
 .hiddenButton::placeholder {
     color: white;
 }
@@ -964,6 +969,7 @@ h2:hover {
     cursor: text;
 
 }
+
 .fullCatalogTitle:hover {
     scale: 1;
     margin-left: 0px;
@@ -1201,10 +1207,29 @@ h2:hover {
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 1,
-    'wght' 700,
-    'GRAD' 200,
-    'opsz' 48
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+.expand {
+    scale: 2;
+}
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 5px 0px;
+    width: 99%;
+    align-items: center;
 }
 
 .white {
@@ -1233,11 +1258,10 @@ h2:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: fit-content;
-    max-width: 60%;
-    min-width: 15%;
+    width: 60%;
     height: fit-content;
-    max-height: 50%;
+    max-height: 30%;
+    overflow: auto;
     background-color: rgba(50, 50, 50, 0.2);
     backdrop-filter: blur(10px);
     border: solid 2px black;
@@ -1246,10 +1270,31 @@ h2:hover {
     left: 2%;
     bottom: 3%;
     border-radius: 10px;
-    overflow: hidden;
     flex-wrap: nowrap;
     padding: 5px 10px 15px 10px;
 }
+
+/* Personalizzazione barra di scorrimento verticale */
+::-webkit-scrollbar {
+    width: 12px; /* Larghezza della barra */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d7d7d7; /* Colore sfondo barra di scorrimento */
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar-thumb {
+    margin: 5px;
+    background-color: #888; /* Colore maniglia barra di scorrimento */
+    border-radius: 6px; /* Angoli arrotondati */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Colore maniglia barra di scorrimento al passaggio del mouse */
+}
+
 
 #carrello {
     display: block;
@@ -1306,6 +1351,6 @@ h2:hover {
     /* padding: 10px; */
     width: fit-content;
     height: fit-content;
-    max-height: 20%;
-    flex-wrap: wrap;
+    /* max-height: 10%; */
+    flex-wrap: wrap-reverse;
 }
