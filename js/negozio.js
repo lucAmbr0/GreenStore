@@ -213,11 +213,14 @@ function updateCartUI(prezzoTotale) {
         var prezzoProdotto = parseFloat(prodotto.prezzo);
 
         NewProductDiv.innerHTML = `
-            <h4 class="cartProductName">${prodotto.nome}</h4>
-            <h3 class="cartProductQuantityAndPrice">
-                <span>${prodotto.quantita}gr.ㅤ</span>
-                <span>${prezzoProdotto.toFixed(2)}€</span>
-            </h3>
+            <div class="tooltip" onclick="deleteItem()">
+                <h4 class="cartProductName">${prodotto.nome}</h4>
+                <h3 class="cartProductQuantityAndPrice">
+                    <span>${prodotto.quantita}gr.ㅤ</span>
+                    <span>${prezzoProdotto.toFixed(2)}€</span>
+                </h3>
+                <span class="tooltiptext">Elimina prodotto</span>
+            </div>
         `;
 
         NewProductDiv.style.display = "flex";
