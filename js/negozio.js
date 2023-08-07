@@ -214,7 +214,8 @@ else {
 // Funzione per aggiornare l'interfaccia del carrello
 
 var nItems = 0;
-
+var totalPrice;
+var nuovoPrezzo;
 // Funzione per aggiornare l'interfaccia del carrello
 function updateCartUI() {
     var carrelloDiv = document.getElementById("itemCartList");
@@ -228,15 +229,16 @@ function updateCartUI() {
     carrello.forEach(function (prodotto) {
         var NewProductDiv = document.createElement("div");
         NewProductDiv.className = "cartItem";
-        var totalPrice = parseFloat(prodotto.prezzo) * parseInt(prodotto.quantita) / 100;
-
+        // totalPrice = parseFloat(prodotto.prezzo) * parseInt(prodotto.quantita) / 100;
+        totalPrice = nuovoPrezzo;
         NewProductDiv.innerHTML = `
         <h4 class="cartProductName">${prodotto.nome}</h4>
         <h3 class="cartProductQuantityAndPrice">
           <span>${prodotto.quantita}gr.ㅤ</span>
-          <span>${totalPrice.toFixed(2)}€</span>
+          <span>${totalPrice}€</span>
         </h3>
       `;
+// DA RIMETTERE .toFixed(2) A RIGA ${totalPrice} PER VISUALIZZARE PREZZO ALLA PRIMA AGGIUNTA
         NewProductDiv.style.display = "flex";
         carrelloDiv.appendChild(NewProductDiv);
 
@@ -248,7 +250,6 @@ function updateCartUI() {
 }
 
 // Costante per il rapporto tra grammi ed euro
-const GRAMMI_PER_EURO = 100;
 
 // Funzione per aggiungere il prodotto al carrello
 function addToCart(product, cartProductName, Price) {
@@ -275,26 +276,20 @@ function addToCart(product, cartProductName, Price) {
     if (prodottoPresente) {
         // Se il prodotto è già presente, aggiorna quantità e prezzo
         var quantitaPrecedente = parseInt(prodottoPresente.quantita);
-        console.log("quantità precedente: " + quantitaPrecedente);
         var quantitaAggiunta = parseInt(quantitaValue);
-        console.log("quantità aggiunta: " + quantitaAggiunta);
         prodottoPresente.quantita = quantitaPrecedente + quantitaAggiunta;
-        var prezzoProdotto = parseFloat(Price) / 100;
-        console.log("Prezzo prodotto: " + prezzoProdotto);
-        var prezzoAggiuntivo = quantitaAggiunta * prezzoProdotto;
-        console.log("Prezzo aggiuntivo: " + prezzoAggiuntivo);
-        var prezzoTotale = (parseFloat(Price) * parseInt(quantitaValue) / GRAMMI_PER_EURO);
-        console.log("Prezzo totale: " + prezzoTotale);
-        var prezzoTotaleAggiornato = prezzoTotale + prezzoAggiuntivo;
-        console.log("Prezzo totale aggiornato: " + prezzoTotaleAggiornato);
-        prodottoPresente.prezzo = prezzoTotaleAggiornato.toFixed(2) + "€";
-        totalPrice = prezzoTotaleAggiornato.toFixed(2) + "€";
-    } else {
+        
+        var prezzoProdotto = parseFloat(Price);
+        var prezzoTotaleAggiornato = ((quantitaPrecedente + quantitaAggiunta) * prezzoProdotto / 100);
+        console.log(prezzoTotaleAggiornato);
+        nuovoPrezzo = prezzoTotaleAggiornato;
+    }     
+    else {
         if (quantitaValue >= 100) {
             // Se il prodotto non è già presente, calcola il prezzo totale per il nuovo prodotto
-            var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / GRAMMI_PER_EURO;
-            JSON.parse(totalPrice);
-            console.log("totalPrice = " + totalPrice);
+            var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
+            var exTotalPrice = totalPrice;
+            console.log(totalPrice);
             prodotto.prezzo = totalPrice.toFixed(2) + "€";
 
             // Aggiungi il prodotto al carrello
@@ -304,13 +299,14 @@ function addToCart(product, cartProductName, Price) {
             return;
         }
     }
-
+    
     // Salva il carrello aggiornato nel localStorage
     localStorage.setItem("carrello", JSON.stringify(carrello));
 
     // Aggiorna l'interfaccia del carrello
     updateCartUI();
-}
 
+    // ... (il resto del tuo codice)
+}
 
 updateCartUI();

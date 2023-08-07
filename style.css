@@ -93,7 +93,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
-    z-index: 1;
+    z-index: 3;
 }
 
 #popupLogout {
@@ -120,7 +120,7 @@ body {
 
 .cookiesNoticeBoxStyle {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 27.5%;
     left: 20%;
     width: 60%;
@@ -1253,8 +1253,8 @@ h2:hover {
 
 #carrello {
     display: block;
-    padding: 0 0px 0px 15px;
-    margin: 7px;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 7px 7px 7px;
     font-size: 30px;
     font-family: Noto Sans;
     font-weight: 500;
@@ -1267,7 +1267,7 @@ h2:hover {
     height: fit-content;
     flex-direction: column;
     background-color: rgba(240, 240, 240, 0.25);
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 5px black;
     border: solid 1px black;
     border-radius: 15px;
     text-align: center;
