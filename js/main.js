@@ -27,3 +27,10 @@ function closeLogoutPopup() {
     popupLogout.style.display = "none";
     location.reload();
 };
+
+document.fonts.load('10pt "Material Icons"').then(function () {
+    var iconsToShow = document.querySelectorAll('.hide-icon');
+    iconsToShow.forEach(function (icon) {
+        icon.classList.remove('hide-icon');
+    });
+});
