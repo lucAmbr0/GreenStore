@@ -1221,6 +1221,10 @@ h2:hover {
         'opsz' 48
 }
 
+.hide-icon {
+    display: none;
+}
+
 .expand {
     scale: 2;
     margin: 5px;
@@ -1336,7 +1340,7 @@ h2:hover {
 .cartItem:hover {
     opacity: 0.2;
     scale: 0.92;
-    background-color: rgba(255, 0, 0, 0.495);
+    background-color: rgba(255, 0, 0, 0.395);
     cursor: pointer;
 }
 

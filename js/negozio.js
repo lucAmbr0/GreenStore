@@ -241,7 +241,7 @@ function updateCartUI() {
 
     var cartCount = document.getElementById("cart");
     cartCount.innerHTML = "Carrello (Prodotti: " + nItems + "):";
-    
+
     if (nItems === 0) {
         shoppingCart.style.display = "none";
     } else {
