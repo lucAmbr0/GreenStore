@@ -217,7 +217,7 @@ var nItems = 0;
 var totalPrice;
 var nuovoPrezzo;
 // Funzione per aggiornare l'interfaccia del carrello
-function updateCartUI() {
+function updateCartUI(nuovoPrezzoA) {
     var carrelloDiv = document.getElementById("itemCartList");
     var carrello = JSON.parse(localStorage.getItem("carrello")) || [];
 
@@ -230,7 +230,9 @@ function updateCartUI() {
         var NewProductDiv = document.createElement("div");
         NewProductDiv.className = "cartItem";
         // totalPrice = parseFloat(prodotto.prezzo) * parseInt(prodotto.quantita) / 100;
+        console.log(totalPrice);
         totalPrice = nuovoPrezzo;
+        console.log(totalPrice);
         NewProductDiv.innerHTML = `
         <h4 class="cartProductName">${prodotto.nome}</h4>
         <h3 class="cartProductQuantityAndPrice">
@@ -282,16 +284,17 @@ function addToCart(product, cartProductName, Price) {
         var prezzoProdotto = parseFloat(Price);
         var prezzoTotaleAggiornato = ((quantitaPrecedente + quantitaAggiunta) * prezzoProdotto / 100);
         console.log(prezzoTotaleAggiornato);
-        nuovoPrezzo = prezzoTotaleAggiornato;
+        nuovoPrezzo = prezzoTotaleAggiornato.toFixed(2);
+        updateCartUI(nuovoPrezzo);
     }     
     else {
         if (quantitaValue >= 100) {
             // Se il prodotto non è già presente, calcola il prezzo totale per il nuovo prodotto
             var totalPrice = parseFloat(Price) * parseInt(quantitaValue) / 100;
-            var exTotalPrice = totalPrice;
             console.log(totalPrice);
-            prodotto.prezzo = totalPrice.toFixed(2) + "€";
-
+            prodotto.prezzo = totalPrice.toFixed(2);
+            nuovoPrezzo = prodotto.prezzo;
+            updateCartUI(nuovoPrezzo)
             // Aggiungi il prodotto al carrello
             carrello.push(prodotto);
         } else {
