@@ -52,14 +52,19 @@ Insta: https://www.instagram.com/luca.ambroo_/
 			</div>
 		</div>
         <!-- SHOPPING CART POPUP -->
-            <div class="shoppingCart">
-                <details open>
-                    <summary class="cartHeader" onclick="cartExpandSwitch()">
+            <div id="shoppingCart">
+                <details>
+                    <summary class="cartHeader">
                         <!-- <div> -->
                             <h3 id="carrello">Carrello (0 elementi):</h3>
-                            <span class="material-symbols-rounded expand" id="cartExpand">
-                                expand_less
-                            </span>
+                            <div>
+                                <span class="material-symbols-rounded expand" id="deleteCart" onclick="emptyCart()">
+                                    cancel
+                                </span>
+                                <span class="material-symbols-rounded expand" id="cartExpand" onclick="cartExpandSwitch()">
+                                    expand_less
+                                </span>
+                            </div>
                         <!-- </div> -->
                     </summary>
                     <div id="itemCartList">

@@ -1222,6 +1222,10 @@ h2:hover {
 }
 .expand {
     scale: 2;
+    margin: 5px;
+}
+#deleteCart {
+    scale: 1.3;
 }
 
 .cartHeader {
@@ -1254,11 +1258,11 @@ h2:hover {
     overflow: hidden;
 }
 
-.shoppingCart {
-    display: flex;
+#shoppingCart {
+    display: none;
     flex-direction: column;
     position: fixed;
-    width: 60%;
+    width: 40%;
     height: fit-content;
     max-height: 30%;
     overflow: auto;

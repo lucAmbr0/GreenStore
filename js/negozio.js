@@ -228,6 +228,11 @@ function updateCartUI(prezzoTotale) {
 
     var cart = document.getElementById("carrello");
     cart.innerHTML = "Carrello (" + nItems + " elementi):";
+    if (nItems > 0) {
+        var shoppingCart = document.getElementById("shoppingCart");
+        shoppingCart.style.display = "flex";
+        console.log("gkahgkajhgkdlj")
+    }
 }
 
 function addToCart(product, cartProductName, Price) {
@@ -264,3 +269,9 @@ function addToCart(product, cartProductName, Price) {
 }
 
 updateCartUI();
+
+function emptyCart() {
+    localStorage.removeItem("carrello");
+    updateCartUI();
+    shoppingCart.style.display = "none";
+}
