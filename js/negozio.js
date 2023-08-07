@@ -186,11 +186,11 @@ function cartExpandSwitch() {
     document.getElementById(cartExpand);
     cartSwitch++;
     if (cartSwitch === 1) {
-        cartExpand.innerHTML = "expand_more";
+        cartExpand.innerHTML = "expand_less";
         cartSwitch = -1;
     }
     else {
-        cartExpand.innerHTML = "expand_less";
+        cartExpand.innerHTML = "expand_more";
     }
 };
 
@@ -219,7 +219,7 @@ function updateCartUI(prezzoTotale) {
                     <span>${prodotto.quantita}gr.ㅤ</span>
                     <span>${prezzoProdotto.toFixed(2)}€</span>
                 </h3>
-                <span class="tooltiptext">Elimina prodotto</span>
+                <span class="tooltiptext">Rimuovi prodotto</span>
             </div>
         `;
 
@@ -234,7 +234,6 @@ function updateCartUI(prezzoTotale) {
     if (nItems > 0) {
         var shoppingCart = document.getElementById("shoppingCart");
         shoppingCart.style.display = "flex";
-        console.log("gkahgkajhgkdlj")
     }
 }
 
