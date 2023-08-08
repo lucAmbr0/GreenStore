@@ -18,66 +18,82 @@ Insta: https://www.instagram.com/luca.ambroo_/
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <div class="everything">
+        <!-- VACATION POPUP -->
+        <div class="popup" id="vacationPopup">
+            <div class="cookiesNoticeBoxStyle" id="vacationNoticeBoxStyle">
+                <p class="cookiesText">Sviluppatore in vacanza :D</h1>
+                <p class="cookiesTextParagraph">Questo progetto sarà momentaneamente discontinuato da ogni tipo di
+                    patch, minor o major update fino a data da destinarsi. Il sito resterà online ma non riceverà alcun
+                    aggiornamento. Puoi comunque scrivermi per qualunque suggerimento o segnalazione. Grazie per la tua
+                    pazienza. <br>
+                    <i>Lo sviluppo dovrebbe riprendere regolarmente intorno all'inizio di settembre.</i>
+                </p> <br>
+                <div class="cookiesButtonsContainer">
+                    <button class="allCookies" onclick="closeVacationPopup()">Grazie, buone vacanze</button>
+                </div>
+            </div>
+        </div>
         <!-- Cookies Notice -->
-		<div class="popup" id="popup">
-			<div class="cookiesNoticeBoxStyle" id="CookiesNoticeBoxStyle">
-				<p class="cookiesText">Informativa Cookies</h1>
-				<p class="cookiesTextParagraph">Utilizziamo cookie e tecnologie simili per aiutare a fornire e
-					migliorare i contenuti su GreenStore. I cookie sono utili anche per fornire un'esperienza più sicura
-					utilizzando le informazioni che riceviamo all'interno e all'esterno di GreenStore e per fornire e
-					migliorare i nostri servizi per le persone che hanno un account. <br>
-					<i>Puoi modificare le tue scelte riguardo i cookies nelle impostazioni del tuo account.</i>
-				</p> <br>
-				<div class="cookiesButtonsContainer">
-					<button class="onlyEssentialCookies" onclick="closePopup()">Accetta solo i cookies
-						essenziali</button>
-					<button class="allCookies" onclick="closePopup()">Accetta tutti i cookies</button>
-				</div>
-			</div>
-		</div>
-		<!-- Logout Popup -->
-		<div class="popup" id="popupLogout">
-			<div class="cookiesNoticeBoxStyle" id="logout">
-				<p class="cookiesText">Logout eseguito</h1>
-				<p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati memorizzati
-					dal sito sono stati eliminati.
-				<div class="cookiesButtonsContainer">
-					<button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
-				</div>
-			</div>
-		</div>
+        <div class="popup" id="popup">
+            <div class="cookiesNoticeBoxStyle" id="CookiesNoticeBoxStyle">
+                <p class="cookiesText">Informativa Cookies</h1>
+                <p class="cookiesTextParagraph">Utilizziamo cookie e tecnologie simili per aiutare a fornire e
+                    migliorare i contenuti su GreenStore. I cookie sono utili anche per fornire un'esperienza più sicura
+                    utilizzando le informazioni che riceviamo all'interno e all'esterno di GreenStore e per fornire e
+                    migliorare i nostri servizi per le persone che hanno un account. <br>
+                    <i>Puoi modificare le tue scelte riguardo i cookies nelle impostazioni del tuo account.</i>
+                </p> <br>
+                <div class="cookiesButtonsContainer">
+                    <button class="onlyEssentialCookies" onclick="closePopup()">Accetta solo i cookies
+                        essenziali</button>
+                    <button class="allCookies" onclick="closePopup()">Accetta tutti i cookies</button>
+                </div>
+            </div>
+        </div>
+        <!-- Logout Popup -->
+        <div class="popup" id="popupLogout">
+            <div class="cookiesNoticeBoxStyle" id="logout">
+                <p class="cookiesText">Logout eseguito</h1>
+                <p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati memorizzati
+                    dal sito sono stati eliminati.
+                <div class="cookiesButtonsContainer">
+                    <button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
+                </div>
+            </div>
+        </div>
         <!-- SHOPPING CART POPUP -->
-            <div id="shoppingCart">
-                <details open>
-                    <summary class="cartHeader" onclick="cartExpandSwitch()">
-                        <!-- <div> -->
-                            <h3 id="cart">Carrello (0 elementi):</h3>
-                            <div>
-                                <span class="material-symbols-rounded hide-icon expand" id="deleteCart" onclick="clearCart()">
-                                    cancel
-                                </span>
-                                <span class="material-symbols-rounded hide-icon expand" id="cartExpand">
-                                    expand_more
-                                </span>
-                            </div>
-                        <!-- </div> -->
-                    </summary>
-                    <div id="itemCartList">
-                        <!-- <div class="cartItem">
+        <div id="shoppingCart">
+            <details open>
+                <summary class="cartHeader" onclick="cartExpandSwitch()">
+                    <!-- <div> -->
+                    <h3 id="cart">Carrello (0 elementi):</h3>
+                    <div>
+                        <span class="material-symbols-rounded hide-icon expand" id="deleteCart" onclick="clearCart()">
+                            cancel
+                        </span>
+                        <span class="material-symbols-rounded hide-icon expand" id="cartExpand">
+                            expand_more
+                        </span>
+                    </div>
+                    <!-- </div> -->
+                </summary>
+                <div id="itemCartList">
+                    <!-- <div class="cartItem">
                             <p class="cartProductName">Arance</p>
                             <h3 class="cartProductQuantityAndPrice">
                                 <span>120g</span>
                                 <span>1.23€</span>
                             </h3>
                         </div> -->
-                    </div>
-                </details>
-            </div>
+                </div>
+            </details>
+        </div>
 
         <div class="header">
             <!-- Main header -->
@@ -140,7 +156,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Albicocche.webp" alt="Albicocche" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Albicocche.webp" alt="Albicocche" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -150,16 +167,18 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Albicocche', '0.45€')">
-                                  shopping_cart
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Albicocche', '0.45€')">
+                                    shopping_cart
                                 </span>
-                            </div>                              
+                            </div>
                         </div>
                     </div>
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Ananas.webp" alt="Ananas" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Ananas.webp" alt="Ananas" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -169,7 +188,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Ananas', '0.39€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Ananas', '0.39€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -189,7 +209,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Arance Foglia', '0.39€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Arance Foglia', '0.39€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -198,7 +219,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/AroniaNera.webp" alt="Aronia Nera" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/AroniaNera.webp" alt="Aronia Nera" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -210,7 +232,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Aronia Nera', '1.44€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Aronia Nera', '1.44€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -219,7 +242,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Avocado.webp" alt="Avocado" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Avocado.webp" alt="Avocado" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -229,7 +253,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Avocado', '0.73€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Avocado', '0.73€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -238,7 +263,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Banane.webp" alt="Banane" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Banane.webp" alt="Banane" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -250,7 +276,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Banane', '0.18€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Banane', '0.18€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -259,7 +286,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/CachiMela.webp" alt="Cachi Mela" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/CachiMela.webp" alt="Cachi Mela" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -269,7 +297,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cachi Mela', '0.26€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cachi Mela', '0.26€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -278,7 +307,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Ciliegie.webp" alt="Ciliegie" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Ciliegie.webp" alt="Ciliegie" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -288,7 +318,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Ciliegie', '0.90€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Ciliegie', '0.90€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -297,7 +328,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Cocco.webp" alt="Cocco" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Cocco.webp" alt="Cocco" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -309,7 +341,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cocco', '0.15€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cocco', '0.15€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -318,7 +351,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Anguria.webp" alt="Anguria" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Anguria.webp" alt="Anguria" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -328,7 +362,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Anguria', '0.15€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Anguria', '0.15€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -350,7 +385,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Dragon Fruit', '0.63€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Dragon Fruit', '0.63€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -359,7 +395,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Fragole.webp" alt="Fragole" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Fragole.webp" alt="Fragole" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -369,7 +406,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Fragole', '0.74€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Fragole', '0.74€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -378,7 +416,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Kiwano.webp" alt="Kiwano" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Kiwano.webp" alt="Kiwano" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -388,7 +427,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Kiwano', '0.88€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Kiwano', '0.88€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -397,7 +437,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Kiwi.webp" alt="Kiwi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Kiwi.webp" alt="Kiwi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -407,7 +448,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Kiwi', '0.24€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Kiwi', '0.24€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -416,7 +458,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Limoni.webp" alt="Limoni" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Limoni.webp" alt="Limoni" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -426,7 +469,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Limoni', '0.39€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Limoni', '0.39€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -435,7 +479,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Mandarini.webp" alt="Mandarini" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Mandarini.webp" alt="Mandarini" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -447,7 +492,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Mandarini', '0.22€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Mandarini', '0.22€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -456,7 +502,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Mele.webp" alt="Mele" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Mele.webp" alt="Mele" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -468,7 +515,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Mele', '0.14€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Mele', '0.14€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -477,7 +525,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Melograno.webp" alt="Melograno" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Melograno.webp" alt="Melograno" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -487,7 +536,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Melograno', '0.24€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Melograno', '0.24€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -496,7 +546,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Melone.webp" alt="Melone" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Melone.webp" alt="Melone" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -506,7 +557,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Melone', '0.23€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Melone', '0.23€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -515,7 +567,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Mirtilli.webp" alt="Mirtilli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Mirtilli.webp" alt="Mirtilli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -525,7 +578,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Mirtilli', '1.14€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Mirtilli', '1.14€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -534,7 +588,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/More.webp" alt="More" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/More.webp" alt="More" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -544,7 +599,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'More', '1.88€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'More', '1.88€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -564,7 +620,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'More di Gelso', '0.53€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'More di Gelso', '0.53€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -573,7 +630,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Nespole.webp" alt="Nespole" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Nespole.webp" alt="Nespole" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -583,7 +641,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Nespole', '0.48€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Nespole', '0.48€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -592,7 +651,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Papaya.webp" alt="Papaya" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Papaya.webp" alt="Papaya" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -604,7 +664,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Papaya', '0.30€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Papaya', '0.30€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -624,7 +685,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Passion Fruit', '2.65€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Passion Fruit', '2.65€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -633,7 +695,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Pere.webp" alt="Pere" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Pere.webp" alt="Pere" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -643,7 +706,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pere', '0.35€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pere', '0.35€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -652,7 +716,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Pesche.webp" alt="Pesche" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Pesche.webp" alt="Pesche" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -662,7 +727,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pesche', '0.09€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pesche', '0.09€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -671,7 +737,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Pomelo.webp" alt="Pomelo" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Pomelo.webp" alt="Pomelo" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -681,7 +748,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pomelo', '0.11€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pomelo', '0.11€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -690,7 +758,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Pompelmo.webp" alt="Pompelmo" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Pompelmo.webp" alt="Pompelmo" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -700,7 +769,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pompelmo', '0.25€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pompelmo', '0.25€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -709,7 +779,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product FRESHFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/FreshFruit/Prugne.webp" alt="Prugne" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/FreshFruit/Prugne.webp" alt="Prugne" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -721,7 +792,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Prugne', '0.20€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Prugne', '0.20€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -742,7 +814,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Uva', '0.27€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Uva', '0.27€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -751,7 +824,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product DRIEDFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Anacardi.webp" alt="Anacardi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/DriedFruit/Anacardi.webp" alt="Anacardi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -761,7 +835,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Anacardi', '1.64€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Anacardi', '1.64€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -770,7 +845,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product DRIEDFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Arachidi.webp" alt="Arachidi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/DriedFruit/Arachidi.webp" alt="Arachidi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -780,16 +856,18 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Arachidi', '0.37€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Arachidi', '0.37€')">
                                     shopping_cart
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="product DRIEDFRUIT">
-                    <!-- NORMAL PRODUCT -->
-                    <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Castagne.webp" alt="Castagne" class="storeProduct" loading="lazy">
+                        <!-- NORMAL PRODUCT -->
+                        <div class="storeImgContainer">
+                            <img src="Media/Products/DriedFruit/Castagne.webp" alt="Castagne" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -799,36 +877,41 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Castagne', '0.58€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Castagne', '0.58€')">
                                     shopping_cart
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="product DRIEDFRUIT">
-                    <!-- PRODUCT OFFER -->
-                    <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Fichi.webp" alt="Fichi" class="storeProduct" loading="lazy">
+                        <!-- PRODUCT OFFER -->
+                        <div class="storeImgContainer">
+                            <img src="Media/Products/DriedFruit/Fichi.webp" alt="Fichi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Fichi <span class="offerPercentage">20%</span></h3>
+                                <h3 class="storeProductName storeOffer">Fichi <span class="offerPercentage">20%</span>
+                                </h3>
                                 <h4 class="storeProductPrice priceOffer">0.41€/hgㅤ<span class="notValid">0.53€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Fichi', '0.41€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Fichi', '0.41€')">
                                     shopping_cart
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="product DRIEDFRUIT">
-                    <!-- NORMAL PRODUCT -->
-                    <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Mandorle.webp" alt="Mandorle" class="storeProduct" loading="lazy">
+                        <!-- NORMAL PRODUCT -->
+                        <div class="storeImgContainer">
+                            <img src="Media/Products/DriedFruit/Mandorle.webp" alt="Mandorle" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -838,16 +921,18 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Mandorle', '0.93€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Mandorle', '0.93€')">
                                     shopping_cart
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="product DRIEDFRUIT">
-                    <!-- NORMAL PRODUCT -->
-                    <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Nocciole.webp" alt="Nocciole" class="storeProduct" loading="lazy">
+                        <!-- NORMAL PRODUCT -->
+                        <div class="storeImgContainer">
+                            <img src="Media/Products/DriedFruit/Nocciole.webp" alt="Nocciole" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -857,7 +942,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Nocciole', '1.23€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Nocciole', '1.23€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -866,7 +952,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product DRIEDFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Noci.webp" alt="Noci" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/DriedFruit/Noci.webp" alt="Noci" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -876,7 +963,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Noci', '0.92€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Noci', '0.92€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -885,7 +973,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product DRIEDFRUIT">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Pinoli.webp" alt="Pinoli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/DriedFruit/Pinoli.webp" alt="Pinoli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -895,7 +984,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pinoli', '5.76€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pinoli', '5.76€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -904,11 +994,13 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product DRIEDFRUIT">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/DriedFruit/Pistacchi.webp" alt="Pistacchi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/DriedFruit/Pistacchi.webp" alt="Pistacchi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Pistacchi <span class="offerPercentage">20%</span>
+                                <h3 class="storeProductName storeOffer">Pistacchi <span
+                                        class="offerPercentage">20%</span>
                                 </h3>
                                 <h4 class="storeProductPrice priceOffer">0.90€/hgㅤ<span class="notValid">1.14€/hg</span>
                                 </h4>
@@ -916,7 +1008,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pistacchi', '0.90€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pistacchi', '0.90€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -925,7 +1018,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Aglio.webp" alt="Aglio" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Aglio.webp" alt="Aglio" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -935,7 +1029,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Aglio', '0.62€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Aglio', '0.62€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -944,11 +1039,13 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Asparagi.webp" alt="Asparagi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Asparagi.webp" alt="Asparagi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Asparagi <span class="offerPercentage">20%</span>
+                                <h3 class="storeProductName storeOffer">Asparagi <span
+                                        class="offerPercentage">20%</span>
                                 </h3>
                                 <h4 class="storeProductPrice priceOffer">0.50€/hgㅤ<span class="notValid">0.62€/hg</span>
                                 </h4>
@@ -956,7 +1053,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Asparagi', '0.50€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Asparagi', '0.50€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -965,7 +1063,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Barbabietola.webp" alt="Barbabietola" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Barbabietola.webp" alt="Barbabietola"
+                                class="storeProduct" loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -975,7 +1074,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Barbabietola', '0.69€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Barbabietola', '0.69€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -984,7 +1084,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Bietola.webp" alt="Bietola" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Bietola.webp" alt="Bietola" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -994,7 +1095,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Bietola', '0.23€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Bietola', '0.23€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1003,11 +1105,13 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Broccoli.webp" alt="Broccoli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Broccoli.webp" alt="Broccoli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Broccoli <span class="offerPercentage">30%</span>
+                                <h3 class="storeProductName storeOffer">Broccoli <span
+                                        class="offerPercentage">30%</span>
                                 </h3>
                                 <h4 class="storeProductPrice priceOffer">0.16€/hgㅤ<span class="notValid">0.25€/hg</span>
                                 </h4>
@@ -1015,7 +1119,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Broccoli', '0.16€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Broccoli', '0.16€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1024,7 +1129,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Carciofi.webp" alt="Carciofi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Carciofi.webp" alt="Carciofi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1034,7 +1140,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Carciofi', '0.89€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Carciofi', '0.89€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1043,7 +1150,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Carote.webp" alt="Carote" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Carote.webp" alt="Carote" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1053,7 +1161,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Carote', '0.13€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Carote', '0.13€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1062,7 +1171,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Cavolfiori.webp" alt="Cavolfiori" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Cavolfiori.webp" alt="Cavolfiori" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1072,7 +1182,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cavolfiori', '0.18€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cavolfiori', '0.18€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1081,7 +1192,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Cavoli.webp" alt="Cavoli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Cavoli.webp" alt="Cavoli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1091,7 +1203,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cavoli', '0.18€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cavoli', '0.18€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1100,7 +1213,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Cetrioli.webp" alt="Cetrioli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Cetrioli.webp" alt="Cetrioli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1110,7 +1224,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cetrioli', '0.65€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cetrioli', '0.65€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1119,7 +1234,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/CimeDiRapa.webp" alt="Cime di rapa" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/CimeDiRapa.webp" alt="Cime di rapa" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1129,7 +1245,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cime di rapa', '0.47€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cime di rapa', '0.47€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1138,7 +1255,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Cipolle.webp" alt="Cipolle" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Cipolle.webp" alt="Cipolle" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1148,7 +1266,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Cipolle', '0.10€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Cipolle', '0.10€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1157,7 +1276,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Finocchi.webp" alt="Finocchi" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Finocchi.webp" alt="Finocchi" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1167,7 +1287,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Finocchi', '0.31€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Finocchi', '0.31€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1176,7 +1297,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Melanzane.webp" alt="Melanzane" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Melanzane.webp" alt="Melanzane" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1186,7 +1308,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Melanzane', '0.61€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Melanzane', '0.61€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1195,7 +1318,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Patate.webp" alt="Patate" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Patate.webp" alt="Patate" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -1207,7 +1331,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Patate', '0.15€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Patate', '0.15€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1216,7 +1341,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Peperoni.webp" alt="Peperoni" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Peperoni.webp" alt="Peperoni" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1226,7 +1352,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Peperoni', '0.11€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Peperoni', '0.11€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1235,11 +1362,13 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Pomodori.webp" alt="Pomodori" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Pomodori.webp" alt="Pomodori" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Pomodori <span class="offerPercentage">40%</span>
+                                <h3 class="storeProductName storeOffer">Pomodori <span
+                                        class="offerPercentage">40%</span>
                                 </h3>
                                 <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid">0.13€/hg</span>
                                 </h4>
@@ -1247,7 +1376,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Pomodori', '0.08€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Pomodori', '0.08€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1256,7 +1386,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/RadicchioRosso.webp" alt="Radicchio Rosso" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/RadicchioRosso.webp" alt="Radicchio Rosso"
+                                class="storeProduct" loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1266,7 +1397,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Radicchio Rosso', '0.17€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Radicchio Rosso', '0.17€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1275,7 +1407,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/RapaBianca.webp" alt="Rapa Bianca" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/RapaBianca.webp" alt="Rapa Bianca" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1285,7 +1418,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Rapa Bianca', '0.26€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Rapa Bianca', '0.26€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1294,7 +1428,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Ravanelli.webp" alt="Ravanelli" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Ravanelli.webp" alt="Ravanelli" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1304,7 +1439,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Ravanelli', '0.14€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Ravanelli', '0.14€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1313,7 +1449,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Rucola.webp" alt="Rucola" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Rucola.webp" alt="Rucola" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -1325,7 +1462,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Rucola', '0.08€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Rucola', '0.08€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1334,7 +1472,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- NORMAL PRODUCT -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Sedano.webp" alt="Sedano" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Sedano.webp" alt="Sedano" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct">
                             <div class="storePriceContainer">
@@ -1344,7 +1483,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Sedano', '0.23€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Sedano', '0.23€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1353,7 +1493,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Spinaci.webp" alt="Spinaci" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Spinaci.webp" alt="Spinaci" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -1365,7 +1506,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Spinaci', '0.24€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Spinaci', '0.24€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1374,7 +1516,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Zucca.webp" alt="Zucca" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Zucca.webp" alt="Zucca" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
@@ -1386,7 +1529,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Zucca', '0.56€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Zucca', '0.56€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1395,11 +1539,13 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <div class="product VEGETABLES">
                         <!-- PRODUCT OFFER -->
                         <div class="storeImgContainer">
-                            <img src="Media/Products/Vegetables/Zucchine.webp" alt="Zucchine" class="storeProduct" loading="lazy">
+                            <img src="Media/Products/Vegetables/Zucchine.webp" alt="Zucchine" class="storeProduct"
+                                loading="lazy">
                         </div>
                         <div class="bottomSectionProduct storeOffer">
                             <div class="storePriceContainer">
-                                <h3 class="storeProductName storeOffer">Zucchine <span class="offerPercentage">20%</span>
+                                <h3 class="storeProductName storeOffer">Zucchine <span
+                                        class="offerPercentage">20%</span>
                                 </h3>
                                 <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid">0.10€/hg</span>
                                 </h4>
@@ -1407,7 +1553,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
                                 <h4 class="hg">qta [gr]:</h4>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
-                                <span class="material-symbols-outlined white" onclick="addToCart(this.parentElement, 'Zucchine', '0.08€')">
+                                <span class="material-symbols-outlined white"
+                                    onclick="addToCart(this.parentElement, 'Zucchine', '0.08€')">
                                     shopping_cart
                                 </span>
                             </div>
@@ -1416,53 +1563,53 @@ Insta: https://www.instagram.com/luca.ambroo_/
                 </div>
             </details>
         </div>
-    <div class="footer">
-        <!-- Footer section -->
-        <div class="footerContainer">
-            <div class="socialBox1">
-                <a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
-                        alt="Logo di Instagram" class="socialIcon"></a>
-                <a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
-                        class="socialIcon"></a>
-                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
-                        src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+        <div class="footer">
+            <!-- Footer section -->
+            <div class="footerContainer">
+                <div class="socialBox1">
+                    <a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+                            alt="Logo di Instagram" class="socialIcon"></a>
+                    <a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+                            class="socialIcon"></a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+                            src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+                </div>
+                <div class="socialBox2">
+                    <a href="#start">
+                        <p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
+                                class="footerLogo">
+                    </a>
+                </div>
+                <div class="socialBox3">
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Contattaci</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Privacy</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Copyright</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Attribuzione</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Citazioni</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Disclaimer</p>
+                    </a>
+                </div>
             </div>
-            <div class="socialBox2">
-                <a href="#start">
-                    <p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
-                            class="footerLogo">
-                </a>
-            </div>
-            <div class="socialBox3">
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Contattaci</p>
-                </a>
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Privacy</p>
-                </a>
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Copyright</p>
-                </a>
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Attribuzione</p>
-                </a>
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Citazioni</p>
-                </a>
-                <a href="Disclaimer.html">
-                    <p class="footerLinks">Disclaimer</p>
-                </a>
-            </div>
+            <h3 class="textFooter"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
+                    simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
+                represents a grocery e-commerce website simulation that does not phisically exist. <br>
+                Attribution required when using any file or code of this project on your third party personal projects.
+                More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
         </div>
-        <h3 class="textFooter"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
-            simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
-            represents a grocery e-commerce website simulation that does not phisically exist. <br>
-            Attribution required when using any file or code of this project on your third party personal projects.
-            More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
-    </div>
-    <a href="https://github.com/lucAmbr0/GreenStore">
-        <p class="versionName">GreenStore Project v2.0 2023 edition</p>
-    </a>
+        <a href="https://github.com/lucAmbr0/GreenStore">
+            <p class="versionName">GreenStore Project v2.0 2023 edition</p>
+        </a>
     </div>
     <script src="js/main.js"></script>
     <script src="js/negozio.js"></script>
