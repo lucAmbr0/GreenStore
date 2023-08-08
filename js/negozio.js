@@ -231,7 +231,7 @@ function updateCartUI() {
                     <span>${product.quantity}gㅤ</span>
                     <span>${productPrice.toFixed(2)}€</span>
                 </h3>
-                <span class="tooltiptext">Remove product</span>
+                <span class="tooltiptext">Rimuovi prodotto</span>
             </div>
         `;
         newProductDiv.style.display = "flex";
