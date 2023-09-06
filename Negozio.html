@@ -90,31 +90,51 @@ Insta: https://www.instagram.com/luca.ambroo_/
                 <img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore" class="smallLogo">
                 <!-- <h3 class="headerTitle">Negozio</h3> -->
             </div>
-            <div class="navbar" id="smallNavbar">
-                <div class="leftBar">
-                    <a href="index.html" id="noDeco">
-                        <h3 class="navbarLink" id="leftLink">Home</h3>
-                    </a>
-                    <a href="Negozio.html" id="noDeco">
-                        <h3 class="navbarLink selected">Negozio</h3>
-                    </a>
-                    <a href="index.html#Offerte" id="noDeco">
-                        <h3 class="navbarLink">Offerte</h3>
-                    </a>
-                    <a href="Account.html" id="noDeco">
-                        <h3 class="navbarLink">Account e ordini</h3>
-                    </a>
-                </div>
-                <div class="rightBar">
-                    <a href="Disclaimer.html" id="noDeco">
-                        <h3 class="navbarLink">Disclaimer</h3>
-                    </a>
-                    <a id="noDeco" onclick="Logout()">
-                        <h3 class="navbarLink" id="rightLink">Logout</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
+			<div class="navbar">
+				<div class="leftBar">
+					<a class="noDeco" href="index.html">
+						<h3 class="selected navbarLink" id="leftLink">Home</h3>
+					</a>
+					<a class="noDeco" href="Negozio.html">
+						<h3 class="navbarLink">Negozio</h3>
+					</a>
+					<a class="noDeco" href="#Offerte">
+						<h3 class="navbarLink">Offerte</h3>
+					</a>
+					<a class="noDeco" href="Account.html">
+						<h3 class="navbarLink">Account e ordini</h3>
+					</a>
+				</div>
+				<div class="rightBar">
+					<a class="noDeco" href="Disclaimer.html">
+						<h3 class="navbarLink">Disclaimer</h3>
+					</a>
+					<a class="noDeco" onclick="Logout()">
+						<h3 class="navbarLink" id="rightLink">Logout</h3>
+					</a>
+				</div>
+			</div>
+			<div class="navbarMobile">
+				<a class="mobileLink noDeco" href="index.html">
+					<h3 class="selected navbarLink" id="topLeft">Home</h3>
+				</a>
+				<a class="mobileLink noDeco" href="Negozio.html">
+					<h3 class="navbarLink">Negozio</h3>
+				</a>
+				<a class="mobileLink noDeco" href="#Offerte">
+					<h3 class="navbarLink" id="topRight">Offerte</h3>
+				</a>
+				<a class="mobileLink noDeco" href="Account.html">
+					<h3 class="navbarLink" id="bottomLeft">Account</h3>
+				</a>
+				<a class="mobileLink noDeco" href="Disclaimer.html">
+					<h3 class="navbarLink">Disclaim</h3>
+				</a>
+				<a class="mobileLink noDeco" onclick="Logout()">
+					<h3 class="navbarLink" id="bottomRight">Logout</h3>
+				</a>
+			</div>
+		</div>
         <div class="content">
             <!-- Content section -->
             <details open>
