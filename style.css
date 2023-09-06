@@ -1442,6 +1442,7 @@ h2:hover {
     html {
         justify-content: center;
         width: 100%;
+        overflow-x: hidden;
     }
     .header {
         margin-top: 5px;
@@ -1570,7 +1571,7 @@ h2:hover {
         box-shadow: 2.5px 0px 5px rgba(0, 0, 0, 0.626);
     }
     #mainReview {
-        margin-right: 0;
+        margin: 10px auto;
         font-size: 20px;
         text-align: center;
     }
@@ -1604,7 +1605,6 @@ h2:hover {
         border: solid 3px black;
         scale: 1;
     }
-    
     .reviewImg:hover {
         scale: 1.04;
     }
@@ -1613,5 +1613,154 @@ h2:hover {
         display: block;
         font-size: 18px;
         text-align: justify;
+    }
+    .headingProductsBox {
+        background-color: rgba(0, 0, 0, 0.111);
+        border: solid 3px rgb(37, 37, 37);
+        border-radius: 35px 35px 5px 5px;
+        display: block;
+        width: auto;
+        margin: 30px 4% 0 4%;
+        transition: 0.3s;
+    }
+    .headingProductsBox:hover {
+        border: solid 3px black;
+    }
+    .headingProductsTxt {
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+        line-height: 1.2;
+        font-size: 25px;
+        border-bottom: none;
+        margin: 5px auto 0 auto;
+        font-family: Poppins;
+        font-weight: 600;
+        scale: 1;
+        transition: 0.3s;
+    }
+    
+    .headingProductsTxt:hover {
+        border-bottom: none;
+        scale: 1;
+    }
+
+    .headingProductsLayout {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productPreview {
+        width: 28%;
+        background-color: black;
+        border: solid 4px black;
+        border-radius: 10px;
+        margin: 5px;
+        scale: 1;
+        transition: 0.4s;
+    }
+    
+    .productPreview:hover {
+        scale: 1.10;
+        border-radius: 10px;
+    }
+    
+    #middleBox {
+        margin: 5px 4% 0 4%;
+        border-radius: 5px 5px 5px 5px;
+    }
+    
+    #bottomBox {
+        margin: 5px 4% 0 4%;
+        border-radius: 5px 5px 25px 25px;
+        padding-bottom: 10px;
+    }
+    #smallerProduct {
+        width: 20.5%;
+        border: solid 3px black;
+        border-radius: 7px;
+        margin: 5px;
+    }
+    
+    #smallerProduct:hover {
+        scale: 1.10;
+        border-radius: 7px;
+    }
+    
+    #mediumProduct {
+        width: 20.5%;
+        border: solid 3px black;
+        border-radius: 7px;
+        margin: 5px;
+    }
+    
+    #mediumProduct:hover {
+        border-radius: 7px;
+    }
+
+    #viewStoreTxt {
+        text-align: center;
+        padding: 10px 2px 0px 2px;
+        font-size: 20px;
+        border-bottom: none;
+        margin: auto;
+        scale: 1;
+        cursor: pointer;
+        transition: 0.45s;
+    }
+    
+    #viewStoreTxt:hover {
+        border-bottom: none;
+        scale: 1;
+        letter-spacing: 1px;
+    }
+    .headingProductsBoxSale {
+        padding: 10px;
+    }
+    .headingProductsBoxSale#bottomBox {
+        padding-bottom: 30px;
+    }
+    .headingProductsTxtSale {
+        padding: 10px 0;
+    }
+    #timer {
+        font-family: Noto Sans, monospace;
+        font-size: 26px;
+        letter-spacing: normal;
+        margin: auto;
+    }
+    .small {
+        scale: 0.9;
+    }
+    .big {
+        scale: 1;
+    }
+    #mediumProductFlashSale {
+        width: 27%;
+        margin: 6px;
+    }
+    .textFooter {
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    .socialMobile {
+        background-color: rgba(0, 0, 0, 0.271);
+        border-radius: 10px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        margin: 2px auto 20px auto;
+    }
+    .socialIcon {
+        display: block;
+        flex-direction: column;
+        padding: 3px;
+        width: 30px;
+        height: 30px;
+    }
+    .footerLogo {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
     }
 }
