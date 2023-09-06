@@ -63,45 +63,45 @@ Insta: https://www.instagram.com/luca.ambroo_/
 					class="longTitle"></div>
 			<div class="navbar">
 				<div class="leftBar">
-					<a href="index.html" id="noDeco">
+					<a class="noDeco" href="index.html">
 						<h3 class="selected navbarLink" id="leftLink">Home</h3>
 					</a>
-					<a href="Negozio.html" id="noDeco">
+					<a class="noDeco" href="Negozio.html">
 						<h3 class="navbarLink">Negozio</h3>
 					</a>
-					<a href="#Offerte" id="noDeco">
+					<a class="noDeco" href="#Offerte">
 						<h3 class="navbarLink">Offerte</h3>
 					</a>
-					<a href="Account.html" id="noDeco">
+					<a class="noDeco" href="Account.html">
 						<h3 class="navbarLink">Account e ordini</h3>
 					</a>
 				</div>
 				<div class="rightBar">
-					<a href="Disclaimer.html" id="noDeco">
+					<a class="noDeco" href="Disclaimer.html">
 						<h3 class="navbarLink">Disclaimer</h3>
 					</a>
-					<a id="noDeco" onclick="Logout()">
+					<a class="noDeco" onclick="Logout()">
 						<h3 class="navbarLink" id="rightLink">Logout</h3>
 					</a>
 				</div>
 			</div>
 			<div class="navbarMobile">
-				<a class="mobileLink" href="index.html" id="noDeco">
+				<a class="mobileLink noDeco" href="index.html">
 					<h3 class="selected navbarLink" id="topLeft">Home</h3>
 				</a>
-				<a class="mobileLink" href="Negozio.html" id="noDeco">
+				<a class="mobileLink noDeco" href="Negozio.html">
 					<h3 class="navbarLink">Negozio</h3>
 				</a>
-				<a class="mobileLink" href="#Offerte" id="noDeco">
+				<a class="mobileLink noDeco" href="#Offerte">
 					<h3 class="navbarLink" id="topRight">Offerte</h3>
 				</a>
-				<a class="mobileLink" href="Account.html" id="noDeco">
+				<a class="mobileLink noDeco" href="Account.html">
 					<h3 class="navbarLink" id="bottomLeft">Account</h3>
 				</a>
-				<a class="mobileLink" href="Disclaimer.html" id="noDeco">
+				<a class="mobileLink noDeco" href="Disclaimer.html">
 					<h3 class="navbarLink">Disclaim</h3>
 				</a>
-				<a class="mobileLink" id="noDeco" onclick="Logout()">
+				<a class="mobileLink noDeco" onclick="Logout()">
 					<h3 class="navbarLink" id="bottomRight">Logout</h3>
 				</a>
 			</div>
@@ -149,7 +149,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 						direttamente a casa tua!
 					</p>
 				</div>
-				<p class="expandImg" id="reviewsAboutUs"><a href="Media/other/MappaItalia.webp" id="noDeco">
+				<p class="expandImg" id="reviewsAboutUs"><a href="Media/other/MappaItalia.webp" class="noDeco">
 					<span id="DesktopMapButton">► Espandi la mappa</span>
 					<span id="altMobileMapButton">► Mappa dei nostri campi</span></p></a>
 			</details>
@@ -174,7 +174,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 				</div>
 				<!-- More reviews when button clicked -->
 				<div class="expandReviewsButtonContainer">
-					<a id="noDeco"><button class="expandReviewsButton" onclick="moreReviews()">
+					<a class="noDeco"><button class="expandReviewsButton" onclick="moreReviews()">
 							<h3 id="moreReviewsText">▼ Leggi altre recensioni ▼</h3>
 						</button></a>
 				</div>
@@ -279,7 +279,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 						</div>
 					</div>
 					<div class="expandReviewsButtonContainer">
-						<a href="#reviewsAboutUs" id="noDeco"><button class="expandReviewsButton"
+						<a href="#reviewsAboutUs" class="noDeco"><button class="expandReviewsButton"
 								onclick="moreReviews()">
 								<h3 id="moreReviewsText">▲ Leggi meno recensioni ▲</h3>
 							</button></a>
@@ -290,7 +290,8 @@ Insta: https://www.instagram.com/luca.ambroo_/
 			<p id="Offerte"></p>
 			<details open>
 				<summary>
-					<h1>Prodotti in evidenza</h1>
+					<span class="hideMobileVersion"><h1>Prodotti in evidenza</h1></span>
+					<span class="hideDesktopVersion"><h1>In evidenza</h1></span>
 				</summary>
 				<div class="headingProductsBox">
 					<h4 class="headingProductsTxt">I più acquistati del mese</h4>
@@ -332,7 +333,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 					</div>
 				</div>
 				<div class="headingProductsBox" id="bottomBox">
-					<a href="Negozio.html" id="noDeco">
+					<a href="Negozio.html" class="noDeco">
 						<h4 id="viewStoreTxt">»»» Visita il negozio completo «««</h4>
 					</a>
 				</div>
