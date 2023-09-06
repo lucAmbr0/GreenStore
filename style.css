@@ -1763,4 +1763,34 @@ h2:hover {
         width: 80%;
         margin: 0 auto;
     }
+    .cookiesNoticeBoxStyle {
+        top: 20%;
+        bottom: 20%;
+        height: 60%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+    }
+    .cookiesText {
+        font-size: 30px;
+    }
+    .cookiesTextParagraph {
+        font-size: 18px;
+    }
+    .cookiesButtonsContainer {
+        justify-content: center;
+    }
+    .allCookies {
+        width: 40%;
+        height: fit-content;
+        font-size: 20px;
+    }
+    .onlyEssentialCookies {
+        width: 40%;
+        height: fit-content;
+        font-size: 14px;
+    }
+    #logout {
+        height: 45%;
+    }
 }
