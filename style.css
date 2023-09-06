@@ -68,6 +68,17 @@ body {
         scale: 1;
     }
 }
+@keyframes softZoomOut {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
 
 @keyframes disappear {
     from {
@@ -346,13 +357,6 @@ body {
     opacity: 0;
 }
 
-.chiSiamoDesktop {
-    display: block;
-}
-.chiSiamoMobile {
-    display: none;
-}
-
 h1 {
     font-family: Poppins;
     font-weight: bolder;
@@ -494,9 +498,22 @@ summary {
     margin-left: 85px;
 }
 
+#DesktopMapButton {
+    display: block;
+}
+#altMobileMapButton {
+    display: none;
+}
+
 #noDeco {
     color: black;
     text-decoration: none;
+}
+
+.noAnimation {
+    animation: none;
+    animation-delay: none;
+    opacity: 1;
 }
 
 #linkDeco {
@@ -1422,6 +1439,9 @@ h2:hover {
     }
     .header {
         margin-top: 5px;
+        margin-bottom: 5px;
+        animation: fadeUp 0.5s forwards;
+        animation-delay: 0s;
     }
     .longTitle {
         width: 90%;
@@ -1440,26 +1460,32 @@ h2:hover {
         background-color: rgba(0, 0, 0, 0.25);
         display: flex;
         flex-direction: row;
-        border-radius: 25px 25px 4px 4px;
+        border-radius: 20px 20px 4px 4px;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 5px;
-        animation: zoomOut 0.8s forwards;
+        padding: 3px;
+        animation: zoomOut 0.4s forwards;
         animation-delay: 0s;
     }
     .mobileLink {
-        width: 33.3333333%;
+        width: 33.333333%;
+        padding: 0;
         margin: 3px 0px;
         border-radius: 10px;
     }
     .navbarLink {
         border-radius: 10px;
+        animation: softZoomOut 0.5s forwards;
+        animation-delay: 0.1s;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
     }
     #topLeft {
-        border-radius: 20px 10px 10px 10px;
+        border-radius: 16px 10px 10px 10px;
     }
     #topRight {
-        border-radius: 10px 20px 10px 10px;
+        border-radius: 10px 16px 10px 10px;
     }
     #bottomLeft {
         border-radius: 10px 10px 10px 5px;
@@ -1470,6 +1496,8 @@ h2:hover {
     h1 {
         font-size: 30px;
         margin-left: 15px;
+        animation: fadeUp 0.5s forwards;
+        animation-delay: 0.3s;
     }
     h1:hover {
         margin-left: 15px;
@@ -1479,13 +1507,102 @@ h2:hover {
         text-align: justify;
         overflow-wrap: break-word;
     }
-    .content {
-        padding: 2% 0;
+    .hideMobileVersion {
+        display: none;
     }
-    .chiSiamoMobile {
+    .content {
+        margin: 5px 0.85% 15px 0.85%;
+        padding: 2% 0;
+        animation: fadeUp 0.4s forwards;
+        animation-delay: 0.3s;
+    }
+    .shippingSection {
+        display: block;
+        margin: 8% 8% 4% 8%;
+        flex-wrap: wrap;
+    }
+    .itMapAlign {
+        display: none;
+    }
+    .expandImg {
+        margin-top: 0;
+        margin-left: 8%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: solid 3px black;
+        border-radius: 8px;
+        width: fit-content;
+        padding: 4px 8px 4px 8px;
+        transition: 0.4s;
+        opacity: 0.8;
+    }
+    .shippingParagraph {
+        margin: -10px 1% 0px 1%;
+        text-align: justify;
+        word-wrap: break-word;
+        font-size: 18px;
+    }
+    #DesktopMapButton {
+        display: none;
+    }
+    #altMobileMapButton {
         display: block;
     }
-    .chiSiamoDesktop {
-        display: none;
+    h2 {
+        margin: 10px 5% 5% 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    h2:hover {
+        scale: 1;
+    }
+    .reviewBox {
+        margin: 40px 6% 35px 6%;
+        box-shadow: 2.5px 0px 5px rgba(0, 0, 0, 0.626);
+    }
+    #mainReview {
+        margin-right: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    .starsContainer {
+        margin: -15px auto 0px auto;
+        padding: 0;
+    }
+    .mobileStar {
+        width: 40px;
+        height: 40px;
+    }
+    #shortReviewText {
+        font-size: 22px;
+        margin: 5px 15px 15px 15px;
+        text-align: center;
+    }
+    .expandReview {
+        display: block;
+        margin: 0 20px 0 20px;
+    }
+    
+    .reviewImg {
+        display: block;
+        grid-area: img;
+        justify-content: center;
+        margin: 10px auto 20px auto;
+        border-radius: 10px;
+        width: 100%;
+        transition: 0.4s;
+        cursor: pointer;
+        border: solid 3px black;
+        scale: 1;
+    }
+    
+    .reviewImg:hover {
+        scale: 1.04;
+    }
+    .reviewText {
+        margin: 10px 0 0 0;
+        display: block;
+        font-size: 18px;
+        text-align: justify;
     }
 }
