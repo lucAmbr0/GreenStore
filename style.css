@@ -265,6 +265,10 @@ body {
     animation-delay: 0s;
 }
 
+.navbarMobile {
+    display: none;
+}
+
 .navbarLink {
     margin: 0px 3px 0px 3px;
     background-color: rgba(0, 0, 0, 0.25);
@@ -1401,3 +1405,53 @@ h2:hover {
     visibility: visible;
     opacity: 1;
   }
+
+
+
+/* CSS MOBILE RULES */
+@media screen and (max-width: 768px) {
+    .header {
+        margin-top: 5px;
+    }
+    .longTitle {
+        width: 60%;
+    }
+    .titleImgContainer {
+        column-span: all;
+        grid-area: titleImgContainer;
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbarMobile {
+        background-color: rgba(0, 0, 0, 0.25);
+        grid-area: navbarItems;
+        border-radius: 25px 25px 4px 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        animation: zoomOut 0.8s forwards;
+        animation-delay: 0s;
+    }
+    .mobileLink {
+        width: 50%;
+        margin: 5px 0px;
+    }
+    .leftBar {
+        grid-area: leftBar;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    
+    .rightBar {
+        grid-area: rightBar;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+}
