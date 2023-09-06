@@ -16,17 +16,6 @@ setTimeout(function () {
     }
 }, 1000);
 
-// --------- VACATION POPUP 
-var vacationPopup = document.getElementById("vacationPopup");
-var vacationPopupShown = localStorage.getItem("vacationPopupShown");
-var vacationNotice = document.getElementById("vacationNoticeBoxStyle");
-function closeVacationPopup() {
-    vacationPopup.style.animation = "0.4s disappear";
-    setTimeout(function () {
-        vacationPopup.style.display = "none";
-        localStorage.setItem("vacationPopupShown", "true");
-    }, 400);
-}
 
 // --------- LOGOUT POPUP
 var popupLogout = document.getElementById("popupLogout");
