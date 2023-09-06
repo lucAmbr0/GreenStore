@@ -1441,6 +1441,7 @@ h2:hover {
 @media screen and (max-width: 768px) {
     html {
         justify-content: center;
+        width: 100%;
     }
     .header {
         margin-top: 5px;
