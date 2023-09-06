@@ -346,6 +346,13 @@ body {
     opacity: 0;
 }
 
+.chiSiamoDesktop {
+    display: block;
+}
+.chiSiamoMobile {
+    display: none;
+}
+
 h1 {
     font-family: Poppins;
     font-weight: bolder;
@@ -1410,11 +1417,14 @@ h2:hover {
 
 /* CSS MOBILE RULES */
 @media screen and (max-width: 768px) {
+    html {
+        justify-content: center;
+    }
     .header {
         margin-top: 5px;
     }
     .longTitle {
-        width: 60%;
+        width: 100%;
     }
     .titleImgContainer {
         column-span: all;
@@ -1428,30 +1438,54 @@ h2:hover {
     }
     .navbarMobile {
         background-color: rgba(0, 0, 0, 0.25);
-        grid-area: navbarItems;
-        border-radius: 25px 25px 4px 4px;
         display: flex;
         flex-direction: row;
+        border-radius: 25px 25px 4px 4px;
         flex-wrap: wrap;
+        justify-content: space-between;
         padding: 5px;
         animation: zoomOut 0.8s forwards;
         animation-delay: 0s;
     }
     .mobileLink {
-        width: 50%;
-        margin: 5px 0px;
+        width: 33.3333333%;
+        margin: 3px 0px;
+        border-radius: 10px;
     }
-    .leftBar {
-        grid-area: leftBar;
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
+    .navbarLink {
+        border-radius: 10px;
     }
-    
-    .rightBar {
-        grid-area: rightBar;
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
+    #topLeft {
+        border-radius: 20px 10px 10px 10px;
+    }
+    #topRight {
+        border-radius: 10px 20px 10px 10px;
+    }
+    #bottomLeft {
+        border-radius: 10px 10px 10px 5px;
+    }
+    #bottomRight {
+        border-radius: 10px 10px 5px 10px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    h1:hover {
+        margin-left: 15px;
+    }
+    p {
+        font-size: 20px;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+    .content {
+        padding: 2% 0;
+    }
+    .chiSiamoMobile {
+        display: block;
+    }
+    .chiSiamoDesktop {
+        display: none;
     }
 }

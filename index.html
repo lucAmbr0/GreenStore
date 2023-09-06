@@ -11,8 +11,10 @@ Insta: https://www.instagram.com/luca.ambroo_/
 	<title>GreenStore - Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Benvenuti su GreenStore, la simulazione di negozio online per la frutta e verdura di alta qualità.">
-	<meta name="keywords" content="GreenStore, frutta, verdura, freschezza, qualità, github projects, html projects, beginner html projects, ecommerce html project">
+	<meta name="description"
+		content="Benvenuti su GreenStore, la simulazione di negozio online per la frutta e verdura di alta qualità.">
+	<meta name="keywords"
+		content="GreenStore, frutta, verdura, freschezza, qualità, github projects, html projects, beginner html projects, ecommerce html project">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="Media/other/LogoTransparentFull.webp">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,41 +87,61 @@ Insta: https://www.instagram.com/luca.ambroo_/
 			</div>
 			<div class="navbarMobile">
 				<a class="mobileLink" href="index.html" id="noDeco">
-					<h3 class="selected navbarLink" id="leftLink">Home</h3>
+					<h3 class="selected navbarLink" id="topLeft">Home</h3>
 				</a>
 				<a class="mobileLink" href="Negozio.html" id="noDeco">
 					<h3 class="navbarLink">Negozio</h3>
 				</a>
 				<a class="mobileLink" href="#Offerte" id="noDeco">
-					<h3 class="navbarLink">Offerte</h3>
+					<h3 class="navbarLink" id="topRight">Offerte</h3>
 				</a>
 				<a class="mobileLink" href="Account.html" id="noDeco">
-					<h3 class="navbarLink">Account</h3>
+					<h3 class="navbarLink" id="bottomLeft">Account</h3>
 				</a>
 				<a class="mobileLink" href="Disclaimer.html" id="noDeco">
-					<h3 class="navbarLink">Disclaimer</h3>
+					<h3 class="navbarLink">Disclaim</h3>
 				</a>
 				<a class="mobileLink" id="noDeco" onclick="Logout()">
-					<h3 class="navbarLink" id="rightLink">Logout</h3>
+					<h3 class="navbarLink" id="bottomRight">Logout</h3>
 				</a>
 			</div>
 		</div>
 		<div class="content">
 			<!-- Content section -->
-			<details open>
-				<summary>
-					<h1>Chi siamo</h1>
-				</summary>
-				<p id="italic">"In GreenStore, ci dedichiamo con passione all'offerta di frutta e verdura di alta
-					qualità a prezzi competitivi. Siamo fermamente convinti che una dieta sana e bilanciata sia alla
-					base del benessere e della felicità. Per questo motivo, selezioniamo con cura i nostri prodotti,
-					garantendo freschezza e genuinità in ogni cesto che consegniamo. La nostra missione è rendere
-					l'acquisto di frutta e verdura un'esperienza comoda e gratificante, portando i tesori del campo
-					direttamente alla vostra tavola. Con GreenStore, potrete fare scelte consapevoli per voi stessi e
-					per l'ambiente, poiché sosteniamo anche pratiche agricole eco-sostenibili. Unirvi a noi significa
-					abbracciare uno stile di vita salutare e rispettoso, contribuendo a costruire un futuro più verde
-					per tutti. Scegliete GreenStore e gustate la freschezza e il sapore della natura!"</p>
-			</details>
+			<div class="chiSiamoDesktop">
+				<details open>
+					<summary>
+						<h1>Chi siamo</h1>
+					</summary>
+					<p id="italic">Greenstore è un progetto che simula un vero sito web e-commerce: "In GreenStore, ci
+						dedichiamo con passione all'offerta di frutta e verdura di alta
+						qualità a prezzi competitivi. Siamo fermamente convinti che una dieta sana e bilanciata sia alla
+						base del benessere e della felicità. Per questo motivo, selezioniamo con cura i nostri prodotti,
+						garantendo freschezza e genuinità in ogni cesto che consegniamo. La nostra missione è rendere
+						l'acquisto di frutta e verdura un'esperienza comoda e gratificante, portando i tesori del campo
+						direttamente alla vostra tavola. Con GreenStore, potrete fare scelte consapevoli per voi stessi e
+						per l'ambiente, poiché sosteniamo anche pratiche agricole eco-sostenibili. Unirvi a noi significa
+						abbracciare uno stile di vita salutare e rispettoso, contribuendo a costruire un futuro più verde
+						per tutti. Scegliete GreenStore e gustate la freschezza e il sapore della natura!"</p>
+				</details>
+			</div>
+			<div class="chiSiamoMobile">
+				<details>
+					<summary>
+						<h1>Chi siamo</h1>
+					</summary>
+					<p id="italic">Greenstore è un progetto che simula un vero sito web e-commerce: "In GreenStore, ci
+						dedichiamo con passione all'offerta di frutta e verdura di alta
+						qualità a prezzi competitivi. Siamo fermamente convinti che una dieta sana e bilanciata sia alla
+						base del benessere e della felicità. Per questo motivo, selezioniamo con cura i nostri prodotti,
+						garantendo freschezza e genuinità in ogni cesto che consegniamo. La nostra missione è rendere
+						l'acquisto di frutta e verdura un'esperienza comoda e gratificante, portando i tesori del campo
+						direttamente alla vostra tavola. Con GreenStore, potrete fare scelte consapevoli per voi stessi e
+						per l'ambiente, poiché sosteniamo anche pratiche agricole eco-sostenibili. Unirvi a noi significa
+						abbracciare uno stile di vita salutare e rispettoso, contribuendo a costruire un futuro più verde
+						per tutti. Scegliete GreenStore e gustate la freschezza e il sapore della natura!"</p>
+				</details>
+			</div>
 			<details open>
 				<summary>
 					<h1>Spedizioni in tutta Italia</h1>
