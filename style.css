@@ -1005,10 +1005,9 @@ h2:hover {
 
 /* ------------------- NEGOZIO.HTML -------------------- */
 
-.fullCatalogTitle {
+Title {
     margin-left: 0px;
     cursor: text;
-
 }
 
 .fullCatalogTitle:hover {
@@ -1878,4 +1877,52 @@ h2:hover {
     .creditsContainer {
         flex-direction: row;
     }
+
+    /* NEGOZIO.HTML */
+
+    .fullCatalogTitle {
+        margin-left: 10px;
+        font-size: 30px;
+        cursor: text;
+    }
+    .fullCatalogTitle:hover {
+        margin-left: 10px;
+    }
+    .filterAndSortContainer {
+        margin: -20px 0 0 0;
+        width: 95%;
+        justify-content: space-between;
+        /* grid-template-areas:
+            "filterName"
+            "filterSelector"
+            "sorterName"
+            "sorterSelector"; */
+    }
+    
+    .filterSorter {
+        width: 95%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .filterSelector {
+        text-align: left;
+        font-size: 18px;
+        width: fit-content;
+        border-radius: 15px;
+        align-content: left;
+        text-align: center;
+    }
+    /* .filterSorter {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.211);
+        border-radius: 40px;
+        align-items: center;
+        padding: 0 3px 0 3px;
+        width: fit-content;
+        box-shadow: 0px 1px 5px rgb(37, 37, 37);
+        border: solid 2px rgb(37, 37, 37);
+    } */
+
 }
