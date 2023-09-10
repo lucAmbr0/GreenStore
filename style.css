@@ -68,6 +68,7 @@ body {
         scale: 1;
     }
 }
+
 @keyframes softZoomOut {
     from {
         opacity: 0;
@@ -506,6 +507,7 @@ summary {
 #DesktopMapButton {
     display: block;
 }
+
 #altMobileMapButton {
     display: none;
 }
@@ -828,7 +830,7 @@ h2:hover {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.25);
-    margin: 10px 0.85% 15px 0.85%;
+    margin: -10px 0.85% 15px 0.85%;
     border-radius: 4px 4px 30px 30px;
     padding: 2%;
 }
@@ -1428,12 +1430,12 @@ h2:hover {
     bottom: -10%;
     left: 50%;
     margin-left: -60px;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}
 
 
 
@@ -1444,15 +1446,18 @@ h2:hover {
         width: 100%;
         overflow-x: hidden;
     }
+
     .header {
         margin-top: 5px;
         margin-bottom: 5px;
         animation: fadeUp 0.5s forwards;
         animation-delay: 0s;
     }
+
     .longTitle {
         width: 90%;
     }
+
     .titleImgContainer {
         column-span: all;
         grid-area: titleImgContainer;
@@ -1460,9 +1465,11 @@ h2:hover {
         justify-content: center;
         margin: 15px;
     }
+
     .navbar {
         display: none;
     }
+
     .navbarMobile {
         background-color: rgba(0, 0, 0, 0.25);
         display: flex;
@@ -1474,12 +1481,14 @@ h2:hover {
         animation: zoomOut 0.4s forwards;
         animation-delay: 0s;
     }
+
     .mobileLink {
         width: 33.333333%;
         padding: 0;
         margin: 3px 0px;
         border-radius: 10px;
     }
+
     .navbarLink {
         border-radius: 10px;
         animation: softZoomOut 0.5s forwards;
@@ -1488,52 +1497,65 @@ h2:hover {
         text-align: center;
         padding: 0;
     }
+
     #topLeft {
         border-radius: 16px 10px 10px 10px;
     }
+
     #topRight {
         border-radius: 10px 16px 10px 10px;
     }
+
     #bottomLeft {
         border-radius: 10px 10px 10px 5px;
     }
+
     #bottomRight {
         border-radius: 10px 10px 5px 10px;
     }
+
     h1 {
         font-size: 30px;
         margin-left: 15px;
         animation: fadeUp 0.5s forwards;
         animation-delay: 0.3s;
     }
+
     h1:hover {
         margin-left: 15px;
     }
+
     p {
         font-size: 20px;
         text-align: justify;
         overflow-wrap: break-word;
     }
+
     .hideMobileVersion {
         display: none;
     }
+
     .hideDesktopVersion {
         display: block;
     }
+
     .content {
         margin: 5px 0.85% 15px 0.85%;
         padding: 2% 0;
         animation: fadeUp 0.4s forwards;
         animation-delay: 0.3s;
     }
+
     .shippingSection {
         display: block;
-        margin: 8% 8% 4% 8%;
+        margin: 8% 3% 4% 3%;
         flex-wrap: wrap;
     }
+
     .itMapAlign {
         display: none;
     }
+
     .expandImg {
         margin-top: 0;
         margin-left: 8%;
@@ -1546,53 +1568,64 @@ h2:hover {
         transition: 0.4s;
         opacity: 0.8;
     }
+
     .shippingParagraph {
         margin: -10px 1% 0px 1%;
         text-align: justify;
         word-wrap: break-word;
         font-size: 18px;
     }
+
     #DesktopMapButton {
         display: none;
     }
+
     #altMobileMapButton {
         display: block;
     }
+
     h2 {
         margin: 10px 5% 5% 10px;
         text-align: center;
         font-size: 20px;
     }
+
     h2:hover {
         scale: 1;
     }
+
     .reviewBox {
         margin: 40px 6% 35px 6%;
         box-shadow: 2.5px 0px 5px rgba(0, 0, 0, 0.626);
     }
+
     #mainReview {
         margin: 10px auto;
         font-size: 20px;
         text-align: center;
     }
+
     .starsContainer {
         margin: -15px auto 0px auto;
         padding: 0;
     }
+
     .mobileStar {
         width: 40px;
         height: 40px;
     }
+
     #shortReviewText {
         font-size: 22px;
         margin: 5px 15px 15px 15px;
         text-align: center;
     }
+
     .expandReview {
         display: block;
         margin: 0 20px 0 20px;
     }
-    
+
     .reviewImg {
         display: block;
         grid-area: img;
@@ -1605,15 +1638,18 @@ h2:hover {
         border: solid 3px black;
         scale: 1;
     }
+
     .reviewImg:hover {
         scale: 1.04;
     }
+
     .reviewText {
         margin: 10px 0 0 0;
         display: block;
         font-size: 18px;
         text-align: justify;
     }
+
     .headingProductsBox {
         background-color: rgba(0, 0, 0, 0.111);
         border: solid 3px rgb(37, 37, 37);
@@ -1623,9 +1659,11 @@ h2:hover {
         margin: 30px 4% 0 4%;
         transition: 0.3s;
     }
+
     .headingProductsBox:hover {
         border: solid 3px black;
     }
+
     .headingProductsTxt {
         text-align: center;
         padding: 10px 0px 0px 0px;
@@ -1638,7 +1676,7 @@ h2:hover {
         scale: 1;
         transition: 0.3s;
     }
-    
+
     .headingProductsTxt:hover {
         border-bottom: none;
         scale: 1;
@@ -1659,41 +1697,42 @@ h2:hover {
         scale: 1;
         transition: 0.4s;
     }
-    
+
     .productPreview:hover {
         scale: 1.10;
         border-radius: 10px;
     }
-    
+
     #middleBox {
         margin: 5px 4% 0 4%;
         border-radius: 5px 5px 5px 5px;
     }
-    
+
     #bottomBox {
         margin: 5px 4% 0 4%;
         border-radius: 5px 5px 25px 25px;
         padding-bottom: 10px;
     }
+
     #smallerProduct {
         width: 20.5%;
         border: solid 3px black;
         border-radius: 7px;
         margin: 5px;
     }
-    
+
     #smallerProduct:hover {
         scale: 1.10;
         border-radius: 7px;
     }
-    
+
     #mediumProduct {
         width: 20.5%;
         border: solid 3px black;
         border-radius: 7px;
         margin: 5px;
     }
-    
+
     #mediumProduct:hover {
         border-radius: 7px;
     }
@@ -1708,41 +1747,50 @@ h2:hover {
         cursor: pointer;
         transition: 0.45s;
     }
-    
+
     #viewStoreTxt:hover {
         border-bottom: none;
         scale: 1;
         letter-spacing: 1px;
     }
+
     .headingProductsBoxSale {
         padding: 10px;
     }
+
     .headingProductsBoxSale#bottomBox {
         padding-bottom: 30px;
     }
+
     .headingProductsTxtSale {
         padding: 10px 0;
     }
+
     #timer {
         font-family: Noto Sans, monospace;
-        font-size: 26px;
+        font-size: 24px;
         letter-spacing: normal;
         margin: auto;
     }
+
     .small {
         scale: 0.9;
     }
+
     .big {
         scale: 1;
     }
+
     #mediumProductFlashSale {
         width: 27%;
         margin: 6px;
     }
+
     .textFooter {
         font-size: 11px;
         margin-top: 0px;
     }
+
     .socialMobile {
         background-color: rgba(0, 0, 0, 0.271);
         border-radius: 10px;
@@ -1751,6 +1799,7 @@ h2:hover {
         justify-content: center;
         margin: 2px auto 20px auto;
     }
+
     .socialIcon {
         display: block;
         flex-direction: column;
@@ -1758,11 +1807,13 @@ h2:hover {
         width: 30px;
         height: 30px;
     }
+
     .footerLogo {
         display: block;
         width: 80%;
         margin: 0 auto;
     }
+
     .cookiesNoticeBoxStyle {
         top: 20%;
         bottom: 20%;
@@ -1771,25 +1822,31 @@ h2:hover {
         right: 5%;
         width: 90%;
     }
+
     .cookiesText {
         font-size: 30px;
     }
+
     .cookiesTextParagraph {
         font-size: 18px;
     }
+
     .cookiesButtonsContainer {
         justify-content: center;
     }
+
     .allCookies {
         width: 40%;
         height: fit-content;
         font-size: 20px;
     }
+
     .onlyEssentialCookies {
         width: 40%;
         height: fit-content;
         font-size: 14px;
     }
+
     #logout {
         height: 45%;
     }
