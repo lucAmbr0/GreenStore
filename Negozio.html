@@ -143,26 +143,44 @@ Insta: https://www.instagram.com/luca.ambroo_/
                 <summary>
                     <h1 class="fullCatalogTitle">Catalogo <span class="hideMobileVersion">completo </span>prodotti</h1>
                 </summary>
+                <span class="hideDesktopVersion"><br></span>
                 <div class="filterAndSortContainer">
-                    <h2 class="filterSorterText" id="filterName">Filtra per:</h2>
-                    <div class="filterSorter" id="filterSelector">
-                        <h3 class="filterSelector filterSelected" id="filterAll" onclick="filterForEverything()">Tutti
-                            <span class="hideMobileVersion">(65)</span></h3>
-                        <h3 class="filterSelector" id="filterFresh" onclick="filterForFreshFruit()">Frutta fresca <span class="hideMobileVersion">(31)</span>
-                        </h3>
-                        <h3 class="filterSelector" id="filterDried" onclick="filterForDriedFruit()">Frutta secca <span class="hideMobileVersion">(9)</span>
-                        </h3>
-                        <h3 class="filterSelector" id="filterVegetables" onclick="filterForVegetables()">Verdura <span class="hideMobileVersion">(25)</span>
-                        </h3>
-                    </div>
-                    <h2 class="filterSorterText" id="sorterName">Ordina per:</h2>
-                    <div class="filterSorter" id="sorterSelector">
-                        <h3 class="filterSelector filterSelected" id="sortAZ" onclick="FsortAZ()">Alfabetico A-Z</h3>
-                        <h3 class="filterSelector" id="sortZA" onclick="FsortZA()">Alfabetico Z-A</h3>
-                        <h3 class="filterSelector" id="sortECRE" onclick="FsortECRE()">Prezzo crescente</h3>
-                        <h3 class="filterSelector" id="sortEDEC" onclick="FsortEDEC()">Prezzo decrescente</h3>
-                    </div>
+                    <details open>
+                        <summary class="sorterMobileMargin">
+                            <h2 class="filterSorterText" id="filterName">Filtra per:</h2>
+                        </summary>
+                        <div class="filterSorter" id="filterSelector">
+                            <h3 class="filterSelector filterSelected" id="filterAll" onclick="filterForEverything()">
+                                Tutti
+                                (65)
+                            </h3>
+                            <h3 class="filterSelector" id="filterFresh" onclick="filterForFreshFruit()">Frutta fresca
+                                (31)
+                            </h3>
+                            <h3 class="filterSelector" id="filterDried" onclick="filterForDriedFruit()">Frutta secca
+                                (9)
+                            </h3>
+                            <h3 class="filterSelector" id="filterVegetables" onclick="filterForVegetables()">Verdura
+                                (25)
+                            </h3>
+                        </div>
+                    </details>
+                    <details open>
+                        <summary class="sorterMobileMargin">
+                            <h2 class="filterSorterText" id="sorterName">Ordina per:</h2>
+                        </summary>
+                        <div class="filterSorter" id="sorterSelector">
+                            <h3 class="filterSelector filterSelected" id="sortAZ" onclick="FsortAZ()">Alfabetico A-Z
+                            </h3>
+                            <h3 class="filterSelector" id="sortZA" onclick="FsortZA()">Alfabetico Z-A</h3>
+                            <h3 class="filterSelector" id="sortECRE" onclick="FsortECRE()">Prezzo cresc<span
+                                    class="hideMobileVersion">ente</span></h3>
+                            <h3 class="filterSelector" id="sortEDEC" onclick="FsortEDEC()">Prezzo decr<span
+                                    class="hideMobileVersion">escente</span></h3>
+                        </div>
+                    </details>
                 </div>
+                <span class="hideDesktopVersion"><br></span>
                 <div class="productsContainer" id="productsGrid">
                     <div class="product FRESHFRUIT">
                         <!-- NORMAL PRODUCT -->
@@ -176,7 +194,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.45€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Albicocche', '0.45€')">
@@ -197,7 +215,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.39€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Ananas', '0.39€')">
@@ -218,7 +236,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.39€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Arance Foglia', '0.39€')">
@@ -237,11 +255,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Aronia Nera <span
                                         class="offerPercentage">20%</span></h3>
-                                <h4 class="storeProductPrice priceOffer">1.44€/hgㅤ<span class="notValid">1.80€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">1.44€/hgㅤ<span class="notValid hideMobileVersion">1.80€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Aronia Nera', '1.44€')">
@@ -262,7 +280,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.73€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Avocado', '0.73€')">
@@ -281,11 +299,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Banane <span class="offerPercentage">30%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.18€/hgㅤ<span class="notValid">0.26€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.18€/hgㅤ<span class="notValid hideMobileVersion">0.26€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Banane', '0.18€')">
@@ -306,7 +324,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.26€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cachi Mela', '0.26€')">
@@ -327,7 +345,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.90€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Ciliegie', '0.90€')">
@@ -346,11 +364,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Cocco <span class="offerPercentage">50%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.15€/hgㅤ<span class="notValid">0.32€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.15€/hgㅤ<span class="notValid hideMobileVersion">0.32€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cocco', '0.15€')">
@@ -371,7 +389,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.15€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Anguria', '0.15€')">
@@ -390,11 +408,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Dragon Fruit <span
                                         class="offerPercentage">20%</span></h3>
-                                <h4 class="storeProductPrice priceOffer">0.63€/hgㅤ<span class="notValid">0.74€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.63€/hgㅤ<span class="notValid hideMobileVersion">0.74€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Dragon Fruit', '0.63€')">
@@ -415,7 +433,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.74€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Fragole', '0.74€')">
@@ -436,7 +454,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.88€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Kiwano', '0.88€')">
@@ -457,7 +475,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.24€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Kiwi', '0.24€')">
@@ -478,7 +496,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.39€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Limoni', '0.39€')">
@@ -497,11 +515,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Mandarini <span
                                         class="offerPercentage">20%</span></h3>
-                                <h4 class="storeProductPrice priceOffer">0.22€/hgㅤ<span class="notValid">0.27€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.22€/hgㅤ<span class="notValid hideMobileVersion">0.27€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Mandarini', '0.22€')">
@@ -520,11 +538,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Mele <span class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.14€/hgㅤ<span class="notValid">0.17€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.14€/hgㅤ<span class="notValid hideMobileVersion">0.17€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Mele', '0.14€')">
@@ -545,7 +563,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.24€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Melograno', '0.24€')">
@@ -566,7 +584,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.23€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Melone', '0.23€')">
@@ -587,7 +605,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">1.14€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Mirtilli', '1.14€')">
@@ -608,7 +626,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">1.88€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'More', '1.88€')">
@@ -629,7 +647,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.53€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'More di Gelso', '0.53€')">
@@ -650,7 +668,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.48€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Nespole', '0.48€')">
@@ -669,11 +687,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Papaya <span class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.30€/hgㅤ<span class="notValid">0.37€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.30€/hgㅤ<span class="notValid hideMobileVersion">0.37€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Papaya', '0.30€')">
@@ -694,7 +712,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">2.65€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Passion Fruit', '2.65€')">
@@ -715,7 +733,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.35€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pere', '0.35€')">
@@ -736,7 +754,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.09€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pesche', '0.09€')">
@@ -757,7 +775,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.11€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pomelo', '0.11€')">
@@ -778,7 +796,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.25€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pompelmo', '0.25€')">
@@ -797,11 +815,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Prugne <span class="offerPercentage">40%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.20€/hgㅤ<span class="notValid">0.33€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.20€/hgㅤ<span class="notValid hideMobileVersion">0.33€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Prugne', '0.20€')">
@@ -819,11 +837,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Uva <span class="offerPercentage">30%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.27€/hgㅤ<span class="notValid">0.32€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.27€/hgㅤ<span class="notValid hideMobileVersion">0.32€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Uva', '0.27€')">
@@ -844,7 +862,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">1.64€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Anacardi', '1.64€')">
@@ -865,7 +883,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.37€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Arachidi', '0.37€')">
@@ -886,7 +904,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.58€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Castagne', '0.58€')">
@@ -905,11 +923,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Fichi <span class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.41€/hgㅤ<span class="notValid">0.53€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.41€/hgㅤ<span class="notValid hideMobileVersion">0.53€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Fichi', '0.41€')">
@@ -930,7 +948,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.93€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Mandorle', '0.93€')">
@@ -951,7 +969,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">1.23€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Nocciole', '1.23€')">
@@ -972,7 +990,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.92/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Noci', '0.92€')">
@@ -993,7 +1011,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">5.76€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pinoli', '5.76€')">
@@ -1013,11 +1031,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h3 class="storeProductName storeOffer">Pistacchi <span
                                         class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.90€/hgㅤ<span class="notValid">1.14€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.90€/hgㅤ<span class="notValid hideMobileVersion">1.14€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pistacchi', '0.90€')">
@@ -1038,7 +1056,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.62€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Aglio', '0.62€')">
@@ -1058,11 +1076,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h3 class="storeProductName storeOffer">Asparagi <span
                                         class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.50€/hgㅤ<span class="notValid">0.62€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.50€/hgㅤ<span class="notValid hideMobileVersion">0.62€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Asparagi', '0.50€')">
@@ -1083,7 +1101,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.69€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Barbabietola', '0.69€')">
@@ -1104,7 +1122,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.23€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Bietola', '0.23€')">
@@ -1124,11 +1142,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h3 class="storeProductName storeOffer">Broccoli <span
                                         class="offerPercentage">30%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.16€/hgㅤ<span class="notValid">0.25€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.16€/hgㅤ<span class="notValid hideMobileVersion">0.25€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Broccoli', '0.16€')">
@@ -1149,7 +1167,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.89€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Carciofi', '0.89€')">
@@ -1170,7 +1188,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.13€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Carote', '0.13€')">
@@ -1191,7 +1209,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.18€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cavolfiori', '0.18€')">
@@ -1212,7 +1230,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.18€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cavoli', '0.18€')">
@@ -1233,7 +1251,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.65€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cetrioli', '0.65€')">
@@ -1254,7 +1272,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.47€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cime di rapa', '0.47€')">
@@ -1275,7 +1293,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.10€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Cipolle', '0.10€')">
@@ -1296,7 +1314,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.31€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Finocchi', '0.31€')">
@@ -1317,7 +1335,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.61€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Melanzane', '0.61€')">
@@ -1336,11 +1354,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Patate <span class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.15€/hgㅤ<span class="notValid">0.18€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.15€/hgㅤ<span class="notValid hideMobileVersion">0.18€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Patate', '0.15€')">
@@ -1361,7 +1379,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.11€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Peperoni', '0.11€')">
@@ -1381,11 +1399,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h3 class="storeProductName storeOffer">Pomodori <span
                                         class="offerPercentage">40%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid">0.13€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid hideMobileVersion">0.13€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Pomodori', '0.08€')">
@@ -1406,7 +1424,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.17€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Radicchio Rosso', '0.17€')">
@@ -1427,7 +1445,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.26€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Rapa Bianca', '0.26€')">
@@ -1448,7 +1466,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.14€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Ravanelli', '0.14€')">
@@ -1467,11 +1485,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Rucola <span class="offerPercentage">40%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid">0.13€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid hideMobileVersion">0.13€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Rucola', '0.08€')">
@@ -1492,7 +1510,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h4 class="storeProductPrice">0.23€/hg</h4>
                             </div>
                             <div class="storeBuyProductContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Sedano', '0.23€')">
@@ -1511,11 +1529,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Spinaci <span class="offerPercentage">40%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.24€/hgㅤ<span class="notValid">0.40€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.24€/hgㅤ<span class="notValid hideMobileVersion">0.40€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Spinaci', '0.24€')">
@@ -1534,11 +1552,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                             <div class="storePriceContainer">
                                 <h3 class="storeProductName storeOffer">Zucca <span class="offerPercentage">30%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.56€/hgㅤ<span class="notValid">0.80€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.56€/hgㅤ<span class="notValid hideMobileVersion">0.80€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Zucca', '0.56€')">
@@ -1558,11 +1576,11 @@ Insta: https://www.instagram.com/luca.ambroo_/
                                 <h3 class="storeProductName storeOffer">Zucchine <span
                                         class="offerPercentage">20%</span>
                                 </h3>
-                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid">0.10€/hg</span>
+                                <h4 class="storeProductPrice priceOffer">0.08€/hgㅤ<span class="notValid hideMobileVersion">0.10€/hg</span>
                                 </h4>
                             </div>
                             <div class="storeBuyProductContainer storeOfferPriceContainer">
-                                <h4 class="hg">qta [gr]:</h4>
+                                <span class="hideMobileVersion"><h4 class="hg">qta [gr]:</h4></span>
                                 <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                                 <span class="material-symbols-outlined white"
                                     onclick="addToCart(this.parentElement, 'Zucchine', '0.08€')">
@@ -1574,56 +1592,74 @@ Insta: https://www.instagram.com/luca.ambroo_/
                 </div>
             </details>
         </div>
-        <div class="footer">
-            <!-- Footer section -->
-            <div class="footerContainer">
-                <div class="socialBox1">
-                    <a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
-                            alt="Logo di Instagram" class="socialIcon"></a>
-                    <a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
-                            class="socialIcon"></a>
-                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
-                            src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
-                </div>
-                <div class="socialBox2">
-                    <a href="#start">
-                        <p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
-                                class="footerLogo">
-                    </a>
-                </div>
-                <div class="socialBox3">
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Contattaci</p>
-                    </a>
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Privacy</p>
-                    </a>
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Copyright</p>
-                    </a>
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Attribuzione</p>
-                    </a>
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Citazioni</p>
-                    </a>
-                    <a href="Disclaimer.html">
-                        <p class="footerLinks">Disclaimer</p>
-                    </a>
-                </div>
-            </div>
-            <h3 class="textFooter"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
-                    simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
-                represents a grocery e-commerce website simulation that does not phisically exist. <br>
-                Attribution required when using any file or code of this project on your third party personal projects.
-                More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
-        </div>
-        <a href="https://github.com/lucAmbr0/GreenStore">
-            <p class="versionName">GreenStore Project v2.0 2023 edition</p>
-        </a>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="js/negozio.js"></script>
+		<div class="footer">
+			<!-- Footer section -->
+
+			<!-- DESKTOP FOOTER -->
+			<div class="footerContainer hideMobileVersion">
+				<div class="socialBox1">
+					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+							alt="Logo di Instagram" class="socialIcon"></a>
+					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+							class="socialIcon"></a>
+					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+				</div>
+				<div class="socialBox2">
+					<a href="index.html#start">
+						<p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
+								class="footerLogo">
+					</a>
+				</div>
+				<div class="socialBox3">
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Contattaci</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Privacy</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Copyright</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Attribuzione</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Citazioni</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Disclaimer</p>
+					</a>
+				</div>
+			</div>
+
+			<!-- MOBILE FOOTER -->
+			<div class="hideDesktopVersion">
+				<div class="socialMobile">
+					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+							alt="Logo di Instagram" class="socialIcon"></a>
+					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+							class="socialIcon"></a>
+					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+				</div>
+				<a href="index.html#start">
+					<p class="footerLinks noAnimation"><img src="Media/other/GreenstoreTransparent2.webp"
+							alt="Logo GreenStore" class="footerLogo">
+				</a>
+			</div>
+			<p class="textFooter noAnimation"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
+					simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
+				represents a grocery e-commerce website simulation that does not phisically exist. <br>
+				Attribution required when using any file or code of this project on your third party personal projects.
+				More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
+		</div>
+		<a href="https://github.com/lucAmbr0/GreenStore">
+			<p class="versionName">GreenStore Project v2.0 2023 edition</p>
+		</a>
+	</div>
+	<script src="js/negozio.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
