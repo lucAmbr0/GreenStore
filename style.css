@@ -834,7 +834,7 @@ h2:hover {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.25);
-    margin: -10px 0.85% 15px 0.85%;
+    margin: 15px 0.85% 15px 0.85%;
     border-radius: 4px 4px 30px 30px;
     padding: 2%;
 }
@@ -1154,12 +1154,12 @@ Title {
 
 .storeProductPrice {
     font-family: Noto Sans;
-    font-size: 18px;
+    font-size: 19px;
     overflow: hidden;
     text-align: center;
     color: whitesmoke;
     margin: 0 auto;
-    padding: 1px 3px;
+    padding: 2px 3px;
     border-radius: 8px;
     width: fit-content;
     font-weight: 300;
@@ -1181,7 +1181,7 @@ Title {
 
 .priceOffer {
     border-radius: 20px;
-    padding: 3px 5px;
+    padding: 2px 5px;
     background-color: rgb(212, 51, 23);
     border: solid 3px orange;
     font-weight: 600;
@@ -1817,6 +1817,10 @@ Title {
         height: 30px;
     }
 
+    .footer {
+        margin: -10px 0.85% 15px 0.85%;
+    }
+
     .footerLogo {
         display: block;
         width: 80%;
@@ -1911,7 +1915,7 @@ Title {
         flex-direction: row;
         flex-wrap: wrap;
         border-radius: 20px;
-        margin: 0 2% 0 2%;
+        /* margin: 0 2% 0 2%; */
         overflow: hidden;
         align-items: flex-start;
         background-color: transparent;
@@ -1926,7 +1930,6 @@ Title {
         align-content: left;
         text-align: center;
         transition: 0.3s;
-
     }
     .filterSelected {   
         margin: 5px 2px;
@@ -1943,8 +1946,9 @@ Title {
     }
 
     .product {
-        width: 42%;
-        margin: 4px 6px;
+        width: 43%;
+        margin: 4px 4px;
+        border: 3px solid black;
     }
 
     .product:hover {
@@ -1958,7 +1962,11 @@ Title {
     }
     
     .priceOffer {
-        padding: 2px 12px;
+        padding: 1px 12px;
+        font-size: 18px;
     }
 
+    .quantity {
+        width: 80px;
+    }
 }
