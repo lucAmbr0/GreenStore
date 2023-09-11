@@ -834,7 +834,7 @@ h2:hover {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.25);
-    margin: -10px 0.85% 15px 0.85%;
+    margin: 15px 0.85% 15px 0.85%;
     border-radius: 4px 4px 30px 30px;
     padding: 2%;
 }
@@ -1010,11 +1010,6 @@ Title {
     cursor: text;
 }
 
-.fullCatalogTitle:hover {
-    scale: 1;
-    margin-left: 0px;
-}
-
 .filterAndSortContainer {
     display: grid;
     grid-template-areas:
@@ -1159,12 +1154,12 @@ Title {
 
 .storeProductPrice {
     font-family: Noto Sans;
-    font-size: 18px;
+    font-size: 19px;
     overflow: hidden;
     text-align: center;
     color: whitesmoke;
     margin: 0 auto;
-    padding: 1px 3px;
+    padding: 2px 3px;
     border-radius: 8px;
     width: fit-content;
     font-weight: 300;
@@ -1186,7 +1181,7 @@ Title {
 
 .priceOffer {
     border-radius: 20px;
-    padding: 1px 5px;
+    padding: 2px 5px;
     background-color: rgb(212, 51, 23);
     border: solid 3px orange;
     font-weight: 600;
@@ -1280,6 +1275,10 @@ Title {
     margin: 10px 0px 5px 0px;
     width: 99%;
     align-items: center;
+}
+
+.cartDetailsMargin {
+    margin-bottom: 0;
 }
 
 .white {
@@ -1461,6 +1460,11 @@ Title {
 
     .longTitle {
         width: 90%;
+    }
+
+    .smallLogo {
+        width: 70%;
+        margin: 10px auto;
     }
 
     .titleImgContainer {
@@ -1813,6 +1817,10 @@ Title {
         height: 30px;
     }
 
+    .footer {
+        margin: -10px 0.85% 15px 0.85%;
+    }
+
     .footerLogo {
         display: block;
         width: 80%;
@@ -1885,26 +1893,34 @@ Title {
         font-size: 30px;
         cursor: text;
     }
+    .fullCatalogDetails {
+        margin-bottom: 0;
+    }
     .fullCatalogTitle:hover {
         margin-left: 10px;
     }
     .filterAndSortContainer {
-        margin: -20px 0 0 0;
+        padding: 0 0 -20px 10px;
+        margin: -20px 0 -50px 0;
         width: 95%;
-        justify-content: space-between;
-        /* grid-template-areas:
+        grid-template-areas:
             "filterName"
             "filterSelector"
             "sorterName"
-            "sorterSelector"; */
+            "sorterSelector";
     }
     
     .filterSorter {
-        width: 95%;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        width: fit-content;
+        flex-direction: row;
+        flex-wrap: wrap;
         border-radius: 20px;
+        /* margin: 0 2% 0 2%; */
         overflow: hidden;
+        align-items: flex-start;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
     }
     .filterSelector {
         text-align: left;
@@ -1913,16 +1929,44 @@ Title {
         border-radius: 15px;
         align-content: left;
         text-align: center;
+        transition: 0.3s;
     }
-    /* .filterSorter {
-        display: flex;
-        background-color: rgba(0, 0, 0, 0.211);
-        border-radius: 40px;
-        align-items: center;
-        padding: 0 3px 0 3px;
-        width: fit-content;
-        box-shadow: 0px 1px 5px rgb(37, 37, 37);
-        border: solid 2px rgb(37, 37, 37);
-    } */
+    .filterSelected {   
+        margin: 5px 2px;
+        scale: 1;
+        transition: 0.3s;
+    }
+    .sorterMobileMargin {
+        margin-top: -25px;
+    }
 
+    .productsContainer {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .product {
+        width: 43%;
+        margin: 4px 4px;
+        border: 3px solid black;
+    }
+
+    .product:hover {
+        scale: 1;
+        border-radius: 15px;
+        box-shadow: 1px 2px 10px;
+    }
+
+    .offerPercentage {
+        display: none;
+    }
+    
+    .priceOffer {
+        padding: 1px 12px;
+        font-size: 18px;
+    }
+
+    .quantity {
+        width: 80px;
+    }
 }
