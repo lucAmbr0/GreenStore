@@ -1467,6 +1467,11 @@ Title {
         width: 90%;
     }
 
+    .smallLogo {
+        width: 70%;
+        margin: 10px auto;
+    }
+
     .titleImgContainer {
         column-span: all;
         grid-area: titleImgContainer;
@@ -1888,6 +1893,9 @@ Title {
         margin-left: 10px;
         font-size: 30px;
         cursor: text;
+    }
+    .fullCatalogDetails {
+        margin-bottom: 0;
     }
     .fullCatalogTitle:hover {
         margin-left: 10px;
