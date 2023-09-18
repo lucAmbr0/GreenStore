@@ -1969,4 +1969,10 @@ Title {
     .quantity {
         width: 80px;
     }
+    #shoppingCart {
+        width: 85%;
+    }
+    #cart {
+        font-size: 24px;
+    }
 }
