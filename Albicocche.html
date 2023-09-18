@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- 
+		GreenStore Project est.2021 
+Created by @luca.ambroo_ 
+github: https://github.com/lucAmbr0/
+Insta: https://www.instagram.com/luca.ambroo_/ 
+-->
+<html id="start">
+
+<head>
+    <title>GreenStore - Albicocche</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Benvenuti su GreenStore, la simulazione di negozio online per la frutta e verdura di alta qualità.">
+    <meta name="keywords"
+        content="GreenStore, frutta, verdura, freschezza, qualità, github projects, html projects, beginner html projects, ecommerce html project">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Media/other/LogoTransparentFull.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@200;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="everything">
+        <!-- Cookies Notice -->
+        <div class="popup" id="popup">
+            <div class="cookiesNoticeBoxStyle" id="CookiesNoticeBoxStyle">
+                <p class="cookiesText">Informativa Cookies</h1>
+                <p class="cookiesTextParagraph">Utilizziamo cookie e tecnologie simili per aiutare a fornire e
+                    migliorare i contenuti su GreenStore. I cookie sono utili anche per fornire un'esperienza più sicura
+                    utilizzando le informazioni che riceviamo all'interno e all'esterno di GreenStore e per fornire e
+                    migliorare i nostri servizi per le persone che hanno un account. <br>
+                    <i>Puoi modificare le tue scelte riguardo i cookies nelle impostazioni del tuo account.</i>
+                </p> <br>
+                <div class="cookiesButtonsContainer">
+                    <button class="onlyEssentialCookies" onclick="closePopup()">Accetta solo i cookies
+                        essenziali</button>
+                    <button class="allCookies" onclick="closePopup()">Accetta tutti i cookies</button>
+                </div>
+            </div>
+        </div>
+        <!-- Logout Popup -->
+        <div class="popup" id="popupLogout">
+            <div class="cookiesNoticeBoxStyle" id="logout">
+                <p class="cookiesText">Logout eseguito</h1>
+                <p class="cookiesTextParagraph">Hai eseguito il logout dell'account da GreenStore. I dati memorizzati
+                    dal sito sono stati eliminati.
+                <div class="cookiesButtonsContainer">
+                    <button class="allCookies" id="logoutButton" onclick="closeLogoutPopup()">Chiudi</button>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <!-- Main header -->
+            <div class="smallLogoContainer"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore"
+                    class="smallLogo"></div>
+            <!-- DESKTOP NAVBAR -->
+            <div class="navbar">
+                <div class="leftBar">
+                    <a class="noDeco" href="index.html">
+                        <h3 class="navbarLink" id="leftLink">Home</h3>
+                    </a>
+                    <a class="noDeco" href="Negozio.html">
+                        <h3 class="navbarLink">Negozio</h3>
+                    </a>
+                    <a class="noDeco" href="#Offerte">
+                        <h3 class="navbarLink">Offerte</h3>
+                    </a>
+                    <a class="noDeco" href="Account.html">
+                        <h3 class="navbarLink">Account e ordini</h3>
+                    </a>
+                </div>
+                <div class="rightBar">
+                    <a class="noDeco" href="Disclaimer.html">
+                        <h3 class="navbarLink">Disclaimer</h3>
+                    </a>
+                    <a class="noDeco" onclick="Logout()">
+                        <h3 class="navbarLink" id="rightLink">Logout</h3>
+                    </a>
+                </div>
+            </div>
+            <!-- MOBILE NAVBAR -->
+            <div class="navbarMobile">
+                <a class="mobileLink noDeco" href="index.html">
+                    <h3 class="navbarLink" id="topLeft">Home</h3>
+                </a>
+                <a class="mobileLink noDeco" href="Negozio.html">
+                    <h3 class="navbarLink">Negozio</h3>
+                </a>
+                <a class="mobileLink noDeco" href="#Offerte">
+                    <h3 class="navbarLink" id="topRight">Offerte</h3>
+                </a>
+                <a class="mobileLink noDeco" href="Account.html">
+                    <h3 class="navbarLink" id="bottomLeft">Account</h3>
+                </a>
+                <a class="mobileLink noDeco" href="Disclaimer.html">
+                    <h3 class="navbarLink">Crediti</h3>
+                </a>
+                <a class="mobileLink noDeco" onclick="Logout()">
+                    <h3 class="navbarLink" id="bottomRight">Logout</h3>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+		<div class="footer">
+			<!-- Footer section -->
+
+			<!-- DESKTOP FOOTER -->
+			<div class="footerContainer hideMobileVersion">
+				<div class="socialBox1">
+					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+							alt="Logo di Instagram" class="socialIcon"></a>
+					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+							class="socialIcon"></a>
+					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+				</div>
+				<div class="socialBox2">
+					<a href="index.html#start">
+						<p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
+								class="footerLogo">
+					</a>
+				</div>
+				<div class="socialBox3">
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Contattaci</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Privacy</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Copyright</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Attribuzione</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Citazioni</p>
+					</a>
+					<a href="Disclaimer.html">
+						<p class="footerLinks">Disclaimer</p>
+					</a>
+				</div>
+			</div>
+
+			<!-- MOBILE FOOTER -->
+			<div class="hideDesktopVersion">
+				<div class="socialMobile">
+					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+							alt="Logo di Instagram" class="socialIcon"></a>
+					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+							class="socialIcon"></a>
+					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+				</div>
+				<a href="index.html#start">
+					<p class="footerLinks noAnimation"><img src="Media/other/GreenstoreTransparent2.webp"
+							alt="Logo GreenStore" class="footerLogo">
+				</a>
+			</div>
+			<p class="textFooter noAnimation"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
+					simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
+				represents a grocery e-commerce website simulation that does not phisically exist. <br>
+				Attribution required when using any file or code of this project on your third party personal projects.
+				More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
+		</div>
+		<a href="https://github.com/lucAmbr0/GreenStore">
+			<p class="versionName">GreenStore Project v2.0 2023 edition</p>
+		</a>
+	</div>
+	<script src="js/negozio.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

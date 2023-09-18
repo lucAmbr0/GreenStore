@@ -1441,7 +1441,9 @@ Title {
     opacity: 1;
 }
 
-
+.productLink {
+    text-decoration: none;
+}
 
 /* CSS MOBILE RULES */
 @media screen and (max-width: 768px) {
