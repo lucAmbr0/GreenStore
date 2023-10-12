@@ -153,22 +153,71 @@ Insta: https://www.instagram.com/luca.ambroo_/
                         <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
                     </div>
                     <div style="display: flex;"><button class="buyNowButton" onclick="addToCart(this.parentElement.parentElement.parentElement, 'Albicocche', '0.45€')">Acquista ora</button></div>
-                    <div style="display: flex;"><button class="buyNowButton" onclick="addToCart(this.parentElement, 'Albicocche', '0.45€')">Aggiungi al carrello</button></div>
+                    <div style="display: flex;"><button class="buyNowButton" onclick="addToCart(this.parentElement.parentElement.parentElement, 'Albicocche', '0.45€')">Aggiungi al carrello</button></div>
                 </div>
             </div>
-            <div style="width: 80%; margin-top: 50px; display: flex;">
-                <ul>
-                    <li class="prodPageLI">Origine dei prodotti</li>
-                    <p class="prodPageLIdesc">La provenienza del nostro prodotto è una parte essenziale della nostra filosofia. Ogni prodotto di Greenstore è coltivato con cura in regioni specifiche, selezionate per le condizioni ideali di crescita. Questa attenzione alla provenienza assicura che tu stia acquistando un prodotto di qualità, coltivato in modo sostenibile e in armonia con l'ambiente. Puoi essere sicuro che il nostro impegno per l'origine specifica significa prodotti più freschi e migliori per te.</p>
-                    <li class="prodPageLI">Conservazione</li>
-                    <p class="prodPageLIdesc">Per garantire che il tuo acquisto mantenga la sua freschezza e qualità, è importante conoscere le giuste pratiche di conservazione. Le nostre linee guida sulla conservazione ti aiuteranno a mantenere il prodotto al meglio. Dalle albicocche alle verdure, ti forniremo consigli dettagliati su come conservare i tuoi prodotti Greenstore in modo da prolungarne la durata e mantenerli sempre deliziosi.</p>
-                    <li class="prodPageLI">Spedizione</li>
-                    <p class="prodPageLIdesc">Siamo impegnati a offrirti un'esperienza di spedizione efficiente e affidabile. I tuoi prodotti Greenstore vengono confezionati con cura e spediti rapidamente per garantire la massima freschezza al momento della consegna. Ti forniremo informazioni dettagliate sulle opzioni di spedizione disponibili, i tempi di consegna stimati e, se necessario, il tracciamento del tuo ordine. La tua soddisfazione è la nostra priorità, e la spedizione è parte integrante di questo impegno.</p>
-                    <li class="prodPageLI">Opzioni di pagamento</li>
-                    <p class="prodPageLIdesc">Vogliamo rendere l'acquisto il più comodo possibile per te, quindi offriamo diverse opzioni di pagamento. Puoi pagare con carta di credito o debito, utilizzare servizi di pagamento online come PayPal o Apple Pay, oppure scegliere un metodo di pagamento offline, come il bonifico bancario. Accettiamo anche pagamenti in contanti alla consegna per offrirti la massima flessibilità. Siamo impegnati a garantire che il processo di pagamento sia sicuro e privo di complicazioni per semplificare la tua esperienza di acquisto.</p>
-                </ul>
-                <img src="Media/Valori Nutrizionali/Albicocche.webp" alt="Valori nutrizionali albicocche" class="nutriFacts">
+            <div style="display: flex;">
+                <div style="width: 100%; margin-top: 50px; display: flex;">
+                    <ul>
+                        <li class="prodPageLI">Origine dei prodotti</li>
+                        <p class="prodPageLIdesc">La provenienza del nostro prodotto è una parte essenziale della nostra filosofia. Ogni prodotto di Greenstore è coltivato con cura in regioni specifiche, selezionate per le condizioni ideali di crescita. Questa attenzione alla provenienza assicura che tu stia acquistando un prodotto di qualità, coltivato in modo sostenibile e in armonia con l'ambiente. Puoi essere sicuro che il nostro impegno per l'origine specifica significa prodotti più freschi e migliori per te.</p>
+                        <li class="prodPageLI">Conservazione</li>
+                        <p class="prodPageLIdesc">Per garantire che il tuo acquisto mantenga la sua freschezza e qualità, è importante conoscere le giuste pratiche di conservazione. Le nostre linee guida sulla conservazione ti aiuteranno a mantenere il prodotto al meglio. Dalle albicocche alle verdure, ti forniremo consigli dettagliati su come conservare i tuoi prodotti Greenstore in modo da prolungarne la durata e mantenerli sempre deliziosi.</p>
+                        <li class="prodPageLI">Spedizione</li>
+                        <p class="prodPageLIdesc">Siamo impegnati a offrirti un'esperienza di spedizione efficiente e affidabile. I tuoi prodotti Greenstore vengono confezionati con cura e spediti rapidamente per garantire la massima freschezza al momento della consegna. Ti forniremo informazioni dettagliate sulle opzioni di spedizione disponibili, i tempi di consegna stimati e, se necessario, il tracciamento del tuo ordine. La tua soddisfazione è la nostra priorità, e la spedizione è parte integrante di questo impegno.</p>
+                        <li class="prodPageLI">Opzioni di pagamento</li>
+                        <p class="prodPageLIdesc">Vogliamo rendere l'acquisto il più comodo possibile per te, quindi offriamo diverse opzioni di pagamento. Puoi pagare con carta di credito o debito, utilizzare servizi di pagamento online come PayPal o Apple Pay, oppure scegliere un metodo di pagamento offline, come il bonifico bancario. Accettiamo anche pagamenti in contanti alla consegna per offrirti la massima flessibilità. Siamo impegnati a garantire che il processo di pagamento sia sicuro e privo di complicazioni per semplificare la tua esperienza di acquisto.</p>
+                    </ul>
+                </div>
+                <div style="width: fit-content; margin-top: 50px; display: flex;">
+                    <table class="nutriFacts">
+                    <tr>
+                        <th colspan="2">Valori nutrizionali [100g]</th>
+                    </tr>
+                    <tr>
+                        <td>Acqua</td>
+                        <td class="right">86,35g</td>
+                    </tr>
+                    <tr>
+                        <td>kcal</td>
+                        <td class="right">48</td>
+                    </tr>
+                    <tr>
+                        <td>Proteine</td>
+                        <td class="right">1,4g</td>
+                    </tr>
+                    <tr>
+                        <td>Grassi</td>
+                        <td class="right">0,39g</td>
+                    </tr>
+                    <tr>
+                        <td>Carboidrati</td>
+                        <td class="right">11,12g</td>
+                    </tr>
+                    <tr>
+                        <td>Calcio</td>
+                        <td class="right">13mg</td>
+                    </tr>
+                    <tr>
+                        <td>Potassio</td>
+                        <td class="right">259mg</td>
+                    </tr>
+                    <tr>
+                        <td>Magnesio</td>
+                        <td class="right">10mg</td>
+                    </tr>
+                    <tr>
+                        <td>Fosforo</td>
+                        <td class="right">23mg</td>
+                    </tr>
+                    <tr>
+                        <td>Indice glicemico</td>
+                        <td class="right">35</td>
+                    </tr>
+                    </table>
+                </div>
             </div>
+
         </div>
         <div class="footer">
             <!-- Footer section -->

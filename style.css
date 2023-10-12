@@ -1491,6 +1491,8 @@ Title {
     font-weight: 400;
     font-size: 26px;
     margin: -5px 0 20px 25px;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.3s;
 }
 
 .productPagePrice:hover {
@@ -1593,8 +1595,39 @@ Title {
     margin-left: 5px;
 }
 .nutriFacts {
-    width: 800px;
-    height: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: fit-content;
+    width: fit-content;
+    min-width: max-content;
+    border-radius: 14px 14px 10px 10px;
+    box-shadow: 0 0 3px black;
+    padding: 2px;
+    border-spacing: 0;
+}
+.nutriFacts td {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 10px 0px 0px 10px;
+}
+.nutriFacts tr {
+    transition: 0.2s;
+}
+.nutriFacts tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+td.right {
+    text-align: right;
+    border-radius: 0px 10px 10px 0px;
+}
+.nutriFacts th {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 22px;
+    border: 2px solid rgb(40, 40, 40);
+    padding: 8px;
+    border-radius: 12px;
 }
 
 /* CSS MOBILE RULES */
