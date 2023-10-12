@@ -8,7 +8,7 @@ Insta: https://www.instagram.com/luca.ambroo_/
 <html id="start">
 
 <head>
-    <title>GreenStore - Albicocche</title>
+    <title>Albicocche - GreenStore</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -75,13 +75,6 @@ Insta: https://www.instagram.com/luca.ambroo_/
                     <!-- </div> -->
                 </summary>
                 <div id="itemCartList">
-                    <!-- <div class="cartItem">
-                            <p class="cartProductName">Arance</p>
-                            <h3 class="cartProductQuantityAndPrice">
-                                <span>120g</span>
-                                <span>1.23€</span>
-                            </h3>
-                        </div> -->
                 </div>
             </details>
         </div>
@@ -137,76 +130,113 @@ Insta: https://www.instagram.com/luca.ambroo_/
             </div>
         </div>
         <div class="content">
-
+            <h4 class="productPath">Negozio > Frutta Fresca > Albicocche</h4>
+            <div style="display: flex;">
+                <img src="Media/Products/FreshFruit/Albicocche.webp" alt="Albicocche" class="productPageImg">
+                <div class="verticalLine"></div>
+                <div style="max-width: 50%;">
+                    <h1 class="productPageName">Albicocche</h1>
+                    <h2 class="productPagePrice">Costo al hg: 0.45€</h2>
+                    <p class="productPageDesc">Le nostre albicocche sono un concentrato di dolcezza e freschezza.
+                        Coltivate con amore e cura, queste succose albicocche sono il frutto perfetto per una spremuta
+                        mattutina, una marmellata fatta in casa o semplicemente per uno spuntino salutare. Sono ricche
+                        di vitamine e il loro sapore naturale ti farà sentire come se stessi mordendo un raggio di sole.
+                        Scopri la bontà delle albicocche con noi!</p>
+                </div>
+                <div class="productPageBuyContainer">
+                    <p class="productPagePriceBox">0.45€/hg IVA inclusa</p>
+                    <p class="productPageBoxDetails">Spedizione calcolata in seguito. Reso Gratuito. <a
+                            href="Disclaimer.html" class="linkDeco">Termini e condizioni.</a></p>
+                    <div class="horizontalLine"></div>
+                    <div class="productPageQuantityBox">
+                        <p class="productPageBoxQuantity">Quantità:</p>
+                        <input type="number" class="quantity" placeholder="0g" min="0" max="3000" step="100">
+                    </div>
+                    <div style="display: flex;"><button class="buyNowButton" onclick="addToCart(this.parentElement.parentElement.parentElement, 'Albicocche', '0.45€')">Acquista ora</button></div>
+                    <div style="display: flex;"><button class="buyNowButton" onclick="addToCart(this.parentElement, 'Albicocche', '0.45€')">Aggiungi al carrello</button></div>
+                </div>
+            </div>
+            <div style="width: 80%; margin-top: 50px; display: flex;">
+                <ul>
+                    <li class="prodPageLI">Origine dei prodotti</li>
+                    <p class="prodPageLIdesc">La provenienza del nostro prodotto è una parte essenziale della nostra filosofia. Ogni prodotto di Greenstore è coltivato con cura in regioni specifiche, selezionate per le condizioni ideali di crescita. Questa attenzione alla provenienza assicura che tu stia acquistando un prodotto di qualità, coltivato in modo sostenibile e in armonia con l'ambiente. Puoi essere sicuro che il nostro impegno per l'origine specifica significa prodotti più freschi e migliori per te.</p>
+                    <li class="prodPageLI">Conservazione</li>
+                    <p class="prodPageLIdesc">Per garantire che il tuo acquisto mantenga la sua freschezza e qualità, è importante conoscere le giuste pratiche di conservazione. Le nostre linee guida sulla conservazione ti aiuteranno a mantenere il prodotto al meglio. Dalle albicocche alle verdure, ti forniremo consigli dettagliati su come conservare i tuoi prodotti Greenstore in modo da prolungarne la durata e mantenerli sempre deliziosi.</p>
+                    <li class="prodPageLI">Spedizione</li>
+                    <p class="prodPageLIdesc">Siamo impegnati a offrirti un'esperienza di spedizione efficiente e affidabile. I tuoi prodotti Greenstore vengono confezionati con cura e spediti rapidamente per garantire la massima freschezza al momento della consegna. Ti forniremo informazioni dettagliate sulle opzioni di spedizione disponibili, i tempi di consegna stimati e, se necessario, il tracciamento del tuo ordine. La tua soddisfazione è la nostra priorità, e la spedizione è parte integrante di questo impegno.</p>
+                    <li class="prodPageLI">Opzioni di pagamento</li>
+                    <p class="prodPageLIdesc">Vogliamo rendere l'acquisto il più comodo possibile per te, quindi offriamo diverse opzioni di pagamento. Puoi pagare con carta di credito o debito, utilizzare servizi di pagamento online come PayPal o Apple Pay, oppure scegliere un metodo di pagamento offline, come il bonifico bancario. Accettiamo anche pagamenti in contanti alla consegna per offrirti la massima flessibilità. Siamo impegnati a garantire che il processo di pagamento sia sicuro e privo di complicazioni per semplificare la tua esperienza di acquisto.</p>
+                </ul>
+                <img src="Media/Valori Nutrizionali/Albicocche.webp" alt="Valori nutrizionali albicocche" class="nutriFacts">
+            </div>
         </div>
-		<div class="footer">
-			<!-- Footer section -->
+        <div class="footer">
+            <!-- Footer section -->
 
-			<!-- DESKTOP FOOTER -->
-			<div class="footerContainer hideMobileVersion">
-				<div class="socialBox1">
-					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
-							alt="Logo di Instagram" class="socialIcon"></a>
-					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
-							class="socialIcon"></a>
-					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
-							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
-				</div>
-				<div class="socialBox2">
-					<a href="index.html#start">
-						<p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
-								class="footerLogo">
-					</a>
-				</div>
-				<div class="socialBox3">
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Contattaci</p>
-					</a>
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Privacy</p>
-					</a>
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Copyright</p>
-					</a>
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Attribuzione</p>
-					</a>
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Citazioni</p>
-					</a>
-					<a href="Disclaimer.html">
-						<p class="footerLinks">Disclaimer</p>
-					</a>
-				</div>
-			</div>
+            <!-- DESKTOP FOOTER -->
+            <div class="footerContainer hideMobileVersion">
+                <div class="socialBox1">
+                    <a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+                            alt="Logo di Instagram" class="socialIcon"></a>
+                    <a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+                            class="socialIcon"></a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+                            src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+                </div>
+                <div class="socialBox2">
+                    <a href="index.html#start">
+                        <p class="footerLinks"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo GreenStore"
+                                class="footerLogo">
+                    </a>
+                </div>
+                <div class="socialBox3">
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Contattaci</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Privacy</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Copyright</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Attribuzione</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Citazioni</p>
+                    </a>
+                    <a href="Disclaimer.html">
+                        <p class="footerLinks">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
 
-			<!-- MOBILE FOOTER -->
-			<div class="hideDesktopVersion">
-				<div class="socialMobile">
-					<a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
-							alt="Logo di Instagram" class="socialIcon"></a>
-					<a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
-							class="socialIcon"></a>
-					<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
-							src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
-				</div>
-				<a href="index.html#start">
-					<p class="footerLinks noAnimation"><img src="Media/other/GreenstoreTransparent2.webp"
-							alt="Logo GreenStore" class="footerLogo">
-				</a>
-			</div>
-			<p class="textFooter noAnimation"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
-					simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
-				represents a grocery e-commerce website simulation that does not phisically exist. <br>
-				Attribution required when using any file or code of this project on your third party personal projects.
-				More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
-		</div>
-		<a href="https://github.com/lucAmbr0/GreenStore">
-			<p class="versionName">GreenStore Project v2.0 2023 edition</p>
-		</a>
-	</div>
-	<script src="js/negozio.js"></script>
-	<script src="js/main.js"></script>
+            <!-- MOBILE FOOTER -->
+            <div class="hideDesktopVersion">
+                <div class="socialMobile">
+                    <a href="https://www.instagram.com/luca.ambroo_/"><img src="Media/other/instagram.webp"
+                            alt="Logo di Instagram" class="socialIcon"></a>
+                    <a href="https://github.com/lucAmbr0/"><img src="Media/other/github.webp" alt="Logo di GitHub"
+                            class="socialIcon"></a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img
+                            src="Media/other/youtube.webp" alt="Logo di YouTube" class="socialIcon"></a>
+                </div>
+                <a href="index.html#start">
+                    <p class="footerLinks noAnimation"><img src="Media/other/GreenstoreTransparent2.webp"
+                            alt="Logo GreenStore" class="footerLogo">
+                </a>
+            </div>
+            <p class="textFooter noAnimation"><i>GreenStore Project HTML [est.2021] - Grocery e-commerce website
+                    simulation</i><br>GreenStore is a project entirely invented and developed by lucAmbr0 since 2021. It
+                represents a grocery e-commerce website simulation that does not phisically exist. <br>
+                Attribution required when using any file or code of this project on your third party personal projects.
+                More info: <a href="Disclaimer.html" id="linkDeco">Disclaimer</a></p>
+        </div>
+        <a href="https://github.com/lucAmbr0/GreenStore">
+            <p class="versionName">GreenStore Project v2.0 2023 edition</p>
+        </a>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1313,7 +1313,7 @@ Title {
     overflow: auto;
     background-color: rgba(50, 50, 50, 0.2);
     backdrop-filter: blur(10px);
-    border: solid 2px black;
+    border: solid 2px rgb(40, 40, 40);
     box-shadow: 0px 0px 10px;
     z-index: 2;
     left: 2%;
@@ -1443,6 +1443,158 @@ Title {
 
 .productLink {
     text-decoration: none;
+}
+
+.productPageImg {
+    width: fit-content;
+    border-radius: 20px;
+    border: solid 3px rgb(40, 40, 40);
+    box-shadow: 0px 0px 5px black;
+    transition: 0.4s;
+    /* display: flex; */
+}
+
+.productPageImg:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 8px black;
+}
+
+.productPath {
+    margin: 10px 10px 18px 0px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productPageName {
+    border: none;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    height: fit-content;
+    font-size: 45px;
+}
+
+.productPageName:hover {
+    margin-left: 10px;
+}
+
+.productPagePrice {
+    text-align: left;
+    justify-content: flex-start;
+    scale: 1;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 26px;
+    margin: -5px 0 20px 25px;
+}
+
+.productPagePrice:hover {
+    scale: 1;
+}
+
+.verticalLine {
+    margin: 0 0 0 30px;
+    border-left: solid 1px rgb(40, 40, 40);
+}
+.horizontalLine {
+    margin: 0 15px;
+    border-bottom: solid 2px rgb(40, 40, 40);
+}
+
+.productPageDesc {
+    font-family: Noto Sans;
+    font-weight: 100;
+    font-size: 18px;
+    max-width: 80%;
+    display: flex;
+    text-align: justify;
+    margin: 14px 10px 0 25px;
+}
+
+.productPageBuyContainer {
+    background-color: rgba(120, 239, 120, 0.45);
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: solid 3px rgb(40, 40, 40);
+}
+
+.productPagePriceBox {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.productPageBoxDetails {
+    font-size: 14px;
+}
+
+.buyNowButton {
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-weight: 500;
+    width: 90%;
+    background: linear-gradient(to bottom, #86e57c, #56a346);
+    box-shadow: 0 0 1px black;
+    border: solid 2px rgb(40, 40, 40);
+    justify-content: center;
+    margin: 5px auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.buyNowButton:hover {
+    scale: 1.05;
+    box-shadow: 0 0 4px black;
+}
+
+.productPageQuantityBox {
+    display: flex;
+    align-items: center;
+}
+
+.productPageQuantity {
+    height: fit-content;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    border: none;
+    font-size: 20px;
+}
+
+.quantity:focus {
+    outline: none;
+    border: none;
+    color: rgb(15, 15, 15);
+}
+
+.productPageQuantity::placeholder {
+    color: black;
+    font-size: 20px;
+}
+
+.prodPageLI {
+    font-size: 20px;
+    font-family: Noto Sans;
+    font-weight: 300;
+}
+.prodPageLIdesc {
+    font-size: 16px;
+    font-family: Noto Sans;
+    color: rgb(30, 30, 30);
+    font-weight: 200;
+    margin-left: 5px;
+}
+.nutriFacts {
+    width: 800px;
+    height: 800px;
 }
 
 /* CSS MOBILE RULES */
@@ -1882,8 +2034,9 @@ Title {
     }
 
     #disclaimerPage {
-    padding: 3% 0 2% 0;
+        padding: 3% 0 2% 0;
     }
+
     .creditsContainer {
         flex-direction: row;
     }
@@ -1895,12 +2048,15 @@ Title {
         font-size: 30px;
         cursor: text;
     }
+
     .fullCatalogDetails {
         margin-bottom: 0;
     }
+
     .fullCatalogTitle:hover {
         margin-left: 10px;
     }
+
     .filterAndSortContainer {
         padding: 0 0 -20px 10px;
         margin: -20px 0 -50px 0;
@@ -1911,7 +2067,7 @@ Title {
             "sorterName"
             "sorterSelector";
     }
-    
+
     .filterSorter {
         width: fit-content;
         flex-direction: row;
@@ -1924,6 +2080,7 @@ Title {
         box-shadow: none;
         border: none;
     }
+
     .filterSelector {
         text-align: left;
         font-size: 18px;
@@ -1933,11 +2090,13 @@ Title {
         text-align: center;
         transition: 0.3s;
     }
-    .filterSelected {   
+
+    .filterSelected {
         margin: 5px 2px;
         scale: 1;
         transition: 0.3s;
     }
+
     .sorterMobileMargin {
         margin-top: -25px;
     }
@@ -1962,7 +2121,7 @@ Title {
     .offerPercentage {
         display: none;
     }
-    
+
     .priceOffer {
         padding: 1px 12px;
         font-size: 18px;
@@ -1971,9 +2130,11 @@ Title {
     .quantity {
         width: 80px;
     }
+
     #shoppingCart {
         width: 85%;
     }
+
     #cart {
         font-size: 24px;
     }

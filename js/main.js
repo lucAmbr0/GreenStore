@@ -110,6 +110,7 @@ function updateCartUI() {
 
 function addToCart(product, productName, price) {
     var quantity = product.querySelector(".quantity");
+    console.log("DIOBONOOOOO")
     var quantityValue = parseInt(quantity.value);
 
     if (quantityValue > 0) {
