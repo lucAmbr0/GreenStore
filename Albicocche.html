@@ -58,6 +58,33 @@ Insta: https://www.instagram.com/luca.ambroo_/
                 </div>
             </div>
         </div>
+        <!-- SHOPPING CART POPUP -->
+        <div id="shoppingCart">
+            <details open class="cartDetailsMargin">
+                <summary class="cartHeader" onclick="cartExpandSwitch()">
+                    <!-- <div> -->
+                    <h3 id="cart">Carrello (0 elementi):</h3>
+                    <div>
+                        <span class="material-symbols-rounded hide-icon expand" id="deleteCart" onclick="clearCart()">
+                            cancel
+                        </span>
+                        <span class="material-symbols-rounded hide-icon expand" id="cartExpand">
+                            expand_more
+                        </span>
+                    </div>
+                    <!-- </div> -->
+                </summary>
+                <div id="itemCartList">
+                    <!-- <div class="cartItem">
+                            <p class="cartProductName">Arance</p>
+                            <h3 class="cartProductQuantityAndPrice">
+                                <span>120g</span>
+                                <span>1.23€</span>
+                            </h3>
+                        </div> -->
+                </div>
+            </details>
+        </div>
         <div class="header">
             <!-- Main header -->
             <div class="smallLogoContainer"><img src="Media/other/GreenstoreTransparent2.webp" alt="Logo di Greenstore"
