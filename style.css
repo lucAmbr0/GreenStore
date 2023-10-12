@@ -1554,11 +1554,16 @@ Title {
     background: linear-gradient(to bottom, #86e57ce5, #55a346c2);
     box-shadow: 0 0 1px black;
     border: solid 2px rgb(40, 40, 40);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 5px auto;
     cursor: pointer;
+    display: flex;
     transition: 0.4s;
+}
+
+.material-symbols-outlined.products {
+    margin-right: 5px;
 }
 
 .buyNowButton:hover {
@@ -1598,10 +1603,25 @@ Title {
     font-size: 20px;
 }
 
+ul.productPageULdetails {
+    list-style: none;
+}
+.material-symbols-outlined.UL {
+    margin-right: 8px;
+    scale: 1.2;
+    color: rgb(20, 20, 20);
+}
+
 .prodPageLI {
     font-size: 20px;
     font-family: Noto Sans;
     font-weight: 300;
+    align-items: center;
+    display: flex;
+    transition: 0.4s;
+}
+.prodPageLI:hover {
+    
 }
 
 .prodPageLIdesc {
