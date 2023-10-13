@@ -1638,12 +1638,17 @@ Title {
 ul.productPageULdetails {
     list-style: none;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 3px rgb(40, 40, 40);
+    box-shadow: 0 0 5px rgb(40, 40, 40);
+    /* border: solid 3px rgb(40,40,40); */
     border-radius: 20px;
     margin-top: 0;
     margin-right: 30px;
     padding: 25px;
     padding-right: 0;
+    height: fit-content;
+    margin-bottom: 0;
+    animation: fadeUp 0.4s forwards;
+    animation-delay: 0.5s;
 }
 .material-symbols-outlined.UL {
     margin-right: 8px;
@@ -1678,12 +1683,14 @@ ul.productPageULdetails {
     /* background-color: rgba(255, 255, 255, 0.1); */
     background-color: rgba(120, 239, 120, 0.45);
     height: fit-content;
-    border-radius: 14px 14px 10px 10px;
+    border-radius: 15px 15px 10px 10px;
     border: solid 3px rgb(40, 40, 40);
     /* box-shadow: 0 0 3px black; */
     padding: 2px;
     border-spacing: 0;
     grid-area: nutriFacts;
+    animation: fadeUp 0.4s forwards;
+    animation-delay: 0.5s;
 }
 
 .nutriFacts td {
@@ -1710,9 +1717,10 @@ td.right {
 }
 
 .nutriFacts th {
-    font-family: Noto Sans;
+    font-family: Poppins;
     font-weight: 600;
     font-size: 21px;
+    letter-spacing: -0.5px;
     border: 2px solid rgb(40, 40, 40);
     align-items: center;
     padding: 8px;
@@ -1732,6 +1740,9 @@ td.right {
     color: rgb(40,40,40);
     animation: none;
     opacity: 1;
+    animation: fadeUp 0.4s forwards;
+    animation-delay: 0.5s;
+    margin: 10px 0 20px 0;
 }
 
 #nutriTableCredits {
@@ -1740,6 +1751,62 @@ td.right {
     text-decoration: underline;
     font-style: italic;
     font-size: 12px;
+}
+
+.productPageReviews {
+    background-color: rgba(120, 239, 120, 0.45);
+    border: solid 3px rgb(40, 40, 40);
+    border-radius: 15px;
+    height: 100%;
+    /* justify-content: space-around; */
+    display: flex;
+    padding: 2px 2.5px;
+    flex-direction: column;
+    animation: fadeUp 0.4s forwards;
+    animation-delay: 0.5s;
+}
+
+.productPageReviewStarContainer {
+    display: flex;
+    /* background-color: aqua; */
+    margin: 5px auto 0 auto;
+    width: fit-content;
+    align-items: center;
+    transition: 0.3s;
+    cursor: default;
+}
+.productPageReviewStarContainer:hover {
+    scale: 1.1;
+}
+.recensioniProdotto {
+    text-align: center;
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 21px;
+    color: rgb(30,30,30);
+    border: solid 2px rgb(40,40,40);
+    border-radius: 11px 11px 8.5px 8.5px;
+    padding: 8px 0;
+    margin: 0;
+    transition: 0.4s;
+}
+.recensioniProdotto:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgb(240,240,240);
+}
+
+.prdctStar {
+    color: rgb(30,30,30);
+}
+.reviewWord {
+    color: rgb(30,30,30);
+}
+.prdctReviewLonger {
+    font-size: 14px;
+    color: rgb(40,40,40);
+    padding: 0px;
+    align-items: center;
+    text-align: left;
 }
 
 /* CSS MOBILE RULES */
