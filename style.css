@@ -1735,6 +1735,7 @@ td.right {
 }
 
 #nutriTableCredits {
+    display: none;
     text-align: center;
     text-decoration: underline;
     font-style: italic;
