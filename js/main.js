@@ -142,3 +142,7 @@ function removeItem(index) {
 
 cart = JSON.parse(localStorage.getItem("cart")) || [];
 updateCartUI();
+
+function goHomePage() {
+    window.location.href = 'index.html';
+};
