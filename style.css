@@ -368,7 +368,7 @@ body {
 h1 {
     font-family: Poppins;
     font-weight: bolder;
-    border-left: double 15px rgb(20,20,20);
+    border-left: double 15px rgb(20, 20, 20);
     font-size: 45px;
     margin-left: 25px;
     padding-left: 15px;
@@ -382,12 +382,12 @@ h1 {
 h1:hover {
     margin-left: 40px;
     width: fit-content;
-    color: rgb(20,20,20);
+    color: rgb(20, 20, 20);
 }
 
 .disclaimerTitle {
     font-size: 38px;
-    border-left: double 11px rgb(20,20,20);
+    border-left: double 11px rgb(20, 20, 20);
 }
 
 details {
@@ -404,10 +404,11 @@ p {
     animation: fadeUp 0.6s forwards;
     animation-delay: 0.4s;
     opacity: 0;
-    color: rgb(35,35,35);
+    color: rgb(35, 35, 35);
 }
+
 strong {
-    color: rgb(30,30,30);
+    color: rgb(30, 30, 30);
 }
 
 .disclaimerParagraph {
@@ -592,7 +593,7 @@ h2 {
     font-size: 30px;
     scale: 1;
     transition: 0.3s;
-    color: rgb(30,30,30);
+    color: rgb(30, 30, 30);
 }
 
 h2:hover {
@@ -1114,7 +1115,7 @@ Title {
 .product {
     display: flex;
     flex-direction: column;
-    border: solid 4px rgb(30,30,30);
+    border: solid 4px rgb(30, 30, 30);
     background-color: white;
     margin: 12px 10px;
     border-radius: 15px;
@@ -1459,21 +1460,26 @@ Title {
 .productGrid {
     display: grid;
     grid-template-columns: 30% 50% 20%;
-    grid-template-areas: 
-    "gridAreaImage itemInfo buyItem"
-    "LIgrid LIgrid nutriFacts";
+    grid-template-areas:
+        "gridAreaImage itemInfo buyItem"
+        "LIgrid LIgrid nutriFacts";
 }
 
 .gridAreaImage {
     grid-area: gridAreaImage;
     /* display: flex; */
 }
+
 .itemInfo {
     grid-area: itemInfo;
     padding-left: 10px;
 }
+
 .LIgrid {
     grid-area: LIgrid;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
 }
 
 .productPageImg {
@@ -1653,6 +1659,7 @@ ul.productPageULdetails {
     animation: fadeUp 0.4s forwards;
     animation-delay: 0.5s;
 }
+
 .material-symbols-outlined.UL {
     margin-right: 8px;
     scale: 1.2;
@@ -1667,6 +1674,7 @@ ul.productPageULdetails {
     display: flex;
     transition: 0.4s;
 }
+
 .prodPageLI:hover {
     padding-left: 5px;
 }
@@ -1732,15 +1740,16 @@ td.right {
     cursor: pointer;
     transition: 0.4s;
 }
+
 .nutriFacts th:hover {
     background-color: rgba(0, 0, 0, 0.45);
-    color: rgb(240,240,240);
+    color: rgb(240, 240, 240);
 }
 
 .nutriFactsSource {
     font-size: 12px;
     text-align: center;
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     animation: none;
     opacity: 1;
     animation: fadeUp 0.4s forwards;
@@ -1778,35 +1787,40 @@ td.right {
     transition: 0.3s;
     cursor: default;
 }
+
 .productPageReviewStarContainer:hover {
     scale: 1.1;
 }
+
 .recensioniProdotto {
     text-align: center;
     font-weight: 600;
     font-family: Poppins;
     font-size: 21px;
-    color: rgb(30,30,30);
-    border: solid 2px rgb(40,40,40);
+    color: rgb(30, 30, 30);
+    border: solid 2px rgb(40, 40, 40);
     border-radius: 11px 11px 8.5px 8.5px;
     padding: 8px 0;
     margin: 0;
     transition: 0.4s;
 }
+
 .recensioniProdotto:hover {
     background-color: rgba(0, 0, 0, 0.45);
-    color: rgb(240,240,240);
+    color: rgb(240, 240, 240);
 }
 
 .prdctStar {
-    color: rgb(30,30,30);
+    color: rgb(30, 30, 30);
 }
+
 .reviewWord {
-    color: rgb(30,30,30);
+    color: rgb(30, 30, 30);
 }
+
 .prdctReviewLonger {
     font-size: 14px;
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     padding: 0px;
     align-items: center;
     text-align: left;
@@ -1832,8 +1846,8 @@ td.right {
     }
 
     .smallLogo {
-        width: 20vh;
-        margin: 10px auto;
+        width: 25vh;
+        margin: 12px auto;
     }
 
     .titleImgContainer {
@@ -1910,7 +1924,7 @@ td.right {
     }
 
     .hideMobileVersion {
-        display: none;
+        display: none !important;
     }
 
     .hideDesktopVersion {
@@ -2352,5 +2366,82 @@ td.right {
 
     #cart {
         font-size: 24px;
+    }
+
+    .productPath {
+        margin: 0 0 0 2%;
+    }
+
+    .productGrid {
+        margin: 10px 10px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "gridAreaImage"
+            "itemInfo"
+            "buyItem"
+            "LIgrid"
+            "nutriFacts";
+    }
+
+    .productPageImg {
+        min-width: 88vw;
+        max-width: 88vw;
+        margin: 5px auto;
+    }
+
+    .itemInfo {
+        padding: 0;
+        margin: 15px 0 0 0;
+    }
+
+    .productPageName {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .productPagePrice {
+        padding: 0;
+        margin: -10px 0 5px 10px;
+    }
+
+    .productPageDesc {
+        margin: 0 10px 0 10px;
+        max-width: 100%;
+    }
+
+    .productPageBuyContainer {
+        background-color: transparent;
+        border-radius: 0 0 20px 20px;
+        border: none;
+        width: 100%;
+    }
+
+    .LIgrid {
+        margin-top: 0;
+    }
+
+    .productPagePriceBox,
+    .productPageBoxDetails {
+        display: none;
+    }
+
+    ul.productPageULdetails {
+        margin: 0px 10px 0 10px;
+        padding: 0px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .prodPageLI {
+        margin-top: 20px;
+        margin-bottom: 6px;
+    }
+
+    .prodPageLI:hover {
+        margin-left: -5px !important;
+    }
+
+    .prodPageLIdesc {
+        margin: 2px 0 0 0;
     }
 }
