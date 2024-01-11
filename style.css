@@ -243,11 +243,12 @@ body {
 
 .smallLogoContainer {
     display: flex;
+    justify-content: left;
 }
 
 .smallLogo {
-    width: 50%;
-    margin: 20px auto 20px auto;
+    width: 30%;
+    margin: 20px 20px 20px 20px;
     display: flex;
     cursor: pointer;
 }
@@ -337,7 +338,7 @@ body {
 }
 
 .longTitle {
-    width: 90%;
+    width: 40%;
 }
 
 .leftBar {
@@ -901,9 +902,11 @@ h2:hover {
 }
 
 .footerLogo {
-    width: 100%;
+    display: flex;
+    width: 70%;
     scale: 1.1;
     transition: 0.4s;
+    margin: 0 auto;
 }
 
 .footerLogo:hover {
@@ -1825,11 +1828,11 @@ td.right {
     }
 
     .longTitle {
-        width: 90%;
+        width: 30vh;
     }
 
     .smallLogo {
-        width: 70%;
+        width: 20vh;
         margin: 10px auto;
     }
 
