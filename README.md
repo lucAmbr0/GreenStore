@@ -2,8 +2,7 @@
 - GreenStore is a concept website that I created a long time ago to simulate an e-commerce website where you shop your groceries. This store does not phisically exist and there's no actual possibility to buy or return products.
 - Unfortunately when this project started I didn't have any code-time extension enabled, but I can guarantee it took me many hours to make.
 <a href="https://github.com/lucAmbr0">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=lucAmbr0&theme=tokyonight&show_icons=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lucAmbr0&theme=tokyonight&layout=compact" />
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=lucAmbr0&theme=tokyonight&show_icons=true" />
 </a>
 
 ## :ledger: Index
