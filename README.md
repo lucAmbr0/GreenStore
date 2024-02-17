@@ -142,10 +142,9 @@ Here are some screenshots of this project (took from version 0.1.2)
 
 <br>
 
-![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0/master/GreenStoreSCREEN1.png?raw=true)
-![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0/master/GreenStoreSCREEN2.png?raw=true)
-![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0/master/GreenStoreSCREEN3.png?raw=true)
-
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/master/GreenStoreSCREEN1.png?raw=true)
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/master/GreenStoreSCREEN2.png?raw=true)
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/master/GreenStoreSCREEN3.png?raw=true)
 
 ## :star2: Credit/Acknowledgment
 I'm the only one that worked on this as of now :')
