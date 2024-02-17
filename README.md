@@ -137,7 +137,14 @@ There are no particularly stringent guidelines as this is a fairly small project
 Sources and websites I used to make this project are all listed in the disclaimer/credits page of the project <3
 
 ##  :camera: Gallery
-Pictures of your project.
+Here are some screenshots of this project (took from version 0.1.2)
+
+<br>
+
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0-patch-1/GreenStoreSCREEN1.png?raw=true)
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0-patch-1/GreenStoreSCREEN2.png?raw=true)
+![alt text](https://github.com/lucAmbr0/GreenStore/blob/lucAmbr0-patch-1/GreenStoreSCREEN3.png?raw=true)
+
 
 ## :star2: Credit/Acknowledgment
 I'm the only one that worked on this as of now :')
