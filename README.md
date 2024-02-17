@@ -12,7 +12,6 @@
   - [File Structure](#file_folder-file-structure)
 - [Community](#cherry_blossom-community)
   - [Contribution](#fire-contribution)
-  - [Branches](#cactus-branches)
   - [Guideline](#exclamation-guideline)  
 - [FAQ](#question-faq)
 - [Resources](#page_facing_up-resources)
@@ -96,56 +95,52 @@ Teamwork is important! If you want to help improve this project feel free to mak
  Your contributions are always welcome and appreciated. Following are the things you can do to contribute to this project.
 
  1. **Report a bug** <br>
- If you think you have encountered a bug, and I should know about it, feel free to report it [here]() and I will take care of it.
+ If you think you have encountered a bug, and I should know about it, feel free to report it and I will take care of it.
 
  2. **Request a feature** <br>
- You can also request for a feature [here](), and if it will viable, it will be picked for development.  
+ You can also request for a feature, and if it will viable, it will be picked for development.  
 
  3. **Create a pull request** <br>
- It can't get better then this, your pull request will be appreciated by the community. You can get started by picking up any open issues from [here]() and make a pull request.
+ It can't get better then this, your pull request will be appreciated by the community. You can get started by picking up any open issues and make a pull request.
 
  > If you are new to open-source, make sure to check read more about it [here](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source) and learn more about creating a pull request [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
 
-
- ### :cactus: Branches
-
- I use an agile continuous integration methodology, so the version is frequently updated and development is really fast.
-
-1. **`stage`** is the development branch.
-
-2. **`master`** is the production branch.
-
-3. No other permanent branches should be created in the main repository, you can create feature branches but they should get merged with the master.
 
 **Steps to work with feature branch**
 
 1. To start working on a new feature, create a new branch prefixed with `feat` and followed by feature name. (ie. `feat-FEATURE-NAME`)
 2. Once you are done with your changes, you can raise PR.
 
-**Steps to create a pull request**
-
-1. Make a PR to `stage` branch.
-2. Comply with the best practices and guidelines e.g. where the PR concerns visual elements it should have an image showing the effect.
-3. It must pass all continuous integration checks and get positive reviews.
-
-After this, changes will be merged.
-
-
 ### :exclamation: Guideline
-coding guidelines or other things you want people to follow should follow.
-
+There are no particularly stringent guidelines as this is a fairly small project, however, as a relative beginner in the world of web development, you may find the code messy or poorly optimized. Feel free to make improvements if you want, but try not to make too massive changes to the code.
 
 ## :question: FAQ
-You can optionally add a FAQ section about the project.
+- **What's this thing?**
+- This is GreenStore, an open-source webpage developed by me to simulate an online e-commerce website that sells groceries.
+
+<br>
+
+- **What can I do with it?**
+- Essentially, nothing very productive. You may find it interesting or worth reading for some nutritional facts about food. Or maybe you'd like the UI and use it for your personal webpages.
+
+<br>
+
+- **Can I buy something?**
+- No, this shop is totally fake and does not intend to sell any commercial products
+
+<br>
+
+- **How are you?**
+- It's a little cold at home now, I think I'll put on a sweater. Thanks for asking <3
 
 ##  :page_facing_up: Resources
-Add important resources here
+Sources and websites I used to make this project are all listed in the disclaimer/credits page of the project <3
 
 ##  :camera: Gallery
 Pictures of your project.
 
 ## :star2: Credit/Acknowledgment
-Credit the authors here.
+I'm the only one that worked on this as of now :')
 
 ##  :lock: License
 Add a license here, or a link to it.
