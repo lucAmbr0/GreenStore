@@ -10,8 +10,6 @@
 - [Development](#wrench-development)
   - [Pre-Requisites](#notebook-pre-requisites)
   - [File Structure](#file_folder-file-structure)
-  - [Build](#hammer-build)  
-  - [Deployment](#rocket-deployment)  
 - [Community](#cherry_blossom-community)
   - [Contribution](#fire-contribution)
   - [Branches](#cactus-branches)
@@ -89,19 +87,9 @@ Add a file structure here with the basic details about files, below is an exampl
 └── style.css
 ```
 
-| No | File Name | Details 
-|----|------------|-------|
-| 1  | index | Entry point
-
-###  :hammer: Build
-Write the build Instruction here.
-
-### :rocket: Deployment
-Write the deployment instruction here.
-
 ## :cherry_blossom: Community
 
-If it's open-source, talk about the community here, ask social media links and other links.
+Teamwork is important! If you want to help improve this project feel free to make changes and make a pull request appropriately using the GitHub channels
 
  ###  :fire: Contribution
 
