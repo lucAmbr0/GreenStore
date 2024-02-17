@@ -21,10 +21,13 @@
 
 ##  :beginner: About
 **GreenStore** is a web page developed in **html/css/js** for demonstration purposes. There is **no commercial reality behind this project**, but only the intention to create a web page showing an online fruit and vegetable shop. Everything written inside is made up.
+<br>
 I created this project to put into **practice** some knowledge I acquired while learning **web development languages**.
 This project was born in 2021 and I personally brought it as a personal project to school in a more essential and raw form than what you see now. In fact, in 2022 the project was restarted from scratch to improve the order of the code and readability.
+<br>
 I decided to publish this web page to make material available to the community from which to take inspiration to create other web pages, or find inspiration for other projects. **Feel free to copy some of the code for your own projects.**
 Although **the shop is a fiction**, inside **you will find** a lot of interesting **information on agricultural products** and reliable average **nutritional information** taken from authoritative and cited sources.
+<br>
 The **graphic aspect** of the page was designed completely from scratch by me, and **takes inspiration from the Material You Android guidelines** made by Google, which I particularly admire.
 The page is **not very optimized for mobile viewing** and could cause problems if you open it in formats other than 16:9 and 9:16, I'm working to make it as responsive as possible.
 Also, note that this page is written in **Italian**.
