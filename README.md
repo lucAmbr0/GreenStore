@@ -119,22 +119,20 @@ Teamwork is important! If you want to help improve this project feel free to mak
 There are no particularly stringent guidelines as this is a fairly small project, however, as a relative beginner in the world of web development, you may find the code messy or poorly optimized. Feel free to make improvements if you want, but try not to make too massive changes to the code.
 
 ## :question: FAQ
-- **What's this thing?**
+- **What's this thing?** <br>
 This is GreenStore, an open-source webpage developed by me to simulate an online e-commerce website that sells groceries.
 
-- **What can I do with it?**
+- **What can I do with it?** <br>
 Essentially, nothing very productive. You may find it interesting or worth reading for some nutritional facts about food. Or maybe you'd like the UI and use it for your personal webpages.
 
-- **I don't understand what it says, why isn't it in English?**
+- **I don't understand what it says, why isn't it in English?** <br>
 Since this project was born for personal purposes it was not initially intended to be published online, so I wrote it in my native language, Italian 🇮🇹.
 
-- **Can I buy something?**
+- **Can I buy something?** <br>
 No, this shop is totally fake and does not intend to sell any commercial products
 
-<br>
-
-- **How are you?**
-- It's a little cold at home now, I think I'll put on a sweater. Thanks for asking <3
+- **How are you?** <br>
+It's a little cold at home now, I think I'll put on a sweater. Thanks for asking <3
 
 ##  :page_facing_up: Resources
 Sources and websites I used to make this project are all listed in the disclaimer/credits page of the project <3
