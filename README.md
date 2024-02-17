@@ -150,4 +150,5 @@ Here are some screenshots of this project (took from version 0.1.2)
 I'm the only one that worked on this as of now :')
 
 ##  :lock: License
-Add a license here, or a link to it.
+Since this project is made using various sources from across the web and is mainly for personal use, it comes with absolutely no license.
+That said, if you choose to clone and use this project for public, private or commercial purposes, I still ask you not to delete my signature and links to my profiles from the files to support my work, it won't cost you anything!
