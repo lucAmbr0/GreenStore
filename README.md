@@ -27,6 +27,7 @@ I decided to publish this web page to make material available to the community f
 Although **the shop is a fiction**, inside **you will find** a lot of interesting **information on agricultural products** and reliable average **nutritional information** taken from authoritative and cited sources.
 The **graphic aspect** of the page was designed completely from scratch by me, and **takes inspiration from the Material You Android guidelines** made by Google, which I particularly admire.
 The page is **not very optimized for mobile viewing** and could cause problems if you open it in formats other than 16:9 and 9:16, I'm working to make it as responsive as possible.
+Also, note that this page is written in **Italian**.
 
 ## :zap: Usage
 This project has no practical use other than browsing a fake online store to read some information about fruit and vegetables.
@@ -116,17 +117,16 @@ There are no particularly stringent guidelines as this is a fairly small project
 
 ## :question: FAQ
 - **What's this thing?**
-- This is GreenStore, an open-source webpage developed by me to simulate an online e-commerce website that sells groceries.
-
-<br>
+This is GreenStore, an open-source webpage developed by me to simulate an online e-commerce website that sells groceries.
 
 - **What can I do with it?**
-- Essentially, nothing very productive. You may find it interesting or worth reading for some nutritional facts about food. Or maybe you'd like the UI and use it for your personal webpages.
+Essentially, nothing very productive. You may find it interesting or worth reading for some nutritional facts about food. Or maybe you'd like the UI and use it for your personal webpages.
 
-<br>
+- **I don't understand what it says, why isn't it in English?**
+Since this project was born for personal purposes it was not initially intended to be published online, so I wrote it in my native language, Italian 🇮🇹.
 
 - **Can I buy something?**
-- No, this shop is totally fake and does not intend to sell any commercial products
+No, this shop is totally fake and does not intend to sell any commercial products
 
 <br>
 
